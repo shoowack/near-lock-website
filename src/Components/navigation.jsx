@@ -4,13 +4,13 @@ import { HashLink as Link } from "react-router-hash-link";
 function Navigation() {
   const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -60;
+    const yOffset = -56;
     window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
   };
 
   return (
-    <div className="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div className="container">
         <Link
           className="navbar-brand"
           smooth
@@ -20,7 +20,7 @@ function Navigation() {
           Home
         </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarText"
@@ -28,11 +28,11 @@ function Navigation() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+        <div className="collapse navbar-collapse" id="navbarText">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
               <Link
                 className="nav-link"
                 smooth
@@ -42,12 +42,12 @@ function Navigation() {
                 Download
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link className="nav-link" smooth to="/features">
                 Features
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link
                 className="nav-link"
                 smooth
@@ -57,30 +57,30 @@ function Navigation() {
                 Compatibility
               </Link>
             </li>
-            <li class="nav-item active">
+            <li className="nav-item active">
               <Link className="nav-link" to="/faq">
                 FAQ
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link className="nav-link" smooth to="/whats-new">
                 What's new
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link className="nav-link" smooth to="/press">
                 Press
               </Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link className="nav-link" smooth to="/contact">
                 Contact
               </Link>
             </li>
           </ul>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 }
 

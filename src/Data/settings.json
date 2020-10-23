@@ -1,0 +1,13 @@
+{
+  "videoUrl": "https://www.youtube.com/embed/mvlcCQ1RWXc?rel=0",
+  "downloadLinks": {
+    "appStoreLinkUrl": "https://itunes.apple.com/us/app/near-lock/id886882252?mt=8"
+  },
+  "homePage": {
+    "showIphoneDownloadHomepageLink": true,
+    "showWatchDownloadHomepageLink": true
+  },
+  "pressPage": {
+    "pressKitFile": "http://nearlock.me/downloads/presskit.zip"
+  }
+}

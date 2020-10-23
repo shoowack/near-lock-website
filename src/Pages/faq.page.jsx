@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 function FaqPage() {
   let faq = require("./../Data/faq.json");
@@ -7,11 +7,13 @@ function FaqPage() {
     <div>
       <h1>FAQ</h1>
       {faq.map((item) => {
+        const { id, question, answer } = item;
+
         return (
-          <>
-            <h3>{item.question}</h3>
-            <p>{item.answer}</p>
-          </>
+          <Fragment key={id}>
+            <h3>{question}</h3>
+            <p>{answer}</p>
+          </Fragment>
         );
       })}
     </div>
