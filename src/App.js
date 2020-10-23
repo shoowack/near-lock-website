@@ -2,11 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
-
-import HomePage from "./Pages/home.page";
-import FaqPage from "./Pages/faq.page";
-import FeaturesPage from "./Pages/features.page";
-import VersionsPage from "./Pages/versions.page";
+import { HomePage, FeaturesPage, FaqPage, VersionsPage } from "./Pages";
 import Navigation from "./Components/navigation";
 
 function App() {
