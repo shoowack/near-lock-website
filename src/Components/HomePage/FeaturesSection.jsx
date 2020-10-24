@@ -88,7 +88,7 @@ export default function FeaturesSection({ scrollWithOffset }) {
                   alt=""
                 />
               </div>
-              <h1>Music</h1>
+              <h4>Music</h4>
               <p>Seamless music control when locking and unlocking your Mac.</p>
             </Link>
           </div>
@@ -106,7 +106,7 @@ export default function FeaturesSection({ scrollWithOffset }) {
                 alt=""
               />
 
-              <h1>Access Anywhere</h1>
+              <h4>Access Anywhere</h4>
               <p>
                 Quickly access Near Lock from Notification Center, through
                 interactive notifications or via 3D Touch!
@@ -129,7 +129,7 @@ export default function FeaturesSection({ scrollWithOffset }) {
                 alt=""
               />
 
-              <h1>Mac Control</h1>
+              <h4>Mac Control</h4>
               <p>Use Near Lock to see who uses your Mac.</p>
             </Link>
           </div>
@@ -147,7 +147,7 @@ export default function FeaturesSection({ scrollWithOffset }) {
                 alt=""
               />
 
-              <h1>Find My iPhone</h1>
+              <h4>Find My iPhone</h4>
               <p>
                 Ping your iPhone from your Mac while the bluetooth connection is
                 established

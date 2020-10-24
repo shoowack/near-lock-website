@@ -2,7 +2,7 @@ import React from "react";
 
 function ToolsSection() {
   return (
-    <div className="container py-5" style={{ background: "red" }}>
+    <div className="container py-5">
       <div className="d-flex flex-column">
         <div className="row">
           <div className="col-md-6 text-md-right text-sm-center text-xs-center">
@@ -14,13 +14,13 @@ function ToolsSection() {
             </p>
           </div>
           <div className="col-md-6">
-            <div className="iphone-app">sajsbkj</div>
+            <div className="iphone-app">iPhone Image</div>
           </div>
         </div>
       </div>
       <section className="menubar d-flex flex-column">
         <div className="row">
-          <div className="col-md-6 imac_menubar vcenter">a</div>
+          <div className="col-md-6 imac_menubar vcenter">MenuBar Image</div>
           <div className="col-md-6 text-lg-left text-md-left text-sm-center text-xs-center">
             <h3>Menu bar</h3>
             <p>

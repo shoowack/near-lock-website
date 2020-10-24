@@ -1,4 +1,92 @@
 [
-  { "id": 1, "question": "How are you?", "answer": "I'm good bruh" },
-  { "id": 2, "question": "Are you sure?", "answer": "100%" }
+  {
+    "id": 1,
+    "question": "Why does my Mac sometimes lock or unlock even when my iPhone is not moving?",
+    "answer": "<p>Near Lock uses the bluetooth signal strength along with an optimization algorithm for the distance estimation. The bluetooth signal strength varies depending on multiple factors (surrounding wifi, other bluetooth devices, humidity..) and an exact value can not be calculated.</p><p>What you can do is increase the Near Lock distance a bit to prevent your Mac from locking when your iPhone is not moving.</p>"
+  },
+  {
+    "id": 2,
+    "question": "I downloaded and opened Near Lock on my devices, but I'm stuck at the first screen.",
+    "answer": "<p>Try restarting Near Lock on Mac.</p><p>Bluetooth signals can sometimes be lost in the crowd. Quit Near Lock from the menu bar icon and open it again. Give it a minute to find its bearings.</p><p>If that didn't help, reset Bluetooth on your devices:</p><br/><p>iOS (7.0 and up): The swipe up menu has a Bluetooth icon. Press once to turn off Bluetooth, press again to turn it on. Alternatively, you can go to Settings > Bluetooth and turn off/on from there.</p><br/><p>MAC: Click on the Bluetooth Icon on the top bar and select 'Turn Bluetooth Off'. Click again on the Icon and turn it back on.</p><p>If you still experiencing problems try restarting your Mac and iPhone - when the Bluetooth framework is faulty on the iPhone, the only way is to restart it.</p>"
+  },
+  {
+    "id": 3,
+    "question": "Near Lock does not work in the background even if I have the PRO mode?",
+    "answer": "<p>Background mode means that the app needs to be <strong>ON</strong> but not active. If you <strong>double press</strong> the <strong>home button</strong> you should see Near Lock listed in the bottom list of all background apps.</p><p>If you turn the app completely <strong>OFF</strong>, there is unfortunately no way to make the Near Lock work - Apple doesn't allow this functionality.</p><p>Make sure Near Lock is listed in the list of all background apps and try again.</p><p>Find out more about <a target='_blank' href='https://support.apple.com/en-us/HT202070'>background activity and multitasking on the official Apple Website.</a></p>"
+  },
+  {
+    "id": 4,
+    "question": "I linked my devices, but my Mac cannot see my iOS Device anymore.",
+    "answer": "<p>First of all, make sure you haven't quit Near Lock from Multitasking menu.</p><p>Apple's latest iOS version forbids apps from running in the background mode when you manually quit them through Multitasking menu (which is accessed by double-tapping the home button). Check if Near Lock is open in the background mode, if it isn't you'll have to re-launch it for your iOS device to be visible to your Mac again.</p><p>Near Lock uses Low Energy Bluetooth technology to link your devices. On your iOS device, Bluetooth settings can be accessed by the swipe-up menu (for iOS 7.0 and above) or through Settings > Bluetooth.</p><p>If you still have problems, try to unlink devices on Mac and iOS.</p>First unlink your Mac by clicking on the Near Lock icon on the menu bar and then on 'Unlink' under setting menu. Your iPhone should unlink automatically. If it doesn't, unlink the iPhone app through the settings screen of your Mac by clicking on Unlink button, then Setup your Mac and iPhone again.</p>"
+  },
+  {
+    "id": 5,
+    "question": "Why are actual distance and the one presented in the app different?",
+    "answer": "<p>Near Lock uses the bluetooth signal strength along with an optimization algorithm for the distance estimation. The bluetooth signal strength varies depending on multiple factors (surrounding wifi, other bluetooth devices, humidity...) and an exact value can not be calculated.</p>"
+  },
+  {
+    "id": 6,
+    "question": "My Mac always unlocks when I press any key or move my mouse",
+    "answer": "<p>Open the <a target='_blank' href='https://support.apple.com/kb/PH25594?locale=en_US&viewlocale=en_US'>System Preferences</a> and select the option <a target='_blank' href='https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/macos-sierra-system-preferences-general-allow-watch-unlock-mac.png'>Security & Privacy</a>.</p><br><p>Once inside the security settings make sure the 'Require password' option is checked and set the option to: 'Require password <strong>immediately</strong> after sleep or screen saver begins'</p><p>If this is already set or if you still have issues, please <strong>restart your Mac</strong> and you should be good to go! Please let us know if you're still having issues after that!</p>"
+  },
+  {
+    "id": 7,
+    "question": "Near lock is in the wrong language. How do I change it?",
+    "answer": "<p>Go into the iPhone settings app and under Near Lock you will find the option to change the Near Lock language. It will automatically update both the language on your iPhone and your Mac.</p>"
+  },
+  {
+    "id": 8,
+    "question": "How do I change the language in the Near Lock app?",
+    "answer": "<p>Please go into your iPhone Settings App -> Near Lock -> Languages and you can set your language there. This will update the language of Near Lock on BOTH your iPhone and your Mac!</p><p>Supported languages are:</p><p>English, German, Portuguese (Portugal and Brazil), Chinese (Simplified and Traditional), Arabic, Spanish, French, Italian, Dutch, Japanese, Korean, Russian</p>"
+  },
+  {
+    "id": 9,
+    "question": "Does my Mac and iPhone support Bluetooth LE?",
+    "answer": "<p>Bluetooth LE is required to run Near Lock apps on your Mac and iPhone.</p><p>The fastest way to tell if your Mac is compatible is to download Near Lock for Mac. It's free, and it will let you know if your Mac works with Near Lock as soon as you open the app.</p><p>Alternatively, you can check your Mac's make and model by clicking on the Apple icon on the top left, click on 'About this Mac', then on 'More Info...'. Your Mac's make and model should appear on your screen. In order to support Bluetooth LE, your Mac has to be one of these models/:</p><p>iMac late 2012 or newer</p><p>MacBook Air 2011 or newer</p><p>MacBook Pro 2012 or newer</p><p>Mac mini 2011 or newer</p><p>Mac Pro late 2013 or newer</p><p>As for the iPhone, Near Lock is only supported on iPhone 4S or newer.<p>"
+  },
+  {
+    "id": 10,
+    "question": "How do I restore already purchased PRO mode?",
+    "answer": "<p>If you are using the same Apple ID for your purchases, simply go through the normal buy procedure and you will get the PRO mode for free. You will <strong>NOT</strong> be charged additionally.</p>"
+  },
+  {
+    "id": 11,
+    "question": "How do I buy the PRO version or Near Lock?",
+    "answer": "<p>To buy (purchase) the PRO version first pair your devices (your iPhone with your Mac).</p><p>After your devices are paired open Near Lock on your iPhone and navigate to the home screen. The 'PRO' button should be in the <strong>bottom right</strong> part of the <strong>home screen</strong>.</p><p>If you do NOT see the 'PRO' button, it means you already have the PRO version.</p>"
+  },
+  {
+    "id": 12,
+    "question": "Will Near Lock work if I log out of my Mac?",
+    "answer": "<p>Unfortunately, Near Lock does not work when you log out of your account, because logging out prevents your applications from running.</p>"
+  },
+  {
+    "id": 13,
+    "question": "How do I uninstall Near Lock from my Mac?",
+    "answer": "<p>First make sure the Near Lock app is not running on your Mac (close it from the <a target='_blank' href='https://support.apple.com/kb/PH25077?locale=en_US'>Mac menu bar.</a>).</p><p>Then simply remove the app into the trash.</p><p>You can also use a free uninstall tool such as <a target='_blank' href='http://freemacsoft.net/appcleaner/'>AppCleaner.</a></p>"
+  },
+  {
+    "id": 14,
+    "question": "Does Near Lock support multiple Macs?",
+    "answer": "<p>Yes, Near Lock does support multiple MACs at the same time! Use the '+' button in the top right of the iPhone home screen to add additional Macs.</p>"
+  },
+  {
+    "id": 15,
+    "question": "How does TouchID work with Near Lock?",
+    "answer": "<p>There is an option in the Mac settings: 'Confirm login with iPhone'</p><p>You can select the option 'When I approach my Mac' and then you will be asked to use your TouchID verification before every login.</p><p>In case Near Lock is disabled (the Near Lock switch is off) - it should work out of the box when your Mac is sleeping and you press any key to turn on the screen. Near Lock should ask you to confirm your login on your iPhone.</p><p>In case Near Lock is disabled (the Near Lock switch is off) - it should work out of the box when your Mac is sleeping and you press any key to turn on the screen. Near Lock should ask you to confirm your login on your iPhone.</p><p>Play around with the options and fell free to ask us if you have any questions.</p>"
+  },
+  {
+    "id": 16,
+    "question": "Can my iPhone also unlock my Mac?",
+    "answer": "<p>Yes it can. When you walk away from your Mac, Near Lock will lock it, when you get back inside determined radius your Mac will unlock.</p>"
+  },
+  {
+    "id": 17,
+    "question": "What if my iPhone is lost or stolen?",
+    "answer": "<p>If your iPhone is lost or stolen, you can sign in with your password normally as if you manually put your Mac in sleep.</p>"
+  },
+  {
+    "id": 18,
+    "question": "What is login on approach?",
+    "answer": "<p>In case login on approach is disabled, your Mac will not automatically unlock as you approach it. It will be unlocked only when a key is pressed and your device is within the near lock range.</p>"
+  }
 ]

@@ -1,10 +1,16 @@
 import React from "react";
+import TitleHeader from "./../Components/TitleHeader";
 
 function FeaturesPage() {
   return (
-    <div>
-      <h1>Features</h1>
-    </div>
+    <>
+      <TitleHeader>Features</TitleHeader>
+      <div className="container py-5">
+        <div className="row">
+          <div className="col-12">Features</div>
+        </div>
+      </div>
+    </>
   );
 }
 

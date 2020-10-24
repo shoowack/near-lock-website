@@ -1,4 +1,5 @@
 import React from "react";
+import TitleHeader from "./../Components/TitleHeader";
 
 function PressPage(props) {
   const {
@@ -9,14 +10,8 @@ function PressPage(props) {
 
   return (
     <>
-      <section className="heading container">
-        <div className="row">
-          <div className="col-12">
-            <h1>Press kit</h1>
-          </div>
-        </div>
-      </section>
-      <section className="container">
+      <TitleHeader>Press kit</TitleHeader>
+      <section className="container py-5">
         <div className="row">
           <div className="col-12">
             <div className="presskit-images">

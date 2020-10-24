@@ -1,8 +1,8 @@
 .highlighted-features {
   &__icon {
     margin: 4em 0 2em 0;
-    width: 7em;
-    height: 7em;
+    width: 75px;
+    height: 75px;
   }
 
   .new .icon {
@@ -13,22 +13,22 @@
     display: inline-block;
     position: relative;
     
-    @media (max-width: 991px) {
-      width: 6em;
-      height: 6em;
-    }  
+    // @media (max-width: 991px) {
+    //   width: 6em;
+    //   height: 6em;
+    // }  
 
     &:after {
       content: "new";
       text-transform: uppercase;
       display: inline-block;
       position: absolute;
-      right: -1em;
-      top: 40px;
+      right: -10px;
+      top: 50px;
       border-radius: 999em;
-      padding: .5em .8em;
+      padding: .5em .75em;
       background: #d82435;
-      font-size: 1.2em;
+      font-size: .75em;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: 500;
 
