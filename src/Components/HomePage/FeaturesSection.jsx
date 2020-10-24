@@ -10,10 +10,7 @@ function FeaturesSection() {
   };
 
   return (
-    <section
-      className="highlighted-features colored text-center"
-      style={{ background: "red" }}
-    >
+    <section className="colored text-center py-5">
       <div className="column">
         <div className="col-md-12">
           <Link
@@ -34,7 +31,7 @@ function FeaturesSection() {
               <div className="backgroundicon"></div>
             </div>
           </Link>
-          <h1>Background mode</h1>
+          <h3>Background mode</h3>
 
           <p>
             Near Lock will work even when your iPhone is in your pocket. Of

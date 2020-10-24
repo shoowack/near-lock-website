@@ -4,6 +4,7 @@ import DownloadsSection from "./DownloadsSection";
 import ToolsSection from "./ToolsSection";
 import FeaturesSection from "./FeaturesSection";
 import CompatibilitySection from "./CompatibilitySection";
+import TestimonialsSection from "./TestimonialsSection";
 
 export {
   TopSection,
@@ -11,5 +12,6 @@ export {
   FamilySection,
   ToolsSection,
   FeaturesSection,
-  CompatibilitySection
+  CompatibilitySection,
+  TestimonialsSection
 };

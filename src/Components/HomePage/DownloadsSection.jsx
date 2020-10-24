@@ -16,7 +16,7 @@ function DownloadsSection({ settings }) {
       <section className="container download text-center py-5" id="download">
         <div className="row">
           <div className="col">
-            <h1>Download</h1>
+            <h3>Download</h3>
           </div>
         </div>
         <div className="row py-4">

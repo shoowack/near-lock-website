@@ -3,9 +3,34 @@
   "downloadLinks": {
     "appStoreLinkUrl": "https://itunes.apple.com/us/app/near-lock/id886882252?mt=8"
   },
+  "newsletterEmailAddress": "email@email.com",
   "homePage": {
-    "showIphoneDownloadHomepageLink": true,
-    "showWatchDownloadHomepageLink": true
+    "topSection": {
+      "showSection": true,
+      "showIphoneDownloadHomepageLink": true,
+      "showWatchDownloadHomepageLink": true
+    },
+    "downloadsSection": {
+      "showSection": true
+    },
+    "familySection": {
+      "showSection": true
+    },
+    "toolsSection": {
+      "showSection": true
+    },
+    "featuresSection": {
+      "showSection": true
+    },
+    "compatibilitySection": {
+      "showSection": true
+    },
+    "testimonialsSection": {
+      "showSection": true
+    },
+    "newsletterSection": {
+      "showSection": true
+    }
   },
   "pressPage": {
     "pressKitFile": "http://nearlock.me/downloads/presskit.zip"

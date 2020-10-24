@@ -10,6 +10,7 @@ import {
   PressPage
 } from "./Pages";
 import Navigation from "./Components/Navigation";
+import Footer from "./Components/Footer";
 
 function App() {
   let settings = require("./Data/settings.json");
@@ -37,6 +38,7 @@ function App() {
             )}
           />
         </Switch>
+        <Footer />
       </div>
     </BrowserRouter>
   );

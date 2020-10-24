@@ -6,7 +6,7 @@ function CompatibilitySection() {
     <div className="container text-center py-5" id="compatibility">
       <div className="row">
         <div className="col-md-12">
-          <h1 className="mb-5">Compatibility</h1>
+          <h3 className="mb-5">Compatibility</h3>
         </div>
       </div>
       <div className="row">

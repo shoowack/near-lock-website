@@ -5,8 +5,11 @@ import {
   FamilySection,
   ToolsSection,
   FeaturesSection,
-  CompatibilitySection
+  CompatibilitySection,
+  TestimonialsSection
 } from "./../Components/HomePage";
+import NewsletterSection from "./../Components/NewsletterSection";
+import "./../Components/HomePage/style.scss";
 
 function HomePage({ settings }) {
   const {
@@ -17,7 +20,9 @@ function HomePage({ settings }) {
       familySection,
       toolsSection,
       featuresSection,
-      compatibilitySection
+      compatibilitySection,
+      testimonialsSection,
+      newsletterSection
     }
   } = settings;
 
@@ -29,6 +34,8 @@ function HomePage({ settings }) {
       {toolsSection.showSection && <ToolsSection />}
       {featuresSection.showSection && <FeaturesSection />}
       {compatibilitySection.showSection && <CompatibilitySection />}
+      {testimonialsSection.showSection && <TestimonialsSection />}
+      {newsletterSection.showSection && <NewsletterSection />}
     </>
   );
 }
