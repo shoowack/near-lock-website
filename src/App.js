@@ -15,10 +15,16 @@ import Footer from "./Components/Footer";
 function App() {
   let settings = require("./Data/settings.json");
 
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -55;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+  };
+
   return (
     <BrowserRouter>
-      <div style={{ paddingTop: "56px" }}>
-        <Navigation />
+      <div style={{ paddingTop: "55px" }}>
+        <Navigation scrollWithOffset={scrollWithOffset} />
         <Switch>
           {/* <Route render={() => <Redirect to="/" />} /> */}
           <Route
@@ -38,7 +44,7 @@ function App() {
             )}
           />
         </Switch>
-        <Footer />
+        <Footer scrollWithOffset={scrollWithOffset} />
       </div>
     </BrowserRouter>
   );

@@ -1,13 +1,7 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
-function Footer() {
-  const scrollWithOffset = (el) => {
-    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -56;
-    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
-  };
-
+function Footer({ scrollWithOffset }) {
   return (
     <div className="colored">
       <div className="container">

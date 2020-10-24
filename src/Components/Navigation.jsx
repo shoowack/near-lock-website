@@ -1,13 +1,7 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
-function Navigation() {
-  const scrollWithOffset = (el) => {
-    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -56;
-    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
-  };
-
+function Navigation({ scrollWithOffset }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div className="container">
@@ -57,7 +51,7 @@ function Navigation() {
                 Compatibility
               </Link>
             </li>
-            <li className="nav-item active">
+            <li className="nav-item">
               <Link className="nav-link" to="/faq">
                 FAQ
               </Link>
