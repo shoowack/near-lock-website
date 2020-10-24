@@ -1,11 +1,11 @@
 import React from "react";
 
-function PressPage({ settings }) {
+function PressPage(props) {
   const {
     appStoreLinkUrl,
     videoUrl,
     pressPage: { pressKitFile }
-  } = settings;
+  } = props.settings;
 
   return (
     <>

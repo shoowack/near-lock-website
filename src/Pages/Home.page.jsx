@@ -9,33 +9,54 @@ import {
   TestimonialsSection
 } from "./../Components/HomePage";
 import NewsletterSection from "./../Components/NewsletterSection";
-import "./../Components/HomePage/style.scss";
+import { topBackground } from "./../assets";
 
-function HomePage({ settings }) {
+function HomePage(props) {
   const {
     videoUrl,
+    downloadLinks: { appStoreLinkUrl },
     homePage: {
-      topSection,
-      downloadsSection,
-      familySection,
-      toolsSection,
-      featuresSection,
-      compatibilitySection,
-      testimonialsSection,
-      newsletterSection
+      visibileSections: {
+        topSection,
+        downloadsSection,
+        familySection,
+        toolsSection,
+        featuresSection,
+        compatibilitySection,
+        testimonialsSection,
+        newsletterSection
+      },
+      downloadsSection: {
+        showIphoneDownloadHomepageLink,
+        showWatchDownloadHomepageLink
+      }
     }
-  } = settings;
+  } = props.settings;
 
   return (
     <>
-      {topSection.showSection && <TopSection videoUrl={videoUrl} />}
-      {downloadsSection.showSection && <DownloadsSection settings={settings} />}
-      {familySection.showSection && <FamilySection />}
-      {toolsSection.showSection && <ToolsSection />}
-      {featuresSection.showSection && <FeaturesSection />}
-      {compatibilitySection.showSection && <CompatibilitySection />}
-      {testimonialsSection.showSection && <TestimonialsSection />}
-      {newsletterSection.showSection && <NewsletterSection />}
+      <div
+        style={{
+          background: `linear-gradient(134deg, #3291e0 25%, rgba(53, 214, 120, 0) 100%), url(${topBackground}) no-repeat center`,
+          backgroundSize: "cover",
+          color: "#fff"
+        }}
+      >
+        {topSection && <TopSection videoUrl={videoUrl} />}
+        {downloadsSection && (
+          <DownloadsSection
+            showIphoneDownloadHomepageLink={showIphoneDownloadHomepageLink}
+            showWatchDownloadHomepageLink={showWatchDownloadHomepageLink}
+            appStoreLinkUrl={appStoreLinkUrl}
+          />
+        )}
+      </div>
+      {familySection && <FamilySection />}
+      {toolsSection && <ToolsSection />}
+      {featuresSection && <FeaturesSection />}
+      {compatibilitySection && <CompatibilitySection />}
+      {testimonialsSection && <TestimonialsSection />}
+      {newsletterSection && <NewsletterSection />}
     </>
   );
 }
