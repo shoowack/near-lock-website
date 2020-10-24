@@ -2,7 +2,11 @@ import React from "react";
 
 function TopSection({ videoUrl }) {
   return (
-    <section className="title_and_video container-fluid py-5" id="top">
+    <section
+      className="title_and_video container-fluid pb-5"
+      id="top"
+      style={{ paddingTop: "100px" }}
+    >
       <div className="row">
         <div className="container">
           <div className="row">

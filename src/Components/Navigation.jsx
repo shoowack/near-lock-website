@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
 function Navigation({ scrollWithOffset }) {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = (e) => {
+      e.target.documentElement.scrollTop > 50
+        ? setScrolled(true)
+        : setScrolled(false);
+    };
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [scrolled]);
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav
+      className={`navbar navbar-expand-lg fixed-top ${
+        scrolled ? " bg-light navbar-light" : " bg-transparent"
+      }`}
+    >
       <div className="container">
         <Link
           className="navbar-brand"

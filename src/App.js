@@ -1,6 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
-import { BrowserRouter } from "react-router-dom";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import {
   HomePage,
@@ -24,28 +23,26 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div style={{ paddingTop: "55px" }}>
-        <Navigation scrollWithOffset={scrollWithOffset} />
-        <Switch>
-          <Route
-            exact
-            path="/"
-            render={(props) => (
-              <HomePage {...props} {...(settings && { settings })} />
-            )}
-          />
-          <Route path="/features" component={FeaturesPage} />
-          <Route path="/faq" component={FaqPage} />
-          <Route path="/whats-new" component={VersionsPage} />
-          <Route
-            path="/press"
-            render={(props) => (
-              <PressPage {...props} {...(settings && { settings })} />
-            )}
-          />
-        </Switch>
-        <Footer scrollWithOffset={scrollWithOffset} />
-      </div>
+      <Navigation scrollWithOffset={scrollWithOffset} />
+      <Switch>
+        <Route
+          exact
+          path="/"
+          render={(props) => (
+            <HomePage {...props} {...(settings && { settings })} />
+          )}
+        />
+        <Route path="/features" component={FeaturesPage} />
+        <Route path="/faq" component={FaqPage} />
+        <Route path="/whats-new" component={VersionsPage} />
+        <Route
+          path="/press"
+          render={(props) => (
+            <PressPage {...props} {...(settings && { settings })} />
+          )}
+        />
+      </Switch>
+      <Footer scrollWithOffset={scrollWithOffset} />
     </BrowserRouter>
   );
 }

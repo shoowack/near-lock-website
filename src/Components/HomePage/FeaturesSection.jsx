@@ -3,6 +3,9 @@ import { HashLink as Link } from "react-router-hash-link";
 import {
   sparkle,
   musicIconWhite,
+  pingIcon,
+  accessAnywhereIcon,
+  macControlIcon,
   backgroundIcon,
   backgroundIconGearRight,
   backgroundIconGearLeft
@@ -20,7 +23,7 @@ export function Sparkle() {
 
 export default function FeaturesSection({ scrollWithOffset }) {
   return (
-    <section className="colored text-center py-5">
+    <section className="highlighted-features colored text-center py-5">
       <div className="container">
         <div className="row">
           <div className="col-md-12">
@@ -79,7 +82,11 @@ export default function FeaturesSection({ scrollWithOffset }) {
               scroll={(el) => scrollWithOffset(el)}
             >
               <div className="new">
-                <img src={musicIconWhite} className="icon" alt="" />
+                <img
+                  src={musicIconWhite}
+                  className="highlighted-features__icon"
+                  alt=""
+                />
               </div>
               <h1>Music</h1>
               <p>Seamless music control when locking and unlocking your Mac.</p>
@@ -93,7 +100,11 @@ export default function FeaturesSection({ scrollWithOffset }) {
               to="/features#access-anywhere"
               scroll={(el) => scrollWithOffset(el)}
             >
-              <img src="img/access_anywhere_icon.svg" className="icon" alt="" />
+              <img
+                src={accessAnywhereIcon}
+                className="highlighted-features__icon"
+                alt=""
+              />
 
               <h1>Access Anywhere</h1>
               <p>
@@ -112,7 +123,11 @@ export default function FeaturesSection({ scrollWithOffset }) {
               to="/features#mac-control"
               scroll={(el) => scrollWithOffset(el)}
             >
-              <img src="img/mac_control_icon.svg" className="icon" alt="" />
+              <img
+                src={macControlIcon}
+                className="highlighted-features__icon"
+                alt=""
+              />
 
               <h1>Mac Control</h1>
               <p>Use Near Lock to see who uses your Mac.</p>
@@ -126,7 +141,11 @@ export default function FeaturesSection({ scrollWithOffset }) {
               to="/features#authentication"
               scroll={(el) => scrollWithOffset(el)}
             >
-              <img src="img/ping_icon.svg" className="icon" alt="" />
+              <img
+                src={pingIcon}
+                className="highlighted-features__icon"
+                alt=""
+              />
 
               <h1>Find My iPhone</h1>
               <p>

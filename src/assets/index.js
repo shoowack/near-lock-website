@@ -1,5 +1,8 @@
 import familyImg from "./family.png";
 import musicIconWhite from "./music_icon.svg";
+import pingIcon from "./ping_icon.svg";
+import accessAnywhereIcon from "./access_anywhere_icon.svg";
+import macControlIcon from "./mac_control_icon.svg";
 import devices from "./devices.svg";
 import topBackground from "./topBackground.jpg";
 import nearlockColor from "./nearlock_color.jpg";
@@ -14,6 +17,9 @@ import sparkle from "./sparkle.png";
 export {
   familyImg,
   musicIconWhite,
+  pingIcon,
+  accessAnywhereIcon,
+  macControlIcon,
   devices,
   topBackground,
   nearlockColor,

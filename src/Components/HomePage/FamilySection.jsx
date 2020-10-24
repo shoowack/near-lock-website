@@ -14,7 +14,8 @@ function FamilySection() {
       </p>
       <img
         src={familyImg}
-        className="img-responsive col-md-6 col-md-offset-3 mt-3"
+        className="img-responsive col-md-6 mt-3"
+        style={{ maxWidth: "950px" }}
         alt=""
       />
       <div className="clearfix"></div>
