@@ -1,5 +1,6 @@
 import React from "react";
 import TitleHeader from "./../Components/TitleHeader";
+import { press, nearlockWhite, nearlockColor, nearlockText } from "./../assets";
 
 function PressPage(props) {
   const {
@@ -12,23 +13,42 @@ function PressPage(props) {
     <>
       <TitleHeader>Press kit</TitleHeader>
       <section className="container py-5">
+        <div className="row mb-5">
+          <a
+            href={press}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="col-3"
+          >
+            <img src={press} alt="" className="img-fluid" />
+          </a>
+          <a
+            href={nearlockWhite}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="col-3"
+          >
+            <img src={nearlockWhite} alt="" className="img-fluid" />
+          </a>
+          <a
+            href={nearlockColor}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="col-3"
+          >
+            <img src={nearlockColor} alt="" className="img-fluid" />
+          </a>
+          <a
+            href={nearlockText}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="col-3"
+          >
+            <img src={nearlockText} alt="" className="img-fluid" />
+          </a>
+        </div>
         <div className="row">
           <div className="col-12">
-            <div className="presskit-images">
-              <a href="img/press.jpg" target="_blank">
-                <img src="img/press.jpg" alt="" />
-              </a>
-              <a href="img/nearlock_white.jpg" target="_blank">
-                <img src="img/nearlock_white.svg" alt="" />
-              </a>
-              <a href="img/nearlock_color.jpg" target="_blank">
-                <img src="img/nearlock_color.svg" alt="" />
-              </a>
-              <a href="img/nearlock_text.jpg" target="_blank">
-                <img src="img/nearlock_text.svg" alt="" />
-              </a>
-            </div>
-
             <p>
               Near Lock, a newly released app for iOS and Mac, is designed to
               allow users to lock and unlock their Macs with an iPhone,
@@ -90,24 +110,37 @@ function PressPage(props) {
               </a>
             </p>
             <br />
-
-            <iframe
-              title="pressvideo"
-              className="pressvideo"
-              src={videoUrl}
-              frameBorder="0"
-              allowFullScreen
-            ></iframe>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12 col-md-8 offset-md-2">
+            <div className="embed-responsive embed-responsive-16by9">
+              <iframe
+                style={{
+                  borderRadius: "30px"
+                }}
+                title="pressVideo"
+                className="embed-responsive-item"
+                src={videoUrl}
+                allowFullScreen
+                frameBorder="0"
+              ></iframe>
+            </div>
 
             <textarea
               type="text"
+              className="col-12 pressVideoCode"
+              autoCorrect="off"
+              spellCheck="false"
               style={{
-                display: "block",
                 margin: "1em auto",
-                height: "5em",
-                width: "50vw",
+                height: "140px",
                 fontSize: "1.5em",
-                padding: ".5em"
+                padding: ".5em 1em",
+                border: "none",
+                background: "#eee",
+                borderRadius: "20px",
+                resize: "none"
               }}
               onClick={(e) => navigator.clipboard.writeText(e.target.value)}
               defaultValue={`<iframe width="560" height="315" src="${videoUrl}" frameborder="0" allowfullscreen></iframe>`}

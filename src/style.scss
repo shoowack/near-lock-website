@@ -6,6 +6,10 @@
     color: #fff;
     text-decoration: none;
   }
+
+  hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+  }
 }
 
 .bg-light {
@@ -36,3 +40,16 @@
     margin: 0;
   }
 }
+
+
+.pressVideoCode {
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(50, 145, 224, .4);
+  }
+
+  &:focus:not(:focus-visible) {
+    box-shadow: 1px 1px 5px rgba(1, 1, 0, .7);
+  }
+}
+  
