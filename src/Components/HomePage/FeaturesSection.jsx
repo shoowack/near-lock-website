@@ -1,6 +1,13 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
-import { musicIconWhite } from "./../../assets";
+import {
+  sparkle,
+  musicIconWhite,
+  backgroundIcon,
+  backgroundIconGearRight,
+  backgroundIconGearLeft
+} from "./../../assets";
+import "./features.scss";
 
 function FeaturesSection({ scrollWithOffset }) {
   return (
@@ -15,15 +22,44 @@ function FeaturesSection({ scrollWithOffset }) {
               scroll={(el) => scrollWithOffset(el)}
             >
               <div className="backgroundiconcontainer">
-                <sparkle></sparkle>
-                <sparkle></sparkle>
-                <sparkle></sparkle>
-                <sparkle></sparkle>
-                <sparkle></sparkle>
-                <sparkle></sparkle>
-                <div className="gear1"></div>
-                <div className="gear2"></div>
-                <div className="backgroundicon"></div>
+                <div
+                  className="sparkle"
+                  style={{ background: `url(${sparkle}) center no-repeat` }}
+                ></div>
+                <div
+                  className="sparkle"
+                  style={{ background: `url(${sparkle}) center no-repeat` }}
+                ></div>
+                <div
+                  className="sparkle"
+                  style={{ background: `url(${sparkle}) center no-repeat` }}
+                ></div>
+                <div
+                  className="sparkle"
+                  style={{ background: `url(${sparkle}) center no-repeat` }}
+                ></div>
+                <div
+                  className="sparkle"
+                  style={{ background: `url(${sparkle}) center no-repeat` }}
+                ></div>
+                <div
+                  className="sparkle"
+                  style={{ background: `url(${sparkle}) center no-repeat` }}
+                ></div>
+                <div
+                  className="gear1"
+                  style={{ background: `url(${backgroundIconGearLeft})` }}
+                ></div>
+                <div
+                  className="gear2"
+                  style={{
+                    background: `url(${backgroundIconGearRight})`
+                  }}
+                ></div>
+                <div
+                  className="backgroundicon"
+                  style={{ background: `url(${backgroundIcon})` }}
+                ></div>
               </div>
             </Link>
             <h3>Background mode</h3>
