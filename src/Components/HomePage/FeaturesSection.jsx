@@ -9,7 +9,16 @@ import {
 } from "./../../assets";
 import "./features.scss";
 
-function FeaturesSection({ scrollWithOffset }) {
+export function Sparkle() {
+  return (
+    <div
+      className="sparkle"
+      style={{ background: `url(${sparkle}) center no-repeat` }}
+    ></div>
+  );
+}
+
+export default function FeaturesSection({ scrollWithOffset }) {
   return (
     <section className="colored text-center py-5">
       <div className="container">
@@ -22,33 +31,19 @@ function FeaturesSection({ scrollWithOffset }) {
               scroll={(el) => scrollWithOffset(el)}
             >
               <div className="backgroundiconcontainer">
-                <div
-                  className="sparkle"
-                  style={{ background: `url(${sparkle}) center no-repeat` }}
-                ></div>
-                <div
-                  className="sparkle"
-                  style={{ background: `url(${sparkle}) center no-repeat` }}
-                ></div>
-                <div
-                  className="sparkle"
-                  style={{ background: `url(${sparkle}) center no-repeat` }}
-                ></div>
-                <div
-                  className="sparkle"
-                  style={{ background: `url(${sparkle}) center no-repeat` }}
-                ></div>
-                <div
-                  className="sparkle"
-                  style={{ background: `url(${sparkle}) center no-repeat` }}
-                ></div>
-                <div
-                  className="sparkle"
-                  style={{ background: `url(${sparkle}) center no-repeat` }}
-                ></div>
+                <Sparkle />
+                <Sparkle />
+                <Sparkle />
+                <Sparkle />
+                <Sparkle />
+                <Sparkle />
+                <Sparkle />
+
                 <div
                   className="gear1"
-                  style={{ background: `url(${backgroundIconGearLeft})` }}
+                  style={{
+                    background: `url(${backgroundIconGearLeft})`
+                  }}
                 ></div>
                 <div
                   className="gear2"
@@ -152,5 +147,3 @@ function FeaturesSection({ scrollWithOffset }) {
     </section>
   );
 }
-
-export default FeaturesSection;
