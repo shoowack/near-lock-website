@@ -11,7 +11,11 @@ function CompatibilitySection() {
       </div>
       <div className="row">
         <div className="col-md-6">
-          <img src={devices} className="img-responsive" alt="" />
+          <img
+            src={devices}
+            className="img-responsive mt-md-5 m-lg-4 mb-4 mb-md-0 w-75"
+            alt=""
+          />
         </div>
         <div className="col-md-6 text-lg-left text-md-left text-sm-center text-xs-center">
           <p>

@@ -12,6 +12,7 @@ import NewsletterSection from "./../Components/NewsletterSection";
 import { topBackground } from "./../assets";
 
 function HomePage(props) {
+  console.log(props);
   const {
     videoUrl,
     downloadLinks: { appStoreLinkUrl },
