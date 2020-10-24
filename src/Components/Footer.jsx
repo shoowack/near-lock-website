@@ -8,10 +8,11 @@ function Footer({ scrollWithOffset, settings }) {
   } = settings;
 
   return (
-    <div className="colored footer py-4">
+    <div className="footer py-4">
+      {/* add "colored" class if we want to revert to v1 */}
       <div className="container">
-        <div className="d-flex">
-          <dl className="flex-fill">
+        <div className="row">
+          <dl className="col-xs-12 col-sm-6 col-md">
             <dt>
               <h5>Product</h5>
             </dt>
@@ -31,7 +32,7 @@ function Footer({ scrollWithOffset, settings }) {
             </dd>
             <dd>Contact</dd>
           </dl>
-          <dl className="flex-fill ">
+          <dl className="col-xs-12 col-sm-6 col-md">
             <dt>
               <h5>Downloads</h5>
             </dt>
@@ -42,7 +43,7 @@ function Footer({ scrollWithOffset, settings }) {
               <a href={macAppLinkUrl}>Mac App</a>
             </dd>
           </dl>
-          <dl className="flex-fill ">
+          <dl className="col-xs-12 col-sm-6 col-md">
             <dt>
               <h5>Company</h5>
             </dt>
@@ -59,7 +60,7 @@ function Footer({ scrollWithOffset, settings }) {
             <dd>Terms of use</dd>
             <dd>Impressum</dd>
           </dl>
-          <dl className="flex-fill ">
+          <dl className="col-xs-12 col-sm-6 col-md">
             <dt>
               <h5>Help</h5>
             </dt>
@@ -68,7 +69,7 @@ function Footer({ scrollWithOffset, settings }) {
             </dd>
             <dd>Support</dd>
           </dl>
-          <dl className="flex-fill ">
+          <dl className="col-sm-12 col-md">
             <dt>
               <h5>Follow us</h5>
             </dt>
