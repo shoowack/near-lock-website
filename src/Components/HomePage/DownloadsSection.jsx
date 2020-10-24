@@ -21,7 +21,7 @@ function DownloadsSection({
             <a
               href={appStoreLinkUrl}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="link col-md-4 col-sm-4 col-xs-12"
             >
               <div className="icon iphone"></div>
@@ -33,7 +33,7 @@ function DownloadsSection({
             <a
               href={appStoreLinkUrl}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="link col-md-4 col-sm-4 col-xs-12"
             >
               <div className="icon watch"></div>

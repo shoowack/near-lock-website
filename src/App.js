@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import {
@@ -27,7 +27,6 @@ function App() {
       <div style={{ paddingTop: "55px" }}>
         <Navigation scrollWithOffset={scrollWithOffset} />
         <Switch>
-          {/* <Route render={() => <Redirect to="/" />} /> */}
           <Route
             exact
             path="/"

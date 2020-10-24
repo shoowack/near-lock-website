@@ -77,7 +77,11 @@ function PressPage(props) {
             <p>
               Both Near Lock apps are free and you can download the iOS version
               from the{" "}
-              <a href={appStoreLinkUrl} target="_blank" rel="noreferrer">
+              <a
+                href={appStoreLinkUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 App Store
               </a>{" "}
               and accompanying <a href="downloads/nearlock.dmg">Mac app</a> from
@@ -86,7 +90,7 @@ function PressPage(props) {
             <br />
             <p>
               You can download the full presskit{" "}
-              <a href={pressKitFile} target="_blank" rel="noreferrer">
+              <a href={pressKitFile} target="_blank" rel="noopener noreferrer">
                 here
               </a>
             </p>

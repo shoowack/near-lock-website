@@ -1,5 +1,4 @@
 import React from "react";
-import { familyImg } from "./../../assets";
 
 function ToolsSection() {
   return (
