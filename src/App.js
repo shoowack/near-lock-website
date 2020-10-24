@@ -42,7 +42,10 @@ function App() {
           )}
         />
       </Switch>
-      <Footer scrollWithOffset={scrollWithOffset} />
+      <Footer
+        scrollWithOffset={scrollWithOffset}
+        {...(settings && { settings })}
+      />
     </BrowserRouter>
   );
 }
