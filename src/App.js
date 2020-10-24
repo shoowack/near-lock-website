@@ -11,6 +11,7 @@ import {
 } from "./Pages";
 import Navigation from "./Components/Navigation";
 import Footer from "./Components/Footer";
+import "./style.scss";
 
 function App() {
   let settings = require("./Data/settings.json");
@@ -31,7 +32,7 @@ function App() {
             exact
             path="/"
             render={(props) => (
-              <HomePage {...props} settings={settings ? settings : null} />
+              <HomePage {...props} {...(settings && { settings })} />
             )}
           />
           <Route path="/features" component={FeaturesPage} />
@@ -40,7 +41,7 @@ function App() {
           <Route
             path="/press"
             render={(props) => (
-              <PressPage {...props} settings={settings ? settings : null} />
+              <PressPage {...props} {...(settings && { settings })} />
             )}
           />
         </Switch>

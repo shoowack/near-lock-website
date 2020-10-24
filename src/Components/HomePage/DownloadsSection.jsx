@@ -1,28 +1,25 @@
 import React from "react";
 
-function DownloadsSection({ settings }) {
-  const {
-    homePage: {
-      topSection: {
-        showIphoneDownloadHomepageLink,
-        showWatchDownloadHomepageLink
-      }
-    },
-    downloadLinks: { appStoreLinkUrl }
-  } = settings;
-
+function DownloadsSection({
+  showIphoneDownloadHomepageLink,
+  showWatchDownloadHomepageLink,
+  appStoreLinkUrl
+}) {
   return (
-    <>
-      <section className="container download text-center py-5" id="download">
+    <div
+      className="container-fluid"
+      style={{ background: "rgba(0, 0, 0, 0.5)" }}
+    >
+      <div className="container download text-center py-4" id="download">
         <div className="row">
           <div className="col">
             <h3>Download</h3>
           </div>
         </div>
         <div className="row py-4">
-          {showIphoneDownloadHomepageLink ? (
+          {showIphoneDownloadHomepageLink && appStoreLinkUrl ? (
             <a
-              href={appStoreLinkUrl ? appStoreLinkUrl : null}
+              href={appStoreLinkUrl}
               target="_blank"
               rel="noreferrer"
               className="link col-md-4 col-sm-4 col-xs-12"
@@ -32,9 +29,9 @@ function DownloadsSection({ settings }) {
             </a>
           ) : null}
 
-          {showWatchDownloadHomepageLink ? (
+          {showWatchDownloadHomepageLink && appStoreLinkUrl ? (
             <a
-              href={appStoreLinkUrl ? appStoreLinkUrl : null}
+              href={appStoreLinkUrl}
               target="_blank"
               rel="noreferrer"
               className="link col-md-4 col-sm-4 col-xs-12"
@@ -58,8 +55,8 @@ function DownloadsSection({ settings }) {
             it a try!
           </sub>
         </div>
-      </section>
-    </>
+      </div>
+    </div>
   );
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { musicIconWhite } from "./../../assets";
 
-function FeaturesSection() {
+function FeaturesSection({ scrollWithOffset }) {
   return (
     <section className="colored text-center py-5">
       <div className="container">
