@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import TitleHeader from "./../Components/TitleHeader";
 import Accordion from "../Components/FaqPage/Accordion";
 
