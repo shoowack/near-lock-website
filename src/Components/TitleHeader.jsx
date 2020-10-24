@@ -5,7 +5,7 @@ function TitleHeader({ children }) {
     <div
       className="pb-5"
       style={{
-        paddingTop: "120px",
+        paddingTop: "115px",
         backgroundImage: "linear-gradient(-45deg, #35d678, #3291e0)",
         color: "#fff"
       }}
@@ -13,7 +13,7 @@ function TitleHeader({ children }) {
       <div className="container text-center">
         <div className="row">
           <div className="col-12">
-            <h3>{children}</h3>
+            <h2>{children}</h2>
           </div>
         </div>
       </div>
