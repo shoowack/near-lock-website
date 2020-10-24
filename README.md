@@ -2,4 +2,4 @@
 
 # Near Lock Website
 
-[[Created with CodeSandbox](https://codesandbox.io/s/github/shoowack/near-lock-website)]
+[Created with CodeSandbox](https://codesandbox.io/s/github/shoowack/near-lock-website)
