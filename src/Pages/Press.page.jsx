@@ -3,7 +3,8 @@ import React from "react";
 function PressPage({ settings }) {
   const {
     appStoreLinkUrl,
-    pressPage: { pressVideoUrl, pressKitFile }
+    videoUrl,
+    pressPage: { pressKitFile }
   } = settings;
 
   return (
@@ -94,7 +95,7 @@ function PressPage({ settings }) {
             <iframe
               title="pressvideo"
               className="pressvideo"
-              src={pressVideoUrl}
+              src={videoUrl}
               frameBorder="0"
               allowFullScreen
             ></iframe>
@@ -110,7 +111,7 @@ function PressPage({ settings }) {
                 padding: ".5em"
               }}
               onClick={(e) => navigator.clipboard.writeText(e.target.value)}
-              defaultValue={`<iframe width="560" height="315" src="${pressVideoUrl}" frameborder="0" allowfullscreen></iframe>`}
+              defaultValue={`<iframe width="560" height="315" src="${videoUrl}" frameborder="0" allowfullscreen></iframe>`}
             ></textarea>
           </div>
         </div>

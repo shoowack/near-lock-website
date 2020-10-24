@@ -9,7 +9,7 @@ import {
   VersionsPage,
   PressPage
 } from "./Pages";
-import Navigation from "./Components/navigation";
+import Navigation from "./Components/Navigation";
 
 function App() {
   let settings = require("./Data/settings.json");
