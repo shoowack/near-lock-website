@@ -16,6 +16,9 @@ import sparkle from "./sparkle.png";
 import closeCursor from "./close.png";
 import videoPlaceholder from "./video.jpg";
 import videoPlayIcon from "./play.svg";
+import iphone from "./iphone11.svg";
+import applewatch from "./applewatch.svg";
+import imac from "./imac.svg";
 
 export {
   familyImg,
@@ -35,5 +38,8 @@ export {
   sparkle,
   closeCursor,
   videoPlaceholder,
-  videoPlayIcon
+  videoPlayIcon,
+  iphone,
+  applewatch,
+  imac
 };
