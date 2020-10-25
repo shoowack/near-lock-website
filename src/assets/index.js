@@ -14,6 +14,8 @@ import backgroundIconGearRight from "./background_icon_gear_right.png";
 import backgroundIcon from "./background_icon.png";
 import sparkle from "./sparkle.png";
 import closeCursor from "./close.png";
+import videoPlaceholder from "./video.jpg";
+import videoPlayIcon from "./play.svg";
 
 export {
   familyImg,
@@ -31,5 +33,7 @@ export {
   backgroundIconGearRight,
   backgroundIcon,
   sparkle,
-  closeCursor
+  closeCursor,
+  videoPlaceholder,
+  videoPlayIcon
 };

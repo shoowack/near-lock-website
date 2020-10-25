@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Modal from "./../../Components/Modal";
+import { videoPlaceholder, videoPlayIcon } from "./../../assets";
 
 function TopSection({ videoUrl }) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -26,7 +27,7 @@ function TopSection({ videoUrl }) {
       </Modal>
 
       <section
-        className="title_and_video container-fluid pb-5"
+        className="top-setion container-fluid pb-5"
         id="top"
         style={{ paddingTop: "100px" }}
       >
@@ -35,7 +36,7 @@ function TopSection({ videoUrl }) {
             <div className="row">
               <div className="col-md-6">
                 <h1>A new way to lock your Mac. Just walk away.</h1>
-
+                <br />
                 <p>
                   Use your iPhone to lock and unlock your Mac automatically.
                   When you walk away from your Mac, it will be automatically
@@ -53,15 +54,15 @@ function TopSection({ videoUrl }) {
                 </p>
               </div>
               <div className="col-md-6">
-                <div className="video_wrapper">
-                  <div className="videoplay" onClick={() => toggleModal()}>
+                <div className="video-wrapper">
+                  <div className="video-play" onClick={() => toggleModal()}>
                     <img
-                      src="img/video.jpg"
-                      className="img-responsive videoimg"
+                      src={videoPlaceholder}
+                      className="img-fluid video-img"
                       alt=""
                     />
                     <div className="play">
-                      <img src="img/play.svg" alt="" />
+                      <img src={videoPlayIcon} alt="" />
                       Play Video
                     </div>
                   </div>

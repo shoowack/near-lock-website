@@ -1,5 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
+import gfm from "remark-gfm";
 import TitleHeader from "./../Components/TitleHeader";
 
 function VersionsPage() {
@@ -11,7 +12,7 @@ function VersionsPage() {
       <div className="container py-3 py-md-5">
         <div className="row">
           <div className="col-12">
-            <ReactMarkdown>{versions}</ReactMarkdown>
+            <ReactMarkdown plugins={[gfm]}>{versions}</ReactMarkdown>
           </div>
         </div>
       </div>

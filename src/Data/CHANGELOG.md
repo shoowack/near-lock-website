@@ -7,11 +7,11 @@
 
 ### 3.6.1: November 25, 2014
 
-- Detect failed login attempts into your Mac
+- detect failed login attempts into your Mac
 - receive an iPhone notification every time a wrong password in inserted into your Mac
 - take a photo on your Mac when a false password is inserted
 - generate and share a Near Lock Mugshot picture
-- Unlock Mac with Knock (Double knock)
+- unlock Mac with Knock (Double knock)
 - login into your Mac by double knocking on your iPhone
 - unlock with double knock when you approach your Mac
 - unlock with double knock when password field appears on sleep screen
@@ -20,13 +20,13 @@
 - you can now see all the login logout information
 - track how users login into your Mac: manually, with password, using Near Lock, Apple watch
 - a nice user interface of the Mac login tracking information
-- Authorization requests settings
+- authorization requests settings
 - choose how you want to authorize the Mac authorization request: TouchID, knock, yes - no, none
 - Near Lock today widget settings on iOS
 - set up today widget restrictions in the iPhone settings
-- Added a new on-boarding Near Lock tutorial on iOS
-- a short, fun and simple tutorial about what Near Lock is about
-- a list of the most interesting features
+- added a new on-boarding Near Lock tutorial on iOS
+- short, fun and simple tutorial about what Near Lock is about
+- list of the most interesting features
 - this tutorial can be found on the Welcome screen
 - Improvements
 - improved the distance calculation
@@ -38,30 +38,30 @@
 
 ### 3.5.1: November 25, 2014
 
-- Fixing the crash for certain languages
+- fixing the crash for certain languages
 
 ### 3.5: November 25, 2014
 
-- Adding the Near Lock tutorial after pairing
-- Various fixes and improvements from user feedback
+- adding the Near Lock tutorial after pairing
+- various fixes and improvements from user feedback
 
 ### 3.4.0: November 25, 2014
 
-- Rare crash fix - after user feedback
-- Updater improvements
+- rare crash fix - after user feedback
+- updater improvements
 
 ### 3.3.0: November 25, 2014
 
-- Auto updated fix
+- auto updated fix
 
 ### 3.2.1: November 25, 2014
 
-- Connection improvements
+- connection improvements
 - sometimes Near Lock would not reconnect automatically
 
 ### 3.2: November 25, 2014
 
-- Authorise user using Near Lock
+- authorise user using Near Lock
 - easily authenticate user with Near Lock when installing new software
 - updating the login tracker file location
 - updating the login logic after unlocking Mac with Near Lock
@@ -73,7 +73,7 @@
 - adding additional Near Lock settings
 - adding an option to disable sound on lock/unlock
 - overall UX improvements
-- Languages
+- languages
 - adding Dutch - thank you Tim!
 - improving the current localizables
 - Bluetooth connection improvements
@@ -82,7 +82,7 @@
 
 ### 3.0: November 25, 2014
 
-- Multiple Macs
+- multiple Macs
 - simulations control of all your Macs at the same time
 - Ping your iPhone
 - in case you cant find your iPhone you can use the new ping feature from your Macs
@@ -97,14 +97,9 @@
 - Touch ID
 - authorize user login with your fingerprint
 - user your fingerprint for more security
-- Near Lock languages: English, German, Portuguese (Portugal and Brazil), Chinese (Simplified and Traditional), Arabic, Spanish, French, Italian
-- Dutch
-- Japanese
-- Korean
-- Russian
-- Supported OS X: Mavericks, Yosemite, El Capitan
-- Supported iOS:
-- iOS7, iOS8, iOS9
-- Thank you for all the feedback!
+- Near Lock languages: English, German, Portuguese (Portugal and Brazil), Chinese (Simplified and Traditional), Arabic, Spanish, French, Italian, Dutch, Japanese, Korean, Russian
+- supported OS X: Mavericks, Yosemite, El Capitan
+- supported iOS: iOS7, iOS8, iOS9
+- **Thank you for all the feedback!**
 
 Near Lock - SECURITY MADE SIMPLE
