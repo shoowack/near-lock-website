@@ -9,7 +9,6 @@ import {
   TestimonialsSection
 } from "./../Components/HomePage";
 import NewsletterSection from "./../Components/NewsletterSection";
-import { topBackground } from "./../assets";
 
 function HomePage(props) {
   const {
@@ -37,7 +36,7 @@ function HomePage(props) {
     <>
       <div
         style={{
-          background: `linear-gradient(134deg, #3291e0 25%, rgba(53, 214, 120, 0) 100%), url(${topBackground}) no-repeat center`,
+          background: `linear-gradient(134deg, #3291e0 25%, rgba(53, 214, 120, 0) 100%), url(/topBackground.jpg) no-repeat center`,
           backgroundSize: "cover",
           color: "#fff"
         }}

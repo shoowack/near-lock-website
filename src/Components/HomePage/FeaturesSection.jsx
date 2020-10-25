@@ -1,22 +1,12 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
-import {
-  sparkle,
-  musicIconWhite,
-  pingIcon,
-  accessAnywhereIcon,
-  macControlIcon,
-  backgroundIcon,
-  backgroundIconGearRight,
-  backgroundIconGearLeft
-} from "./../../assets";
 import "./features-section.scss";
 
 export function Sparkle() {
   return (
     <div
       className="sparkle"
-      style={{ background: `url(${sparkle}) center no-repeat` }}
+      style={{ background: "url(/sparkle.png) center no-repeat" }}
     ></div>
   );
 }
@@ -45,18 +35,18 @@ export default function FeaturesSection({ scrollWithOffset }) {
                 <div
                   className="gear1"
                   style={{
-                    background: `url(${backgroundIconGearLeft})`
+                    background: "url(/background_icon_gear_left.png)"
                   }}
                 ></div>
                 <div
                   className="gear2"
                   style={{
-                    background: `url(${backgroundIconGearRight})`
+                    background: "url(/background_icon_gear_right.png)"
                   }}
                 ></div>
                 <div
                   className="backgroundicon"
-                  style={{ background: `url(${backgroundIcon})` }}
+                  style={{ background: "url(/background_icon.png)" }}
                 ></div>
               </div>
             </Link>
@@ -83,7 +73,7 @@ export default function FeaturesSection({ scrollWithOffset }) {
             >
               <div className="new">
                 <img
-                  src={musicIconWhite}
+                  src="/music_icon.svg"
                   className="highlighted-features__icon"
                   alt=""
                 />
@@ -101,7 +91,7 @@ export default function FeaturesSection({ scrollWithOffset }) {
               scroll={(el) => scrollWithOffset(el)}
             >
               <img
-                src={accessAnywhereIcon}
+                src="/access_anywhere_icon.svg"
                 className="highlighted-features__icon"
                 alt=""
               />
@@ -124,7 +114,7 @@ export default function FeaturesSection({ scrollWithOffset }) {
               scroll={(el) => scrollWithOffset(el)}
             >
               <img
-                src={macControlIcon}
+                src="/mac_control_icon.svg"
                 className="highlighted-features__icon"
                 alt=""
               />
@@ -142,7 +132,7 @@ export default function FeaturesSection({ scrollWithOffset }) {
               scroll={(el) => scrollWithOffset(el)}
             >
               <img
-                src={pingIcon}
+                src="/ping_icon.svg"
                 className="highlighted-features__icon"
                 alt=""
               />

@@ -10,6 +10,8 @@ function NewsletterSection() {
           <small>
             Subscribe to get news about new releases and special offers
           </small>
+        </div>
+        <div className="col-12">
           <div className="shadow d-inline-block mt-4">
             <form action="" method="post" encType="multipart/form-data">
               <input type="email" name="email" placeholder="Your E-mail" />

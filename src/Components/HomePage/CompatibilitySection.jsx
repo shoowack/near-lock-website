@@ -1,5 +1,4 @@
 import React from "react";
-import { devices } from "./../../assets";
 
 function CompatibilitySection() {
   return (
@@ -12,7 +11,7 @@ function CompatibilitySection() {
       <div className="row">
         <div className="col-md-6">
           <img
-            src={devices}
+            src="/devices.svg"
             className="img-responsive mt-md-5 m-lg-4 mb-4 mb-md-0 w-75"
             alt=""
           />

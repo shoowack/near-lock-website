@@ -1,6 +1,5 @@
 import React from "react";
 import TitleHeader from "./../Components/TitleHeader";
-import { press, nearlockWhite, nearlockColor, nearlockText } from "./../assets";
 
 function PressPage(props) {
   const {
@@ -9,42 +8,49 @@ function PressPage(props) {
     pressPage: { pressKitFile }
   } = props.settings;
 
+  const images = {
+    press: "/press.jpg",
+    nearlockWhite: "/nearlock_white.jpg",
+    nearlockColor: "/nearlock_color.jpg",
+    nearlockText: "/nearlock_text.jpg"
+  };
+
   return (
     <>
       <TitleHeader>Press kit</TitleHeader>
       <div className="container py-3 py-md-5">
         <div className="row mb-5">
           <a
-            href={press}
+            href={images.press}
             target="_blank"
             rel="noreferrer noopener"
             className="col-3"
           >
-            <img src={press} alt="" className="img-fluid" />
+            <img src={images.press} alt="" className="img-fluid" />
           </a>
           <a
-            href={nearlockWhite}
+            href={images.nearlockWhite}
             target="_blank"
             rel="noreferrer noopener"
             className="col-3"
           >
-            <img src={nearlockWhite} alt="" className="img-fluid" />
+            <img src={images.nearlockWhite} alt="" className="img-fluid" />
           </a>
           <a
-            href={nearlockColor}
+            href={images.nearlockColor}
             target="_blank"
             rel="noreferrer noopener"
             className="col-3"
           >
-            <img src={nearlockColor} alt="" className="img-fluid" />
+            <img src={images.nearlockColor} alt="" className="img-fluid" />
           </a>
           <a
-            href={nearlockText}
+            href={images.nearlockText}
             target="_blank"
             rel="noreferrer noopener"
             className="col-3"
           >
-            <img src={nearlockText} alt="" className="img-fluid" />
+            <img src={images.nearlockText} alt="" className="img-fluid" />
           </a>
         </div>
         <div className="row">

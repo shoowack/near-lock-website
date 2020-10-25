@@ -1,5 +1,4 @@
 import React from "react";
-import { familyImg } from "./../../assets";
 
 function FamilySection() {
   return (
@@ -13,7 +12,7 @@ function FamilySection() {
         separate apps.
       </p>
       <img
-        src={familyImg}
+        src="/family.png"
         className="img-responsive col-md-6 mt-3"
         style={{ maxWidth: "950px" }}
         alt=""

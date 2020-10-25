@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Modal from "./../../Components/Modal";
-import { videoPlaceholder, videoPlayIcon } from "./../../assets";
 import "./top-section.scss";
 
 function TopSection({ videoUrl }) {
@@ -59,12 +58,12 @@ function TopSection({ videoUrl }) {
                   <div className="video-wrapper">
                     <div className="video-play" onClick={() => toggleModal()}>
                       <img
-                        src={videoPlaceholder}
+                        src="/video.jpg"
                         className="img-fluid video-img"
                         alt=""
                       />
                       <div className="play">
-                        <img src={videoPlayIcon} alt="" />
+                        <img src="/play.svg" alt="" />
                         Play Video
                       </div>
                     </div>

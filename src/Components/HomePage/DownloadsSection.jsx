@@ -1,5 +1,4 @@
 import React from "react";
-import { iphone, applewatch, imac } from "./../../assets";
 import "./downloads-section.scss";
 
 function DownloadsSection({
@@ -28,7 +27,7 @@ function DownloadsSection({
             >
               <div
                 className="icon iphone mb-4"
-                style={{ background: `url(${iphone})` }}
+                style={{ background: "url(/iphone11.svg)" }}
               ></div>
               iPhone App
             </a>
@@ -43,7 +42,7 @@ function DownloadsSection({
             >
               <div
                 className="icon watch mb-4"
-                style={{ background: `url(${applewatch})` }}
+                style={{ background: "url(/applewatch.svg)" }}
               ></div>
               Apple Watch
             </a>
@@ -55,7 +54,7 @@ function DownloadsSection({
           >
             <div
               className="icon mac mb-4"
-              style={{ background: `url(${imac})` }}
+              style={{ background: "url(/imac.svg)" }}
             ></div>
             Mac App
           </a>
