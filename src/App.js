@@ -1,6 +1,8 @@
 import React from "react";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
+import "jquery";
 import "bootstrap/dist/css/bootstrap.css";
+
 import {
   HomePage,
   FeaturesPage,
