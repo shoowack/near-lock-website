@@ -13,6 +13,7 @@ import backgroundIconGearLeft from "./background_icon_gear_left.png";
 import backgroundIconGearRight from "./background_icon_gear_right.png";
 import backgroundIcon from "./background_icon.png";
 import sparkle from "./sparkle.png";
+import closeCursor from "./close.png";
 
 export {
   familyImg,
@@ -29,5 +30,6 @@ export {
   backgroundIconGearLeft,
   backgroundIconGearRight,
   backgroundIcon,
-  sparkle
+  sparkle,
+  closeCursor
 };

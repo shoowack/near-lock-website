@@ -1,4 +1,5 @@
 import React from "react";
+import { closeCursor } from "./../assets/";
 
 function Modal(props) {
   const { children, onClose, show, modalColor } = props;
@@ -20,6 +21,7 @@ function Modal(props) {
     backdropFilter: "blur(5px)",
     alignItems: "center",
     justifyContent: "center",
+    cursor: `url(${closeCursor}), auto`,
     zIndex: 1050
   };
 
