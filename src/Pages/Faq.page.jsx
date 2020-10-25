@@ -8,7 +8,7 @@ function FaqPage() {
   return (
     <>
       <TitleHeader>FAQ</TitleHeader>
-      <div className="container py-5">
+      <div className="container py-3 py-md-5">
         <div className="row">
           <div className="col">
             {faq.map((item) => {

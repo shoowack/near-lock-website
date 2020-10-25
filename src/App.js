@@ -6,7 +6,8 @@ import {
   FeaturesPage,
   FaqPage,
   VersionsPage,
-  PressPage
+  PressPage,
+  TermsOfUsePage
 } from "./Pages";
 import Navigation from "./Components/Navigation";
 import Footer from "./Components/Footer";
@@ -41,6 +42,7 @@ function App() {
             <PressPage {...props} {...(settings && { settings })} />
           )}
         />
+        <Route path="/terms" component={TermsOfUsePage} />
       </Switch>
       <Footer
         scrollWithOffset={scrollWithOffset}

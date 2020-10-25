@@ -5,7 +5,7 @@ function FeaturesPage() {
   return (
     <>
       <TitleHeader>Features</TitleHeader>
-      <div className="container py-5">
+      <div className="container py-3 py-md-5">
         <div className="row">
           <div className="col-12">Features</div>
         </div>

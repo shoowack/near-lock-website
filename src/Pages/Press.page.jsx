@@ -12,7 +12,7 @@ function PressPage(props) {
   return (
     <>
       <TitleHeader>Press kit</TitleHeader>
-      <section className="container py-5">
+      <div className="container py-3 py-md-5">
         <div className="row mb-5">
           <a
             href={press}
@@ -147,7 +147,7 @@ function PressPage(props) {
             ></textarea>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 }
