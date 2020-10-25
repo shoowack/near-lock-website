@@ -25,7 +25,7 @@ function Footer({ scrollWithOffset, settings }) {
             </Link>
           </dd>
           <dd>
-            <Link smooth to="/features">
+            <Link smooth to="/features#top">
               Features
             </Link>
           </dd>
@@ -47,17 +47,17 @@ function Footer({ scrollWithOffset, settings }) {
             <h5>Company</h5>
           </dt>
           <dd>
-            <Link smooth to="/contact">
+            <Link smooth to="/contact#top">
               Contact
             </Link>
           </dd>
           <dd>
-            <Link smooth to="/press">
+            <Link smooth to="/press#top">
               Press
             </Link>
           </dd>
           <dd>
-            <Link smooth to="/terms">
+            <Link smooth to="/terms#top">
               Terms of use
             </Link>
           </dd>
@@ -68,7 +68,9 @@ function Footer({ scrollWithOffset, settings }) {
             <h5>Help</h5>
           </dt>
           <dd>
-            <Link to="/faq">FAQ</Link>
+            <Link smooth to="/faq#top">
+              FAQ
+            </Link>
           </dd>
           <dd>Support</dd>
         </dl>

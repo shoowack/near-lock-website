@@ -91,7 +91,7 @@ function Navigation({ scrollWithOffset }) {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" smooth to="/features">
+              <Link className="nav-link" smooth to="/features#top">
                 Features
               </Link>
             </li>
@@ -106,17 +106,17 @@ function Navigation({ scrollWithOffset }) {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/faq">
+              <Link className="nav-link" smooth to="/faq#top">
                 FAQ
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" smooth to="/whats-new">
+              <Link className="nav-link" smooth to="/whats-new#top">
                 What's new
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" smooth to="/press">
+              <Link className="nav-link" smooth to="/press#top">
                 Press
               </Link>
             </li>
