@@ -2,10 +2,9 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 import gfm from "remark-gfm";
 import TitleHeader from "./../Components/TitleHeader";
+import versions from "./../../src/CHANGELOG.md";
 
 function VersionsPage() {
-  const versions = require("./../CHANGELOG.md");
-
   return (
     <>
       <TitleHeader>Version History</TitleHeader>
