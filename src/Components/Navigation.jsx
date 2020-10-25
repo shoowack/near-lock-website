@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
+import "./navigation.scss";
 
 function Navigation({ scrollWithOffset }) {
   const [scrolled, setScrolled] = useState(false);

@@ -10,7 +10,7 @@ import {
   backgroundIconGearRight,
   backgroundIconGearLeft
 } from "./../../assets";
-import "./features.scss";
+import "./features-section.scss";
 
 export function Sparkle() {
   return (

@@ -1,0 +1,37 @@
+.logo {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.bg-light, .bg-transparent {
+  transition: .5s all;
+}
+
+.bg-light {
+  box-shadow: 0 0 25px -15px rgba(0, 0, 0, 0.5);
+
+  #inside {
+    fill: #fff;
+  }
+
+  #outside {
+    fill: url(#SVGID_2_);
+  }
+}
+
+.bg-transparent {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  
+  #inside {
+    fill: url(#SVGID_2_);
+  }
+
+  #outside {
+    fill: #fff;
+  }
+
+  a {
+    color: #fff;
+  }
+}

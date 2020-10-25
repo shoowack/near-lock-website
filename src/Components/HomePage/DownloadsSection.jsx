@@ -1,4 +1,6 @@
 import React from "react";
+import { iphone, applewatch, imac } from "./../../assets";
+import "./downloads-section.scss";
 
 function DownloadsSection({
   showIphoneDownloadHomepageLink,
@@ -24,7 +26,10 @@ function DownloadsSection({
               rel="noopener noreferrer"
               className="link col-md-4 col-sm-4 col-xs-12"
             >
-              <div className="icon iphone"></div>
+              <div
+                className="icon iphone mb-4"
+                style={{ background: `url(${iphone})` }}
+              ></div>
               iPhone App
             </a>
           ) : null}
@@ -36,7 +41,10 @@ function DownloadsSection({
               rel="noopener noreferrer"
               className="link col-md-4 col-sm-4 col-xs-12"
             >
-              <div className="icon watch"></div>
+              <div
+                className="icon watch mb-4"
+                style={{ background: `url(${applewatch})` }}
+              ></div>
               Apple Watch
             </a>
           ) : null}
@@ -45,7 +53,10 @@ function DownloadsSection({
             href="downloads/nearlock.dmg"
             className="link col-md-4 col-sm-4 col-xs-12 newsletter-trigger"
           >
-            <div className="icon mac"></div>
+            <div
+              className="icon mac mb-4"
+              style={{ background: `url(${imac})` }}
+            ></div>
             Mac App
           </a>
         </div>

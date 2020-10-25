@@ -1,5 +1,6 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
+import "./footer.scss";
 
 function Footer({ scrollWithOffset, settings }) {
   const {

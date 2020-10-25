@@ -1,0 +1,25 @@
+.download {
+  a {
+    color: #fff;
+
+    &:hover {
+      text-decoration: none;
+
+      .icon {
+        opacity: 1;
+        transition: .25s all;
+      }
+    }
+  }
+
+  .icon {
+    transition: .25s all;
+    opacity: .75;
+    height: 80px;
+    width: 80px;
+    background-size: 100% 100% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    margin: auto;
+  }
+}
