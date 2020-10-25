@@ -2,15 +2,6 @@ import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import "./features-section.scss";
 
-export function Sparkle() {
-  return (
-    <div
-      className="sparkle"
-      style={{ background: "url(/sparkle.png) center no-repeat" }}
-    ></div>
-  );
-}
-
 export default function FeaturesSection({ scrollWithOffset }) {
   return (
     <section className="highlighted-features colored text-center py-5">
@@ -24,30 +15,16 @@ export default function FeaturesSection({ scrollWithOffset }) {
               scroll={(el) => scrollWithOffset(el)}
             >
               <div className="backgroundiconcontainer">
-                <Sparkle />
-                <Sparkle />
-                <Sparkle />
-                <Sparkle />
-                <Sparkle />
-                <Sparkle />
-                <Sparkle />
-
-                <div
-                  className="gear1"
-                  style={{
-                    background: "url(/background_icon_gear_left.png)"
-                  }}
-                ></div>
-                <div
-                  className="gear2"
-                  style={{
-                    background: "url(/background_icon_gear_right.png)"
-                  }}
-                ></div>
-                <div
-                  className="backgroundicon"
-                  style={{ background: "url(/background_icon.png)" }}
-                ></div>
+                <div className="sparkle"></div>
+                <div className="sparkle"></div>
+                <div className="sparkle"></div>
+                <div className="sparkle"></div>
+                <div className="sparkle"></div>
+                <div className="sparkle"></div>
+                <div className="sparkle"></div>
+                <div className="gear1"></div>
+                <div className="gear2"></div>
+                <div className="backgroundicon"></div>
               </div>
             </Link>
             <h3>Background mode</h3>
