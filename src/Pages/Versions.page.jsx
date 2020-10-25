@@ -4,7 +4,7 @@ import gfm from "remark-gfm";
 import TitleHeader from "./../Components/TitleHeader";
 
 function VersionsPage() {
-  let versions = require("/public/CHANGELOG.md");
+  const versions = require("/CHANGELOG.md");
 
   return (
     <>
