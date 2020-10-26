@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
-import "./slick.css";
-import "./slick-theme.css";
+import "./slick.scss";
+import "./slick-theme.scss";
 import "./testimonials.scss";
 
 function TestimonialsSlider() {

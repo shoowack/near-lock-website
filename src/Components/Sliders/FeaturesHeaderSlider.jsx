@@ -1,8 +1,8 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import Slider from "react-slick";
-import "./slick.css";
-import "./slick-theme.css";
+import "./slick.scss";
+import "./slick-theme.scss";
 import "./features-header-slider.scss";
 
 function FeaturesHeaderSlider({ scrollWithOffset }) {
