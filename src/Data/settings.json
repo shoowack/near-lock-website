@@ -33,6 +33,12 @@
     "testimonialsSection": {},
     "newsletterSection": {}
   },
+  "featuresPage": {
+    "visibileSections": {
+      "accessAnywhereSection": true,
+      "newsletterSection": true
+    }
+  },
   "pressPage": {
     "pressKitFile": "http://nearlock.me/downloads/presskit.zip"
   }

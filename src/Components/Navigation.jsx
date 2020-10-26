@@ -3,7 +3,6 @@ import { HashLink as Link } from "react-router-hash-link";
 import "./navigation.scss";
 
 function Navigation({ scrollWithOffset, settings }) {
-  console.log();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {

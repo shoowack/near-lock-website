@@ -38,7 +38,12 @@ function App() {
             <HomePage {...props} {...(settings && { settings })} />
           )}
         />
-        <Route path="/features" component={FeaturesPage} />
+        <Route
+          path="/features"
+          render={(props) => (
+            <FeaturesPage {...props} {...(settings && { settings })} />
+          )}
+        />
         <Route path="/faq" component={FaqPage} />
         <Route path="/whats-new" component={VersionsPage} />
         <Route
