@@ -72,7 +72,11 @@ function Footer({ scrollWithOffset, settings }) {
               Terms of use
             </Link>
           </dd>
-          <dd>Impressum</dd>
+          <dd>
+            <Link smooth to="/impressum#top">
+              Impressum
+            </Link>
+          </dd>
         </dl>
         <dl className="col-xs-12 col-sm-6 col-md">
           <dt>

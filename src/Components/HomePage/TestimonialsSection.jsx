@@ -8,7 +8,7 @@ function TestimonialsSection() {
         <div className="row">
           <div className="col-12">
             <div className="column testimonials">
-              <h1 className="text-center">Testimonials</h1>
+              <h3 className="mb-5">Testimonials</h3>
               <TestimonialsSlider />
             </div>
           </div>

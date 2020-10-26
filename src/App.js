@@ -10,7 +10,8 @@ import {
   FaqPage,
   VersionsPage,
   PressPage,
-  TermsOfUsePage
+  TermsOfUsePage,
+  ImpressumPage
 } from "./Pages";
 import Navigation from "./Components/Navigation";
 import Footer from "./Components/Footer";
@@ -57,6 +58,7 @@ function App() {
           )}
         />
         <Route path="/terms" component={TermsOfUsePage} />
+        <Route path="/impressum" component={ImpressumPage} />
       </Switch>
       <Footer
         scrollWithOffset={scrollWithOffset}
