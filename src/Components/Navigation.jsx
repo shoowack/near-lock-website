@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import "./navigation.scss";
 
-function Navigation({ scrollWithOffset }) {
+function Navigation({ scrollWithOffset, settings }) {
+  console.log();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -122,9 +123,12 @@ function Navigation({ scrollWithOffset }) {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" smooth to="/contact">
+              <a
+                className="nav-link"
+                href={`mailto:${settings.contactEmailAddress}?subject=Contact via Near Lock Website`}
+              >
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

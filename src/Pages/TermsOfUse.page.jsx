@@ -58,7 +58,7 @@ function TermsOfUsePage() {
               Installing and using the app you agree to the terms and
               conditions of the 3rd party frameworks we are using:
             </p>
-            <ul class="lists">
+            <ul>
               <li>
                 Google Analytics – 
                 <a href="https://www.google.com/intl/en/policies/privacy/">

@@ -9,7 +9,9 @@
     "twitter": "https://twitter.com/nearlockapp",
     "facebook": "https://www.facebook.com/nearlockapp"
   },
-  "newsletterEmailAddress": "email@email.com",
+  "contactEmailAddress": "contact@nearlock.me",
+  "newsletterEmailAddress": "subscribe@nearlock.me",
+  "supportEmailAddress": "support@nearlock.me",
   "homePage": {
     "visibileSections": {
       "topSection": true,

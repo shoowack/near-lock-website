@@ -5,7 +5,9 @@ import "./footer.scss";
 function Footer({ scrollWithOffset, settings }) {
   const {
     socialLinks: { youtube, twitter, facebook },
-    downloadLinks: { appStoreLinkUrl, macAppLinkUrl }
+    downloadLinks: { appStoreLinkUrl, macAppLinkUrl },
+    contactEmailAddress,
+    supportEmailAddress
   } = settings;
 
   return (
@@ -30,7 +32,13 @@ function Footer({ scrollWithOffset, settings }) {
               Features
             </Link>
           </dd>
-          <dd>Contact</dd>
+          <dd>
+            <a
+              href={`mailto:${contactEmailAddress}?subject=Contact via Near Lock Website`}
+            >
+              Contact
+            </a>
+          </dd>
         </dl>
         <dl className="col-xs-12 col-sm-6 col-md">
           <dt>
@@ -48,9 +56,11 @@ function Footer({ scrollWithOffset, settings }) {
             <h5>Company</h5>
           </dt>
           <dd>
-            <Link smooth to="/contact#top">
+            <a
+              href={`mailto:${contactEmailAddress}?subject=Contact via Near Lock Website`}
+            >
               Contact
-            </Link>
+            </a>
           </dd>
           <dd>
             <Link smooth to="/press#top">
@@ -73,7 +83,13 @@ function Footer({ scrollWithOffset, settings }) {
               FAQ
             </Link>
           </dd>
-          <dd>Support</dd>
+          <dd>
+            <a
+              href={`mailto:${supportEmailAddress}?subject=Question via Near Lock Website`}
+            >
+              Support
+            </a>
+          </dd>
         </dl>
         <dl className="col-sm-12 col-md">
           <dt>

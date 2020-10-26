@@ -26,7 +26,10 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navigation scrollWithOffset={scrollWithOffset} />
+      <Navigation
+        scrollWithOffset={scrollWithOffset}
+        {...(settings && { settings })}
+      />
       <Switch>
         <Route
           exact
