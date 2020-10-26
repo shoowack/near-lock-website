@@ -20,7 +20,12 @@ function FeaturesPage(props) {
 
   return (
     <>
-      <TitleHeader>Features</TitleHeader>
+      <TitleHeader
+        scrollWithOffset={props.scrollWithOffset}
+        location={props.location.pathname}
+      >
+        Features
+      </TitleHeader>
       {accessAnywhereSection && <AccessAnywhereSection />}
       {macControlSection && <MacControlSection />}
       {newsletterSection && <NewsletterSection />}

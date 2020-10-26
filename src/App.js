@@ -41,7 +41,11 @@ function App() {
         <Route
           path="/features"
           render={(props) => (
-            <FeaturesPage {...props} {...(settings && { settings })} />
+            <FeaturesPage
+              scrollWithOffset={scrollWithOffset}
+              {...props}
+              {...(settings && { settings })}
+            />
           )}
         />
         <Route path="/faq" component={FaqPage} />

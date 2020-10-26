@@ -1,6 +1,7 @@
 import React from "react";
+import FeaturesHeaderSlider from "./Sliders/FeaturesHeaderSlider";
 
-function TitleHeader({ children }) {
+function TitleHeader({ scrollWithOffset, location, children }) {
   return (
     <div
       id="top"
@@ -15,6 +16,9 @@ function TitleHeader({ children }) {
         <div className="row">
           <div className="col-12">
             <h2>{children}</h2>
+            {location === "/features" && (
+              <FeaturesHeaderSlider scrollWithOffset={scrollWithOffset} />
+            )}
           </div>
         </div>
       </div>
