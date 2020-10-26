@@ -1,9 +1,9 @@
 import AccessAnywhereSection from "./AccessAnywhereSection";
 import MacControlSection from "./MacControlSection";
-// import  from "./";
+import MacUnlockConfirmation from "./MacUnlockConfirmation";
 // import  from "./";
 // import  from "./";
 // import  from "./";
 // import  from "./";
 
-export { AccessAnywhereSection, MacControlSection };
+export { AccessAnywhereSection, MacControlSection, MacUnlockConfirmation };

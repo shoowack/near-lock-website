@@ -37,6 +37,7 @@
     "visibileSections": {
       "accessAnywhereSection": true,
       "macControlSection": true,
+      "macUnlockConfirmation": true,
       "newsletterSection": true
     }
   },

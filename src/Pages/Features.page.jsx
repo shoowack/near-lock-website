@@ -2,7 +2,8 @@ import React from "react";
 import TitleHeader from "./../Components/TitleHeader";
 import {
   AccessAnywhereSection,
-  MacControlSection
+  MacControlSection,
+  MacUnlockConfirmation
 } from "./../Components/FeaturesPage";
 import NewsletterSection from "./../Components/NewsletterSection";
 import "./../Components/FeaturesPage/style.scss";
@@ -13,6 +14,7 @@ function FeaturesPage(props) {
       visibileSections: {
         accessAnywhereSection,
         macControlSection,
+        macUnlockConfirmation,
         newsletterSection
       }
     }
@@ -28,6 +30,7 @@ function FeaturesPage(props) {
       </TitleHeader>
       {accessAnywhereSection && <AccessAnywhereSection />}
       {macControlSection && <MacControlSection />}
+      {macUnlockConfirmation && <MacUnlockConfirmation />}
       {newsletterSection && <NewsletterSection />}
     </>
   );

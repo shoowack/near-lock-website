@@ -6,26 +6,6 @@
     padding-bottom: 0.15em;
   }
   
-  .section-header {
-    text-align: center;
-
-    @media (max-width: 991px) {
-        margin: 0 auto 1rem;
-        width: 100%;
-    }
-  
-    > h2::before {
-      content: "";
-      display: block;
-      width: 3.75rem;
-      height: 3.75rem;
-      margin: 0 auto 1.5625rem;
-      background-repeat: no-repeat !important;
-      background-position: center !important;
-      background-size: cover !important;
-    }
-  }
-  
   h4 {
     &:before {
       content: "";
@@ -52,57 +32,6 @@
   // }
 }
 
-#retina-graphics .section-header > h2::before {
-  background: url(/feature/retina-graphics_icon_alt.svg);
-}
-
-#access-anywhere .section-header > h2::before {
-  background: url(/feature/access-anywhere_icon_alt.svg);
-}
-
-#authentication .section-header > h2:before {
-  background: url(/feature/authentication_icon_alt.svg);
-}
-
-#unlock-options .section-header > h2:before {
-  background: url(/feature/unlock-options_icon_alt.svg);
-}
-
-#lock-settings .section-header > h2:before {
-  background: url(/feature/lock-settings_icon_alt.svg);
-}
-
-#bluetooth-le .section-header > h2:before {
-  background: url(/feature/bluetooth-le_icon_alt.svg);
-}
-
-#apple-watch .section-header > h2:before {
-  background: url(/feature/apple-watch_icon_alt.svg);
-}
-
-#mac-control .section-header > h2:before {
-  background: url(/feature/mac-control_icon_alt.svg);
-}
-
-#wifi-unlock .section-header > h2:before {
-  background: url(/feature/wifi_unlock_icon_alt.svg);
-}
-
-#languages .section-header > h2:before {
-  background: url(/feature/languages_icon_alt.svg);
-}
-
-#security .section-header > h2:before {
-  background: url(/feature/security_icon_alt.svg);
-}
-
-#music .section-header > h2:before {
-  background: url(/feature/music_icon_alt.svg);
-}
-
-#ping .section-header > h2:before {
-  background: url(/feature/ping_icon_alt.svg);
-}
 
 #access-anywhere .three-d-touch > h4::before {
   background: url(/feature/3d_touch_icon_sub.svg);
