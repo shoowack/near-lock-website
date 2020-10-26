@@ -4,6 +4,15 @@ import "./navigation.scss";
 
 function Navigation({ scrollWithOffset, settings }) {
   const [scrolled, setScrolled] = useState(false);
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+
+  const handleNavCollapse = (el) => {
+    if (el === undefined) {
+      setIsNavCollapsed(true);
+    } else if (el.target.className === "navbar-toggler-icon") {
+      setIsNavCollapsed(!isNavCollapsed);
+    }
+  };
 
   useEffect(() => {
     if (window.innerWidth < 991) {
@@ -29,6 +38,7 @@ function Navigation({ scrollWithOffset, settings }) {
           className="navbar-brand"
           smooth
           to="/#top"
+          onClick={() => handleNavCollapse()}
           scroll={(el) => scrollWithOffset(el)}
         >
           <svg
@@ -73,28 +83,33 @@ function Navigation({ scrollWithOffset, settings }) {
         <button
           className="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarText"
+          onClick={(el) => handleNavCollapse(el)}
           aria-controls="navbarText"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarText">
+        <div className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}>
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <Link
                 className="nav-link"
                 smooth
                 to="/#download"
+                onClick={() => handleNavCollapse()}
                 scroll={(el) => scrollWithOffset(el)}
               >
                 Download
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" smooth to="/features#top">
+              <Link
+                className="nav-link"
+                smooth
+                onClick={() => setIsNavCollapsed(true)}
+                to="/features#top"
+              >
                 Features
               </Link>
             </li>
@@ -103,29 +118,46 @@ function Navigation({ scrollWithOffset, settings }) {
                 className="nav-link"
                 smooth
                 to="/#compatibility"
+                onClick={() => handleNavCollapse()}
                 scroll={(el) => scrollWithOffset(el)}
               >
                 Compatibility
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" smooth to="/faq#top">
+              <Link
+                className="nav-link"
+                smooth
+                onClick={() => handleNavCollapse()}
+                to="/faq#top"
+              >
                 FAQ
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" smooth to="/whats-new#top">
+              <Link
+                className="nav-link"
+                smooth
+                onClick={() => handleNavCollapse()}
+                to="/whats-new#top"
+              >
                 What's new
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" smooth to="/press#top">
+              <Link
+                className="nav-link"
+                smooth
+                onClick={() => handleNavCollapse()}
+                to="/press#top"
+              >
                 Press
               </Link>
             </li>
             <li className="nav-item">
               <a
                 className="nav-link"
+                onClick={() => handleNavCollapse()}
                 href={`mailto:${settings.contactEmailAddress}?subject=Contact via Near Lock Website`}
               >
                 Contact

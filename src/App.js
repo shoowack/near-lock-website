@@ -2,9 +2,9 @@ import React from "react";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "./style.scss";
-import "bootstrap/dist/js/bootstrap.js";
-import "jquery";
-import "popper.js";
+// import "bootstrap/dist/js/bootstrap.js"; // uncomment when needed later
+// import "jquery"; // uncomment when needed later
+// import "popper.js"; // uncomment when needed later
 
 import {
   HomePage,
