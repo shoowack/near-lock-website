@@ -49,7 +49,7 @@ function MacUnlockConfirmation() {
             Add additional protection for unlocking your Mac with the{" "}
             <a
               href="https://support.apple.com/en-us/HT201371"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               target="_blank"
             >
               Touch ID
