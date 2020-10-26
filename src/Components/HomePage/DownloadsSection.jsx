@@ -17,13 +17,13 @@ function DownloadsSection({
             <h3>Download</h3>
           </div>
         </div>
-        <div className="row py-4">
+        <div className="row">
           {showIphoneDownloadHomepageLink && appStoreLinkUrl ? (
             <a
               href={appStoreLinkUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="link col-md-4 col-sm-4 col-xs-12"
+              className="link col-md-4 col-sm-4 col-xs-12 py-4"
             >
               <div
                 className="icon iphone mb-4"
@@ -38,7 +38,7 @@ function DownloadsSection({
               href={appStoreLinkUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="link col-md-4 col-sm-4 col-xs-12"
+              className="link col-md-4 col-sm-4 col-xs-12 py-4"
             >
               <div
                 className="icon watch mb-4"
@@ -50,7 +50,7 @@ function DownloadsSection({
 
           <a
             href="downloads/nearlock.dmg"
-            className="link col-md-4 col-sm-4 col-xs-12 newsletter-trigger"
+            className="link col-md-4 col-sm-4 col-xs-12 py-4 newsletter-trigger"
           >
             <div
               className="icon mac mb-4"

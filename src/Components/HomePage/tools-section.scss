@@ -1,0 +1,39 @@
+.imac_menubar {
+  border: 1px dashed rgba(255, 255, 255, 0.5);
+  border-top-right-radius: 3em;
+  border-bottom: none;
+  border-left: none;
+  background: url("/imac_menubar.png") right bottom no-repeat;
+  background-size: cover;
+  // background-position-y: 32em;
+  height: 32em;
+
+  @media (max-width: 991px) {
+    height: 26.5em !important;
+    margin: 2em 1em 0 0;
+  }    
+}
+
+.iphone-app {
+  background: url(/iphone-app.png) no-repeat;
+  background-size: 100%;
+  width: 38.438em;
+  height: 47.563em;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  @media (max-width: 991px) {
+      width: 25.438em;
+      height: 31.563em;
+  }
+}
+
+.vcenter {
+  @media (min-width: 991px) {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+  }
+}
