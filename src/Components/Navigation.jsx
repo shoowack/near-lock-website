@@ -6,20 +6,22 @@ function Navigation({ scrollWithOffset, settings }) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = (e) => {
-      e.target.documentElement.scrollTop > 50
-        ? setScrolled(true)
-        : setScrolled(false);
-    };
-    window.addEventListener("scroll", onScroll);
+    if (window.innerWidth < 991) {
+      setScrolled(true);
+    } else {
+      const onScroll = (e) => {
+        window.pageYOffset > 5 ? setScrolled(true) : setScrolled(false);
+      };
+      window.addEventListener("scroll", onScroll);
 
-    return () => window.removeEventListener("scroll", onScroll);
+      return () => window.removeEventListener("scroll", onScroll);
+    }
   }, [scrolled]);
 
   return (
     <nav
       className={`navbar navbar-expand-lg fixed-top ${
-        scrolled ? " bg-light navbar-light" : " bg-transparent"
+        scrolled ? " bg-light navbar-light" : " bg-transparent navbar-dark"
       }`}
     >
       <div className="container">
