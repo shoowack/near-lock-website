@@ -12,7 +12,7 @@ function CompatibilitySection() {
         <div className="col-md-6">
           <img
             src="/devices.svg"
-            className="img-responsive mt-md-5 m-lg-4 mb-4 mb-md-0 w-75"
+            className="img-fluid mt-md-5 m-lg-4 mb-4 mb-md-0 w-75"
             alt=""
           />
         </div>

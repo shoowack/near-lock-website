@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "./slick.css";
 import "./slick-theme.css";
+import "./testimonials.scss";
 
 function TestimonialsSlider() {
   const [nav1, setNav1] = useState(null);
@@ -16,7 +17,12 @@ function TestimonialsSlider() {
     "If you have an iPhone 5S or newer you can even use your iPhone’s Touch ID to unlock your Mac. Using your own fingerprint to unlock your computer? Doesn’t get much more secure than that. - <a href='https://test.guidingtech.com/38482/unlock-mac-iphone/'>Guiding Tech</a>"
   ];
 
-  const images = ["mactrast.jpg", "appinn.png", "ukmac.png", "guidingtech.svg"];
+  const images = [
+    "/testimonials/mactrast.jpg",
+    "/testimonials/appinn.png",
+    "/testimonials/ukmac.png",
+    "/testimonials/guidingtech.svg"
+  ];
 
   useEffect(() => {
     setNav1(slider1);
@@ -30,18 +36,29 @@ function TestimonialsSlider() {
         ref={(slider) => setSlider2(slider, [slider])}
         slidesToShow={3}
         autoplay={true}
+        speed={3000}
         swipeToSlide={true}
         focusOnSelect={true}
+        arrows={false}
+        className="testimonialsImages"
+        pauseOnHover
       >
         {images.map((item, index) => (
           <div key={index}>
-            <img src={item} alt="" />
+            <img src={item} alt="" className="img-fluid" />
           </div>
         ))}
       </Slider>
-      <Slider asNavFor={nav2} ref={(slider) => setSlider1(slider, [slider])}>
+      <Slider
+        asNavFor={nav2}
+        speed={3000}
+        arrows={false}
+        pauseOnHover
+        ref={(slider) => setSlider1(slider, [slider])}
+        className="testimonialsContainer"
+      >
         {data.map((item, index) => (
-          <div key={index}>{item}</div>
+          <div key={index} dangerouslySetInnerHTML={{ __html: item }}></div>
         ))}
       </Slider>
     </>
