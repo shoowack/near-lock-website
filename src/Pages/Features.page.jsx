@@ -1,12 +1,20 @@
 import React from "react";
 import TitleHeader from "./../Components/TitleHeader";
-import { AccessAnywhereSection } from "./../Components/FeaturesPage";
+import {
+  AccessAnywhereSection,
+  MacControlSection
+} from "./../Components/FeaturesPage";
 import NewsletterSection from "./../Components/NewsletterSection";
+import "./../Components/FeaturesPage/style.scss";
 
 function FeaturesPage(props) {
   const {
     featuresPage: {
-      visibileSections: { accessAnywhereSection, newsletterSection }
+      visibileSections: {
+        accessAnywhereSection,
+        macControlSection,
+        newsletterSection
+      }
     }
   } = props.settings;
 
@@ -14,6 +22,7 @@ function FeaturesPage(props) {
     <>
       <TitleHeader>Features</TitleHeader>
       {accessAnywhereSection && <AccessAnywhereSection />}
+      {macControlSection && <MacControlSection />}
       {newsletterSection && <NewsletterSection />}
     </>
   );
