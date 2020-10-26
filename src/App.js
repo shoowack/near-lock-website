@@ -2,6 +2,7 @@ import React from "react";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import "jquery";
 import "bootstrap/dist/css/bootstrap.css";
+import "./style.scss";
 
 import {
   HomePage,
@@ -13,7 +14,6 @@ import {
 } from "./Pages";
 import Navigation from "./Components/Navigation";
 import Footer from "./Components/Footer";
-import "./style.scss";
 
 function App() {
   let settings = require("./Data/settings.json");
