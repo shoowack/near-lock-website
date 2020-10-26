@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import gfm from "remark-gfm";
 import TitleHeader from "./../Components/TitleHeader";
-// import versions from "./../../src/Data/CHANGELOG.md";
-import versions from "/CHANGELOG.md";
+import versions from "./../../src/Data/CHANGELOG.md";
 
 function VersionsPage() {
   const [changelog, setChangelog] = useState("Loading...");
