@@ -352,8 +352,8 @@
       transform: translateX(-50%);
 
       &.active {
-        -webkit-transform: translateX(-50%) scale(1.2);
-        -webkit-filter: drop-shadow(0 40px 30px rgba(0, 0, 0, 0.5));
+        transform: translateX(-50%) scale(1.2);
+        filter: drop-shadow(0 40px 30px rgba(0, 0, 0, 0.5));
       }
 
       label {

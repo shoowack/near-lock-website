@@ -19,12 +19,12 @@ function PressPage(props) {
     <>
       <TitleHeader>Press kit</TitleHeader>
       <div className="container py-3 py-md-5">
-        <div className="row mb-5">
+        <div className="row mb-4">
           <a
             href={images.press}
             target="_blank"
             rel="noreferrer noopener"
-            className="col-3"
+            className="col-6 col-md-3 mb-3"
           >
             <img src={images.press} alt="" className="img-fluid" />
           </a>
@@ -32,7 +32,7 @@ function PressPage(props) {
             href={images.nearlockWhite}
             target="_blank"
             rel="noreferrer noopener"
-            className="col-3"
+            className="col-6 col-md-3 mb-3"
           >
             <img src={images.nearlockWhite} alt="" className="img-fluid" />
           </a>
@@ -40,7 +40,7 @@ function PressPage(props) {
             href={images.nearlockColor}
             target="_blank"
             rel="noreferrer noopener"
-            className="col-3"
+            className="col-6 col-md-3 mb-3"
           >
             <img src={images.nearlockColor} alt="" className="img-fluid" />
           </a>
@@ -48,7 +48,7 @@ function PressPage(props) {
             href={images.nearlockText}
             target="_blank"
             rel="noreferrer noopener"
-            className="col-3"
+            className="col-6 col-md-3 mb-3"
           >
             <img src={images.nearlockText} alt="" className="img-fluid" />
           </a>
