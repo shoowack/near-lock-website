@@ -35,9 +35,9 @@ function AuthenticationSection() {
         </div>
 
         <div className="col-12">
-          <h3 className="text-center supported-players-title">
+          <h5 className="text-center supported-players-title">
             Currently supported players:
-          </h3>
+          </h5>
         </div>
 
         <div className="dock backdropfilter">

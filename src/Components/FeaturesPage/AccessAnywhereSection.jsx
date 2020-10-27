@@ -113,21 +113,21 @@ function AccessAnywhereSection() {
         </div>
       </div>
       <div className="row">
-        <div className="col-md-4 col-sm-4 hidden-xs">
+        <div className="col-md-4 col-sm-4 d-none d-md-block">
           <img
             src="/feature/3d-touch-iphone.png"
             className="img-fluid center-block"
             alt=""
           />
         </div>
-        <div className="col-md-4 col-sm-4 hidden-xs">
+        <div className="col-md-4 col-sm-4 d-none d-md-block">
           <img
             src="/feature/notification-center-iphone.png"
             className="img-fluid center-block"
             alt=""
           />
         </div>
-        <div className="col-md-4 col-sm-4 hidden-xs">
+        <div className="col-md-4 col-sm-4 d-none d-md-block">
           <img
             src="/feature/interactive-notifications-iphone.png"
             className="img-fluid center-block"
