@@ -135,63 +135,60 @@
   position: relative;
   background: url(/feature/music-background.png) center bottom -100px no-repeat;
   background-size: 100%;
-}
-@media (max-width: 1200px) {
-  #music {
+
+  @media (max-width: 1200px) {
     background: url(/feature/music-background.png) center bottom -50px no-repeat;
     background-size: 100%;
   }
-}
-@media (max-width: 767px) {
-  #music {
+
+  @media (max-width: 767px) {
     background: url(/feature/music-background.png) left 40% bottom 0px no-repeat;
     background-size: 500%;
   }
-}
 
-#music .play_icon > h4::before {
-  background: url(/feature/play_icon.svg);
-}
-
-#music .pause_icon > h4::before {
-  background: url(/feature/pause_icon.svg);
-}
-
-#music .supported-players-title {
-  padding-top: 100px;
-  padding-bottom: 50px;
-}
-@media (max-width: 991px) {
-  #music .supported-players-title {
-    padding-top: 30px;
-    padding-bottom: 100px;
+  .play_icon > h4::before {
+    background: url(/feature/play_icon.svg);
   }
-}
+  
+  .pause_icon > h4::before {
+    background: url(/feature/pause_icon.svg);
+  }
+  
+  .supported-players-title {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  
+    @media (max-width: 991px) {
+      padding-top: 30px;
+      padding-bottom: 100px;
+    }
+  }
+  
+  .dock {
+    backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    position: absolute;
+    transform: translateX(-50%);
+    min-width: 240px;
+    border-radius: 7px 7px 0 0;
+    left: 50%;
+    bottom: 0px;
+    padding: 0 10px;
 
-#music .dock {
-  backdrop-filter: blur(20px);
-  background: rgba(0, 0, 0, 0.25);
-  display: inline-block;
-  position: absolute;
-  transform: translateX(-50%);
-  min-width: 240px;
-  border-radius: 7px 7px 0 0;
-  left: 50%;
-  bottom: 0px;
-  padding: 0 10px;
-}
-
-#music .dock .dock-item {
-  display: inline-block;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  border: none;
-  margin: 10px 2px 5px 2px;
-
-  img {
-    border: none;
-    width: 100%;
+    .dock-item {
+      display: inline-block;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      border: none;
+      margin: 10px 2px 5px 2px;
+    
+      img {
+        border: none;
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -201,72 +198,78 @@
   display: block;
   width: 100%;
   padding-bottom: 340px;
-}
-@media (max-width: 991px) {
-  #apple-watch {
+
+  @media (max-width: 991px) {
     padding-bottom: 250px;
   }
-}
-#apple-watch .btn {
-  display: inline-block;
-  border-radius: 8px;
-  border: 2px solid #c6c6c6;
-  padding: 12px 30px;
-  font-weight: 400;
-  font-size: 1.1em;
-  line-height: 1.1;
-  transition: 0.5s all;
-}
-#apple-watch .btn:hover {
-  background: #c6c6c6;
-}
-#apple-watch .apple-watch {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-@media (max-width: 991px) {
-  #apple-watch .apple-watch {
-    transform: scale(0.75) translate(-67%, 24px);
+
+  .btn {
+    display: inline-block;
+    border-radius: 8px;
+    border: 2px solid #c6c6c6;
+    padding: 12px 30px;
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.1;
+    transition: 0.5s all;
+
+    &:hover {
+      background: #c6c6c6;
+    }
   }
-}
-#apple-watch .apple-watch-image {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-#apple-watch .apple-watch .screen-wrapper {
-  position: relative;
-  height: 154px;
-  width: 190px;
-  bottom: 105px;
-  perspective: 150px;
-}
-#apple-watch .apple-watch .screen-wrapper .screen {
-  width: 190px;
-  height: 130px;
-  position: absolute;
-  transform: rotateX(14deg);
-  overflow: hidden;
-  cursor: grab;
-}
-#apple-watch .apple-watch .screen-wrapper .screen:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5) inset;
-  pointer-events: none;
-}
-#apple-watch .apple-watch .screen-wrapper .screen img {
-  display: inline-block;
-  width: 190px;
-  height: 130px;
+  
+  .apple-watch {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    @media (max-width: 991px) {
+      transform: scale(0.75) translate(-67%, 24px);
+    }
+  }
+
+  .apple-watch-image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .apple-watch .screen-wrapper {
+    position: relative;
+    height: 154px;
+    width: 190px;
+    bottom: 105px;
+    perspective: 150px;
+  
+    .screen {
+      width: 190px;
+      height: 130px;
+      position: absolute;
+      transform: rotateX(14deg);
+      overflow: hidden;
+      cursor: grab;
+
+      &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5) inset;
+        pointer-events: none;
+      }
+
+      img {
+        display: inline-block;
+        width: 190px;
+        height: 130px;
+      }
+    }
+  }
 }
 
 .feature_menubar__main_image,
@@ -284,209 +287,221 @@
   position: relative;
   padding: 0;
   overflow: hidden;
-}
-#clipboard .feature_menubar {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-  position: relative;
-  min-height: 310px;
-}
-@media (max-width: 991px) {
-  #clipboard .feature_menubar {
-    top: -30px;
-    transform: scale(0.6);
-    min-height: 170px;
+
+  .feature_menubar {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    min-height: 310px;
+
+    @media (max-width: 991px) {
+      top: -30px;
+      transform: scale(0.6);
+      min-height: 170px;
+    }
+
+    &__content {
+      text-align: right;
+
+      @media (max-width: 991px) {
+        text-align: center;
+      }
+
+      h3 {
+        margin-right: 15px;
+
+        @media (min-width: 991px) {
+          text-align: right;
+        }
+      }
+    }
+
+    &__main_image {
+      position: absolute;
+      top: -550px;
+      transform: translateX(-50%) scale(0.75);
+      left: 50%;
+
+      &.active {
+        transform: translateX(-50%) scale(0.73);
+        filter: blur(5px) brightness(0.75);
+      }
+    }
+
+    &_zoomed {
+      background-repeat: repeat-x;
+      background-image: -webkit-linear-gradient(135deg, #34b2ae, #35c591);
+      background-image: -o-linear-gradient(135deg, #34b2ae, #35c591);
+      background-image: linear-gradient(135deg, #34b2ae, #35c591);
+      position: absolute;
+      top: 85px;
+      width: 412px;
+      height: 75px;
+      border-radius: 5px;
+      padding: 10px 28px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &.active {
+        -webkit-transform: translateX(-50%) scale(1.2);
+        -webkit-filter: drop-shadow(0 40px 30px rgba(0, 0, 0, 0.5));
+      }
+
+      label {
+        position: absolute;
+        top: 28px;
+        left: 83px;
+      }
+
+      &__right_icon {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        width: 92px;
+        height: 37px;
+        background: url("/feature/copy_right.svg") no-repeat center -41px;
+        background-size: 217px;
+      }
+
+      &__left_icon {
+        position: absolute;
+        height: 38px;
+        width: 38px;
+        top: 18px;
+        left: 28px;
+        background: url("/feature/copy_left.svg") no-repeat -72px -41px;
+        background-size: 182px;
+      }  
+    }
   }
-}
-#clipboard .feature_menubar__content {
-  text-align: right;
-}
-#clipboard .feature_menubar__content h3 {
-  margin-right: 15px;
-}
-@media (min-width: 991px) {
-  #clipboard .feature_menubar__content h3 {
-    text-align: right;
+
+  .feature_clipboard_ios {
+    position: relative;
+    height: 360px;
+
+    @media (max-width: 991px) {
+      bottom: -30px;
+      transform: scale(0.6);
+      height: 250px;
+    }
+
+    &__content {
+      @media (max-width: 991px) {
+        text-align: center;
+      }
+
+      h3 {
+        margin-left: 15px;
+
+        @media (min-width: 991px) {
+          text-align: left;
+        }
+      }
+    }
+
+    &__main_image {
+      position: absolute;
+      bottom: -144px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &.active {
+        left: 50%;
+        transform: translateX(-50%) scale(0.9);
+        filter: blur(5px) brightness(0.75);
+      }
+    }
+
+    &__zoomed {
+      background: -webkit-linear-gradient(
+        177deg,
+        #dae0db 0%,
+        #e7f4ea 22%,
+        #e3ebe3 70%,
+        #b8cdc1 100%
+      );
+      background: -o-linear-gradient(
+        177deg,
+        #dae0db 0%,
+        #e7f4ea 22%,
+        #e3ebe3 70%,
+        #b8cdc1 100%
+      );
+      background: linear-gradient(
+        177deg,
+        #dae0db 0%,
+        #e7f4ea 22%,
+        #e3ebe3 70%,
+        #b8cdc1 100%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFDAE0DB', endColorstr='#FFB8CDC1', GradientType=1);
+      position: absolute;
+      bottom: 80px;
+      left: calc(50% + 84px);
+      transform: translateX(-50%);
+      width: 180px;
+      height: 135px;
+      padding: 0 8px;
+      border-radius: 5px;
+
+      &__left_icon {
+        background: #bfd9b1 url("/feature/copy-to-mac-icon.svg") no-repeat center;
+        background-size: 114px;
+      }
+
+      &__right_icon {
+        background: #bfd9b1 url("/feature/copy-from-mac-icon.svg") no-repeat center;
+        background-size: 114px;
+      }
+
+      &__left,
+      &__right {
+        display: inline-block;
+        width: 50%;
+        float: left;
+        text-align: center;
+        padding: 0 8px;
+      }
+
+      &__left_icon,
+      &__right_icon {
+        margin: 18px auto 10px auto;
+        height: 57px;
+        width: 57px;
+        border-radius: 999em;
+      }
+      
+      &__left label,
+      &__right label {
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      &.active {
+        left: calc(50% + 84px);
+        -webkit-transform: translateX(-50%) scale(1.2);
+        -webkit-filter: drop-shadow(0 40px 30px rgba(0, 0, 0, 0.5));
+      }
+
+      &.active .feature_clipboard_ios__zoomed__left_icon,
+      &.active .feature_clipboard_ios__zoomed__right_icon {
+        animation-duration: 2s;
+        animation-fill-mode: both;
+        animation-timing-function: cubic-bezier(0.87, 0.58, 0.25, 1.29);
+        transform-origin: center center;
+        animation-name: slam;
+      }
+
+      &.active .feature_clipboard_ios__zoomed__left_icon {
+        animation-delay: 0.25s;
+      }
+
+      &.active .feature_clipboard_ios__zoomed__right_icon {
+        animation-delay: 0.5s;
+      }
+    }
   }
-}
-@media (max-width: 991px) {
-  #clipboard .feature_menubar__content {
-    text-align: center;
-  }
-}
-#clipboard .feature_menubar__main_image {
-  position: absolute;
-  top: -550px;
-  transform: translateX(-50%) scale(0.75);
-  left: 50%;
-}
-#clipboard .feature_menubar__main_image.active {
-  transform: translateX(-50%) scale(0.73);
-  filter: blur(5px) brightness(0.75);
-}
-#clipboard .feature_menubar_zoomed {
-  background-repeat: repeat-x;
-  background-image: -webkit-linear-gradient(135deg, #34b2ae, #35c591);
-  background-image: -o-linear-gradient(135deg, #34b2ae, #35c591);
-  background-image: linear-gradient(135deg, #34b2ae, #35c591);
-  position: absolute;
-  top: 85px;
-  width: 412px;
-  height: 75px;
-  border-radius: 5px;
-  padding: 10px 28px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-#clipboard .feature_menubar_zoomed.active {
-  -webkit-transform: translateX(-50%) scale(1.2);
-  -webkit-filter: drop-shadow(0 40px 30px rgba(0, 0, 0, 0.5));
-}
-#clipboard .feature_menubar_zoomed label {
-  position: absolute;
-  top: 28px;
-  left: 83px;
-}
-#clipboard .feature_menubar_zoomed__right_icon {
-  position: absolute;
-  right: 30px;
-  top: 20px;
-  width: 92px;
-  height: 37px;
-  background: url("/feature/copy_right.svg") no-repeat center -41px;
-  background-size: 217px;
-}
-#clipboard .feature_menubar_zoomed__left_icon {
-  position: absolute;
-  height: 38px;
-  width: 38px;
-  top: 18px;
-  left: 28px;
-  background: url("/feature/copy_left.svg") no-repeat -72px -41px;
-  background-size: 182px;
-}
-#clipboard .feature_clipboard_ios {
-  position: relative;
-  height: 360px;
-}
-@media (max-width: 991px) {
-  #clipboard .feature_clipboard_ios {
-    bottom: -30px;
-    transform: scale(0.6);
-    height: 250px;
-  }
-}
-#clipboard .feature_clipboard_ios__content h3 {
-  margin-left: 15px;
-}
-@media (min-width: 991px) {
-  #clipboard .feature_clipboard_ios__content h3 {
-    text-align: left;
-  }
-}
-@media (max-width: 991px) {
-  #clipboard .feature_clipboard_ios__content {
-    text-align: center;
-  }
-}
-#clipboard .feature_clipboard_ios__main_image {
-  position: absolute;
-  bottom: -144px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-#clipboard .feature_clipboard_ios__main_image.active {
-  left: 50%;
-  transform: translateX(-50%) scale(0.9);
-  filter: blur(5px) brightness(0.75);
-}
-#clipboard .feature_clipboard_ios__zoomed {
-  background: -webkit-linear-gradient(
-    177deg,
-    #dae0db 0%,
-    #e7f4ea 22%,
-    #e3ebe3 70%,
-    #b8cdc1 100%
-  );
-  background: -o-linear-gradient(
-    177deg,
-    #dae0db 0%,
-    #e7f4ea 22%,
-    #e3ebe3 70%,
-    #b8cdc1 100%
-  );
-  background: linear-gradient(
-    177deg,
-    #dae0db 0%,
-    #e7f4ea 22%,
-    #e3ebe3 70%,
-    #b8cdc1 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFDAE0DB', endColorstr='#FFB8CDC1', GradientType=1);
-  position: absolute;
-  bottom: 80px;
-  left: calc(50% + 84px);
-  transform: translateX(-50%);
-  width: 180px;
-  height: 135px;
-  padding: 0 8px;
-  border-radius: 5px;
-}
-#clipboard .feature_clipboard_ios__zoomed__left_icon {
-  background: #bfd9b1 url("/feature/copy-to-mac-icon.svg") no-repeat center;
-  background-size: 114px;
-}
-#clipboard .feature_clipboard_ios__zoomed__right_icon {
-  background: #bfd9b1 url("/feature/copy-from-mac-icon.svg") no-repeat center;
-  background-size: 114px;
-}
-#clipboard .feature_clipboard_ios__zoomed__left,
-#clipboard .feature_clipboard_ios__zoomed__right {
-  display: inline-block;
-  width: 50%;
-  float: left;
-  text-align: center;
-  padding: 0 8px;
-}
-#clipboard .feature_clipboard_ios__zoomed__left_icon,
-#clipboard .feature_clipboard_ios__zoomed__right_icon {
-  margin: 18px auto 10px auto;
-  height: 57px;
-  width: 57px;
-  border-radius: 999em;
-}
-#clipboard .feature_clipboard_ios__zoomed__left label,
-#clipboard .feature_clipboard_ios__zoomed__right label {
-  font-size: 14px;
-  font-weight: bold;
-}
-#clipboard .feature_clipboard_ios__zoomed.active {
-  left: calc(50% + 84px);
-  -webkit-transform: translateX(-50%) scale(1.2);
-  -webkit-filter: drop-shadow(0 40px 30px rgba(0, 0, 0, 0.5));
-}
-#clipboard
-  .feature_clipboard_ios__zoomed.active
-  .feature_clipboard_ios__zoomed__left_icon,
-#clipboard
-  .feature_clipboard_ios__zoomed.active
-  .feature_clipboard_ios__zoomed__right_icon {
-  animation-duration: 2s;
-  animation-fill-mode: both;
-  animation-timing-function: cubic-bezier(0.87, 0.58, 0.25, 1.29);
-  transform-origin: center center;
-  animation-name: slam;
-}
-#clipboard
-  .feature_clipboard_ios__zoomed.active
-  .feature_clipboard_ios__zoomed__left_icon {
-  animation-delay: 0.25s;
-}
-#clipboard
-  .feature_clipboard_ios__zoomed.active
-  .feature_clipboard_ios__zoomed__right_icon {
-  animation-delay: 0.5s;
 }
 
 @keyframes slam {
