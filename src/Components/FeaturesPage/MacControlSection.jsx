@@ -9,7 +9,19 @@ function MacControlSection() {
     >
       <div className="row">
         <div className="col-md-6 order-md-1 failed-login-attempts_icon login-photos_icon d-flex justify-content-center flex-column px-5">
-          <h4 className="text-center">Unlock Photos</h4>
+          <div className="d-flex justify-content-center">
+            <img
+              src="/feature/failed_login_attempts_icon.svg"
+              alt=""
+              className="feature-icon m-0"
+            />
+            <img
+              src="/feature/login_photo_icon.svg"
+              alt=""
+              className="feature-icon m-0"
+            />
+          </div>
+          <h3 className="text-center">Unlock Photos</h3>
           <ul>
             <li>
               <strong>Failed login attempts</strong> feature takes a photo from
@@ -43,6 +55,11 @@ function MacControlSection() {
       <hr className="my-md-5" />
       <div className="row">
         <div className="col-md-6 lock-unlock-history_icon text-center d-flex justify-content-center flex-column px-5">
+          <img
+            src="/feature/lock_unlock_history_icon.svg"
+            alt=""
+            className="feature-icon"
+          />
           <h4>Lock/Unlock History</h4>
           <p>
             See full list of times when you logged in or logged out, how long

@@ -12,6 +12,11 @@ function SecuritySection() {
     >
       <div className="row">
         <div className="col-md-6 private_informations_icon">
+          <img
+            src="/feature/private_informations_icon.svg"
+            alt=""
+            className="feature-icon"
+          />
           <h3>Private (User) Information</h3>
           <p>
             Your private - user information is encrypted and never leaves your
@@ -19,6 +24,11 @@ function SecuritySection() {
           </p>
         </div>
         <div className="col-md-6 encryption_icon">
+          <img
+            src="/feature/encryption_icon.svg"
+            alt=""
+            className="feature-icon"
+          />
           <h3>AES encryption</h3>
           <p>
             For the internal data encryption we use AES: The Advanced Encryption

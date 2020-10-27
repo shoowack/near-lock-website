@@ -12,9 +12,11 @@ function AuthenticationSection() {
     >
       <div className="row">
         <div className="col-md-6 play_icon">
+          <img src="/feature/pause_icon.svg" alt="" className="feature-icon" />
           <h4>Pause audio when mac is locked</h4>
         </div>
         <div className="col-md-6 pause_icon">
+          <img src="/feature/play_icon.svg" alt="" className="feature-icon" />
           <h4>Continue music after login</h4>
         </div>
 

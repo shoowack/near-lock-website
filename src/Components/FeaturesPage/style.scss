@@ -6,21 +6,28 @@
     padding-bottom: 0.15em;
   }
   
-  h4 {
-    &:before {
-      content: "";
-      display: block;
-      width: 5rem;
-      height: 5rem;
-      margin: 0 auto 1.5625rem;
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
+  // h4 {
+  //   &:before {
+  //     content: "";
+  //     display: block;
+  //     width: 5rem;
+  //     height: 5rem;
+  //     margin: 0 auto 1.5625rem auto;
+  //     background-repeat: no-repeat;
+  //     background-size: contain;
+  //   }
     
-    &.no-icon:before {
-      content: "";
-      display: none !important;
-    }
+  //   &.no-icon:before {
+  //     content: "";
+  //     display: none !important;
+  //   }
+  // }
+
+  &-icon {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5625rem auto;
   }
   
   // p {
@@ -30,103 +37,6 @@
   // li {
   //   color: rgba(55, 61, 72, 0.8);
   // }
-}
-
-
-#access-anywhere {
-  .three-d-touch > h4::before {
-    background: url(/feature/3d_touch_icon_sub.svg);
-  }
-  
-  .notification_center_icon > h4::before {
-    background: url(/feature/notification_center_icon.svg);
-  }
-  
-  .interactive_notifications_icon > h4::before {
-    background: url(/feature/interactive_notifications_icon.svg);
-  }
-}
-
-#security {
-  .private_informations_icon > h4::before {
-    background: url(/feature/private_informations_icon.svg);
-  }
-  
-  .encryption_icon > h4::before {
-    background: url(/feature/encryption_icon.svg);
-  }
-}
-
-#mac-control {
-  .failed-login-attempts_icon {
-    > h4::before {
-      background: url(/feature/failed_login_attempts_icon.svg);
-      margin-left: 5px;
-    }
-
-    &.login-photos_icon > h4 {
-      margin-top: 100px;
-    }
-  }
-  
-  .failed-login-attempts_icon > h4:before,
-  .login-photos_icon > h4:after {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    width: 5rem;
-    height: 5rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: -100px;
-  }
-  
-  .login-photos_icon > h4:after {
-    margin-left: -85px;
-    background: url(/feature/login_photo_icon.svg);
-  }
-  
-  .lock-unlock-history_icon > h4:before {
-    background: url(/feature/lock_unlock_history_icon.svg);
-  }
-}
-
-#mac-unlock-confirmation {
-  .interactive_notifications_icon > h4:before {
-    background: url(/feature/interactive_notifications_icon.svg);
-  }
-  
-  .double_knock_icon > h4:before {
-    background: url(/feature/double_knock_icon.svg);
-  }
-  
-  .touch-id_icon > h4:before {
-    background: url(/feature/touch-id_icon.svg);
-  }
-}
-
-#unlock-options {
-  .unlock_approach_icon > h4:before {
-    background: url(/feature/unlock_approach_icon.svg);
-  }
-  
-  .wifi_unlock_icon > h4:before {
-    background: url(/feature/wifi_unlock_icon.svg);
-  }
-  
-  .mac_wake_unlock_icon > h4:before {
-    background: url(/feature/mac_wake_unlock_icon.svg);
-  }
-}
-
-#lock-settings {
-  .sleep_icon > h4:before {
-    background: url(/feature/sleep_icon.svg);
-  }
-  
-  .screensaver_icon > h4:before {
-    background: url(/feature/screensaver_icon.svg);
-  }
 }
 
 #mac-control .mac-control-thumbnails img {
@@ -154,14 +64,6 @@
     background-size: 500%;
   }
 
-  .play_icon > h4::before {
-    background: url(/feature/play_icon.svg);
-  }
-  
-  .pause_icon > h4::before {
-    background: url(/feature/pause_icon.svg);
-  }
-  
   .supported-players-title {
     padding-top: 100px;
     padding-bottom: 50px;

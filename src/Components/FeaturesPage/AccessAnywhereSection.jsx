@@ -11,6 +11,11 @@ function AccessAnywhereSection() {
     >
       <div className="row">
         <div className="col-md-4 three-d-touch">
+          <img
+            src="/feature/3d_touch_icon_sub.svg"
+            alt=""
+            className="feature-icon"
+          />
           <h4>3D Touch</h4>
           <p className="text-left">
             Use{" "}
@@ -41,6 +46,11 @@ function AccessAnywhereSection() {
           </ul>
         </div>
         <div className="col-md-4 notification_center_icon">
+          <img
+            src="/feature/notification_center_icon.svg"
+            alt=""
+            className="feature-icon"
+          />
           <h4>Notification Center</h4>
           <p className="text-left">
             Swipe down on your iPhone home screen to access your Notification
@@ -69,6 +79,11 @@ function AccessAnywhereSection() {
           </ul>
         </div>
         <div className="col-md-4 interactive_notifications_icon">
+          <img
+            src="/feature/interactive_notifications_icon.svg"
+            alt=""
+            className="feature-icon"
+          />
           <h4>Interactive Notifications</h4>
           <p className="text-left">
             You don't even need to open the Near Lock app on your iPhone to
@@ -82,18 +97,18 @@ function AccessAnywhereSection() {
             <br />
             <br />
             {/* <ul>
-                        <li>
-                          unlock your Mac with Yes or No (no authentication)
-                        </li>
-                        <li>
-                          unlock your Mac with double knocking on your iPhone
-                          (no authentication)
-                        </li>
-                        <li>
-                          unlock your Mac with Touch ID or Passcode
-                          (authentication required)
-                        </li>
-                      </ul> */}
+              <li>
+                unlock your Mac with Yes or No (no authentication)
+              </li>
+              <li>
+                unlock your Mac with double knocking on your iPhone
+                (no authentication)
+              </li>
+              <li>
+                unlock your Mac with Touch ID or Passcode
+                (authentication required)
+              </li>
+            </ul> */}
           </p>
         </div>
       </div>

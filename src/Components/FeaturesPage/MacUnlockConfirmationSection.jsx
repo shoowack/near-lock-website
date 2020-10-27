@@ -13,6 +13,11 @@ function MacUnlockConfirmation() {
     >
       <div className="row">
         <div className="col-md-4 interactive_notifications_icon">
+          <img
+            src="/feature/interactive_notifications_icon.svg"
+            alt=""
+            className="feature-icon"
+          />
           <h4>Interactive Notifications</h4>
           <p>
             You will get a notification when you approach your Mac or when your
@@ -24,6 +29,11 @@ function MacUnlockConfirmation() {
           </p>
         </div>
         <div className="col-md-4 double_knock_icon">
+          <img
+            src="/feature/double_knock_icon.svg"
+            alt=""
+            className="feature-icon"
+          />
           <h4>Knock, Knock</h4>
           <p>
             Unlock your Mac by double knocking on your iPhone. Use double knock
@@ -44,6 +54,11 @@ function MacUnlockConfirmation() {
           </ul>
         </div>
         <div className="col-md-4 touch-id_icon">
+          <img
+            src="/feature/touch-id_icon.svg"
+            alt=""
+            className="feature-icon"
+          />
           <h4>Touch ID</h4>
           <p>
             Add additional protection for unlocking your Mac with the{" "}

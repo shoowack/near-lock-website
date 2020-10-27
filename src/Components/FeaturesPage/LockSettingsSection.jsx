@@ -10,6 +10,7 @@ function LockSettingsSection() {
     >
       <div className="row">
         <div className="col-md-6 sleep_icon">
+          <img src="/feature/sleep_icon.svg" alt="" className="feature-icon" />
           <h4>Sleep</h4>
           <p>
             Sleep (hibernate) will turn your Mac screen off when locking your
@@ -17,6 +18,11 @@ function LockSettingsSection() {
           </p>
         </div>
         <div className="col-md-6 screensaver_icon">
+          <img
+            src="/feature/screensaver_icon.svg"
+            alt=""
+            className="feature-icon"
+          />
           <h4>Screensaver</h4>
           <p>
             Screensaver option will show your default screensaver when locking

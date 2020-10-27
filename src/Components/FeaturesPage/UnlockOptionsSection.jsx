@@ -11,6 +11,11 @@ function MacUnlockConfirmation() {
     >
       <div className="row">
         <div className="col-12 col-md-4 unlock_approach_icon">
+          <img
+            src="/feature/unlock_approach_icon.svg"
+            alt=""
+            className="feature-icon"
+          />
           <h4>Automatically Unlock on Approach</h4>
           <p>
             Use your iPhone to lock and unlock your Mac automatically.
@@ -21,6 +26,11 @@ function MacUnlockConfirmation() {
           </p>
         </div>
         <div className="col-12 col-md-4 wifi_unlock_icon">
+          <img
+            src="/feature/wifi_unlock_icon.svg"
+            alt=""
+            className="feature-icon"
+          />
           <h4>Wifi Unlock</h4>
           <p>
             Keep your Mac unlocked while connected to your selected WiFi network
@@ -32,6 +42,11 @@ function MacUnlockConfirmation() {
           </p>
         </div>
         <div className="col-12 col-md-4 mac_wake_unlock_icon">
+          <img
+            src="/feature/mac_wake_unlock_icon.svg"
+            alt=""
+            className="feature-icon"
+          />
           <h4>Mac Wake Unlock</h4>
           <p>
             After your Mac is woken up from sleep and the password screen is
