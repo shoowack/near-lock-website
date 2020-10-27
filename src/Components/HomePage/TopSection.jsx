@@ -35,7 +35,7 @@ function TopSection({ videoUrl }) {
           <div className="col">
             <div className="container">
               <div className="row">
-                <div className="col-12 col-md-6">
+                <div className="col-12 col-lg-6">
                   <h1>A new way to lock your Mac. Just walk away.</h1>
                   <br />
                   <p>
@@ -54,8 +54,8 @@ function TopSection({ videoUrl }) {
                     Try it out for FREE!
                   </p>
                 </div>
-                <div className="col-12 col-md-6">
-                  <div className="video-wrapper">
+                <div className="col-12 col-lg-6">
+                  <div className="video-wrapper pl-lg-5">
                     <div className="video-play" onClick={() => toggleModal()}>
                       <img
                         src="/video.jpg"
