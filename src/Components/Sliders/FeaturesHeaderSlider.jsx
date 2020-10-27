@@ -15,7 +15,8 @@ function FeaturesHeaderSlider({ scrollWithOffset }) {
     "Authentication",
     "Music",
     "BlueTooth LE",
-    "Retina Graphics"
+    "Retina Graphics",
+    "Security"
   ];
 
   return (
@@ -59,13 +60,13 @@ function FeaturesHeaderSlider({ scrollWithOffset }) {
           <Link
             key={index}
             smooth
-            to={`#${feature.replace(" ", "-").toLowerCase()}`}
+            to={`#${feature.replaceAll(" ", "-").toLowerCase()}`}
             scroll={(el) => scrollWithOffset(el)}
             className="featureHeaderSlider__item"
           >
             <img
               src={`/feature/icons/${feature
-                .replace(" ", "_")
+                .replaceAll(" ", "_")
                 .toLowerCase()}_icon.svg`}
               alt=""
             />

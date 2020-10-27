@@ -13,28 +13,32 @@ function AppleWatchSection() {
       <div className="row">
         <a
           href="https://itunes.apple.com/us/app/near-lock/id886882252?mt=8"
-          class="btn"
+          className="btn"
         >
           Download now
         </a>
-        <div class="apple-watch">
-          <img src="img/features-watch.png" class="apple-watch-image" alt="" />
-          <div class="screen-wrapper">
-            <div class="screen">
-              <div id="owl-apple-watch" class="owl">
-                <div class="item">
+        <div className="apple-watch">
+          <img
+            src="img/features-watch.png"
+            className="apple-watch-image"
+            alt=""
+          />
+          <div className="screen-wrapper">
+            <div className="screen">
+              <div id="owl-apple-watch" className="owl">
+                <div className="item">
                   <img src="img/watch-1.jpg" alt="" />
                 </div>
-                <div class="item">
+                <div className="item">
                   <img src="img/watch-2.jpg" alt="" />
                 </div>
-                <div class="item">
+                <div className="item">
                   <img src="img/watch-3.jpg" alt="" />
                 </div>
-                <div class="item">
+                <div className="item">
                   <img src="img/watch-4.jpg" alt="" />
                 </div>
-                <div class="item">
+                <div className="item">
                   <img src="img/watch-5.jpg" alt="" />
                 </div>
               </div>

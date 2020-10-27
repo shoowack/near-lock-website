@@ -12,7 +12,9 @@ import {
   MacMenuBarSection,
   MusicSection,
   BlueToothLeSection,
-  RetinaGraphicsSection
+  RetinaGraphicsSection,
+  SecuritySection,
+  FindYourIphoneSection
 } from "./../Components/FeaturesPage";
 import NewsletterSection from "./../Components/NewsletterSection";
 import "./../Components/FeaturesPage/style.scss";
@@ -33,6 +35,8 @@ function FeaturesPage(props) {
         musicSection,
         blueToothLeSection,
         retinaGraphicsSection,
+        securitySection,
+        findYourIphoneSection,
         newsletterSection
       }
     }
@@ -58,6 +62,8 @@ function FeaturesPage(props) {
       {musicSection && <MusicSection />}
       {blueToothLeSection && <BlueToothLeSection />}
       {retinaGraphicsSection && <RetinaGraphicsSection />}
+      {securitySection && <SecuritySection />}
+      {findYourIphoneSection && <FindYourIphoneSection />}
       {newsletterSection && <NewsletterSection />}
     </>
   );

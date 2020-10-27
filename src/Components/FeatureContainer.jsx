@@ -9,7 +9,7 @@ function FeatureContainer({
   padding,
   children
 }) {
-  const browserFriendlyTitle = featureTitle.replace(" ", "-").toLowerCase();
+  const browserFriendlyTitle = featureTitle.replaceAll(" ", "-").toLowerCase();
 
   return (
     <div

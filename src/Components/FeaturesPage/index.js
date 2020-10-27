@@ -10,6 +10,8 @@ import MacMenuBarSection from "./MacMenuBarSection";
 import MusicSection from "./MusicSection";
 import BlueToothLeSection from "./BlueToothLeSection";
 import RetinaGraphicsSection from "./RetinaGraphicsSection";
+import SecuritySection from "./SecuritySection";
+import FindYourIphoneSection from "./FindYourIphoneSection";
 // import  from "./";
 
 export {
@@ -24,5 +26,7 @@ export {
   MacMenuBarSection,
   MusicSection,
   BlueToothLeSection,
-  RetinaGraphicsSection
+  RetinaGraphicsSection,
+  SecuritySection,
+  FindYourIphoneSection
 };
