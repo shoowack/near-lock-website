@@ -12,7 +12,7 @@ function AuthenticationSection() {
       <div className="row">
         <div className="password-prompt-wrapper">
           <div className="password-prompt">
-            <img src="img/password-prompt.png" alt="" />
+            <img src="/feature/password-prompt.png" alt="" />
             <div className="prompt"></div>
             <div className="asterisks">
               <div className="asterisk"></div>
