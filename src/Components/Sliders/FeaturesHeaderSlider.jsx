@@ -14,7 +14,8 @@ function FeaturesHeaderSlider({ scrollWithOffset }) {
     "Apple Watch",
     "Authentication",
     "Music",
-    "BlueTooth LE"
+    "BlueTooth LE",
+    "Retina Graphics"
   ];
 
   return (

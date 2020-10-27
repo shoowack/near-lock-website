@@ -9,6 +9,7 @@ import AuthenticationSection from "./AuthenticationSection";
 import MacMenuBarSection from "./MacMenuBarSection";
 import MusicSection from "./MusicSection";
 import BlueToothLeSection from "./BlueToothLeSection";
+import RetinaGraphicsSection from "./RetinaGraphicsSection";
 // import  from "./";
 
 export {
@@ -22,5 +23,6 @@ export {
   AuthenticationSection,
   MacMenuBarSection,
   MusicSection,
-  BlueToothLeSection
+  BlueToothLeSection,
+  RetinaGraphicsSection
 };
