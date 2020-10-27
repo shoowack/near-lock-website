@@ -8,7 +8,7 @@ import "./style.scss";
 
 import * as pages from "./Pages";
 import Navigation from "./Components/Navigation/Navigation";
-import Footer from "./Components/Footer";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   let settings = require("./Data/settings.json");
