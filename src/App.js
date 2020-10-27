@@ -6,16 +6,8 @@ import "./style.scss";
 // import "jquery"; // uncomment when needed later
 // import "popper.js"; // uncomment when needed later
 
-import {
-  HomePage,
-  FeaturesPage,
-  FaqPage,
-  VersionsPage,
-  PressPage,
-  TermsOfUsePage,
-  ImpressumPage
-} from "./Pages";
-import Navigation from "./Components/Navigation";
+import * as pages from "./Pages";
+import Navigation from "./Components/Navigation/Navigation";
 import Footer from "./Components/Footer";
 
 function App() {
@@ -38,29 +30,29 @@ function App() {
           exact
           path="/"
           render={(props) => (
-            <HomePage {...props} {...(settings && { settings })} />
+            <pages.HomePage {...props} {...(settings && { settings })} />
           )}
         />
         <Route
           path="/features"
           render={(props) => (
-            <FeaturesPage
+            <pages.FeaturesPage
               scrollWithOffset={scrollWithOffset}
               {...props}
               {...(settings && { settings })}
             />
           )}
         />
-        <Route path="/faq" component={FaqPage} />
-        <Route path="/whats-new" component={VersionsPage} />
+        <Route path="/faq" component={pages.FaqPage} />
+        <Route path="/whats-new" component={pages.VersionsPage} />
         <Route
           path="/press"
           render={(props) => (
-            <PressPage {...props} {...(settings && { settings })} />
+            <pages.PressPage {...props} {...(settings && { settings })} />
           )}
         />
-        <Route path="/terms" component={TermsOfUsePage} />
-        <Route path="/impressum" component={ImpressumPage} />
+        <Route path="/terms" component={pages.TermsOfUsePage} />
+        <Route path="/impressum" component={pages.ImpressumPage} />
       </Switch>
       <Footer
         scrollWithOffset={scrollWithOffset}
