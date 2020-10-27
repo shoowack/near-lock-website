@@ -2,10 +2,11 @@ import React from "react";
 
 function MacMenuBarSection() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid" id="mac-menu-bar">
       <div className="container">
         <div className="row">
-          <div className="col-md-7 col-md-offset-1 col-sm-7">
+          <div className="col-md-7 offset-md-1 col-sm-7">
+            <h3>Mac Menu Bar</h3>
             <p>
               Near Lock lives in your Mac's menu bar and lets you view status of
               your iPhone, quickly enable or disable locking and set the

@@ -516,3 +516,205 @@
     box-shadow: 0px 0px 125px 5px transparent;
   }
 }
+
+#authentication .password-prompt-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+#authentication .password-prompt {
+  margin: 0 auto;
+  background: url("feature/password-prompt.png") center center no-repeat;
+  width: 555px;
+  height: 326px;
+  position: relative;
+}
+@media (max-width: 991px) {
+  #authentication .password-prompt {
+    height: 270px;
+    transform: translateX(-50%) scale(0.8);
+    left: 50%;
+  }
+}
+#authentication .password-prompt .prompt {
+  position: absolute;
+  top: 163px;
+  left: 235px;
+  width: 1px;
+  height: 17px;
+  background: #000;
+  opacity: 0;
+}
+@media (max-width: 991px) {
+  #authentication .password-prompt .prompt {
+    top: 135px;
+  }
+}
+#authentication .password-prompt .prompt.active {
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 1.25s;
+  -webkit-animation-name: prompt;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 1.25s;
+  -moz-animation-name: prompt;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 0;
+  -o-animation-duration: 1.25s;
+  -o-animation-name: prompt;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0;
+  animation-duration: 1.25s;
+  animation-name: prompt;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes prompt {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  51% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes prompt {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  51% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes prompt {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  51% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes prompt {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  51% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#authentication .password-prompt .asterisks {
+  position: absolute;
+  top: 169px;
+  left: 236px;
+}
+@media (max-width: 991px) {
+  #authentication .password-prompt .asterisks {
+    top: 141px;
+  }
+}
+#authentication .password-prompt .asterisks.active .asterisk {
+  opacity: 1;
+}
+#authentication .password-prompt .asterisks .asterisk {
+  display: inline-block;
+  float: left;
+  width: 6px;
+  height: 6px;
+  background: #000;
+  border-radius: 999em;
+  margin-right: 2px;
+  opacity: 0;
+}
+#authentication .password-prompt .asterisks .asterisk:nth-child(1) {
+  transition: all 0s 0.025s ease-in-out;
+}
+#authentication .password-prompt .asterisks .asterisk:nth-child(2) {
+  transition: all 0s 0.05s ease-in-out;
+}
+#authentication .password-prompt .asterisks .asterisk:nth-child(3) {
+  transition: all 0s 0.075s ease-in-out;
+}
+#authentication .password-prompt .asterisks .asterisk:nth-child(4) {
+  transition: all 0s 0.1s ease-in-out;
+}
+#authentication .password-prompt .asterisks .asterisk:nth-child(5) {
+  transition: all 0s 0.125s ease-in-out;
+}
+#authentication .password-prompt .asterisks .asterisk:nth-child(6) {
+  transition: all 0s 0.15s ease-in-out;
+}
+#authentication .password-prompt .asterisks .asterisk:nth-child(7) {
+  transition: all 0s 0.175s ease-in-out;
+}
+#authentication .password-prompt .asterisks .asterisk:nth-child(8) {
+  transition: all 0s 0.2s ease-in-out;
+}
+#authentication .password-prompt .asterisks .asterisk:nth-child(9) {
+  transition: all 0s 0.225s ease-in-out;
+}
+#authentication .password-prompt .asterisks .asterisk:nth-child(10) {
+  transition: all 0s 0.25s ease-in-out;
+}
+#authentication .password-prompt .asterisks .asterisk:nth-child(11) {
+  transition: all 0s 0.275s ease-in-out;
+}
+#authentication .password-prompt .asterisks .asterisk:nth-child(12) {
+  transition: all 0s 0.3s ease-in-out;
+}
+#authentication .password-prompt .asterisks .asterisk:nth-child(13) {
+  transition: all 0s 0.325s ease-in-out;
+}
+#authentication .password-prompt .asterisks .asterisk:nth-child(14) {
+  transition: all 0s 0.35s ease-in-out;
+}
+#authentication .password-prompt .asterisks .asterisk.active {
+  opacity: 1;
+}
+
+#mac-menu-bar {
+  background: rgba(50, 145, 224, 0.1) url("/feature/features-menubar.png") no-repeat top right;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 991px) {
+    background: rgba(50, 145, 224, 0.1) url("/feature/features-menubar.png")
+    no-repeat top right -7px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 400px;
+  }
+}
