@@ -1,5 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import FeatureContainer from "./../FeatureContainer";
+
+function DockItem({ tooltip, image }) {
+  const [tooltipActive, setTooltipActive] = useState(false);
+  return (
+    <div
+      className="dock-item"
+      onMouseEnter={() => setTooltipActive(true)}
+      onMouseLeave={() => setTooltipActive(false)}
+    >
+      {tooltipActive && <div className="dock-tooltip">{tooltip}</div>}
+      <img src={image} alt={tooltip} />
+    </div>
+  );
+}
 
 function AuthenticationSection() {
   return (
@@ -27,21 +41,11 @@ function AuthenticationSection() {
         </div>
 
         <div className="dock backdropfilter">
-          <div className="dock-item" data-toggle="tooltip" title="iTunes">
-            <img src="/feature/dock-itunes.svg" alt="iTunes" />
-          </div>
-          <div className="dock-item" data-toggle="tooltip" title="QuickTime">
-            <img src="/feature/dock-quicktime.png" alt="QuickTime" />
-          </div>
-          <div className="dock-item" data-toggle="tooltip" title="VLC">
-            <img src="/feature/dock-vlc.svg" alt="VLC" />
-          </div>
-          <div className="dock-item" data-toggle="tooltip" title="Spotify">
-            <img src="/feature/dock-spotify.svg" alt="Spotify" />
-          </div>
-          <div className="dock-item" data-toggle="tooltip" title="Near Lock">
-            <img src="/feature/dock-nearlock.svg" alt="Near Lock" />
-          </div>
+          <DockItem tooltip="iTunes" image="/feature/dock-itunes.svg" />
+          <DockItem tooltip="QuickTime" image="/feature/dock-quicktime.png" />
+          <DockItem tooltip="VLC" image="/feature/dock-vlc.svg" />
+          <DockItem tooltip="Spotify" image="/feature/dock-spotify.svg" />
+          <DockItem tooltip="Near Lock" image="/feature/dock-nearlock.svg" />
         </div>
       </div>
     </FeatureContainer>
