@@ -8,6 +8,7 @@ import ClipboardOptionsSection from "./ClipboardOptionsSection";
 import AuthenticationSection from "./AuthenticationSection";
 import MacMenuBarSection from "./MacMenuBarSection";
 import MusicSection from "./MusicSection";
+import BlueToothLeSection from "./BlueToothLeSection";
 // import  from "./";
 
 export {
@@ -20,5 +21,6 @@ export {
   ClipboardOptionsSection,
   AuthenticationSection,
   MacMenuBarSection,
-  MusicSection
+  MusicSection,
+  BlueToothLeSection
 };

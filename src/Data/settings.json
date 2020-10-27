@@ -45,6 +45,7 @@
       "authenticationSection": true,
       "macMenuBarSection": true,
       "musicSection": true,
+      "blueToothLeSection": true,
       "newsletterSection": true
     }
   },

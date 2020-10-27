@@ -13,7 +13,8 @@ function FeaturesHeaderSlider({ scrollWithOffset }) {
     "Lock Settings",
     "Apple Watch",
     "Authentication",
-    "Music"
+    "Music",
+    "BlueTooth LE"
   ];
 
   return (

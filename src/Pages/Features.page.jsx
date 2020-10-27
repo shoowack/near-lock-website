@@ -10,7 +10,8 @@ import {
   ClipboardOptionsSection,
   AuthenticationSection,
   MacMenuBarSection,
-  MusicSection
+  MusicSection,
+  BlueToothLeSection
 } from "./../Components/FeaturesPage";
 import NewsletterSection from "./../Components/NewsletterSection";
 import "./../Components/FeaturesPage/style.scss";
@@ -29,6 +30,7 @@ function FeaturesPage(props) {
         authenticationSection,
         macMenuBarSection,
         musicSection,
+        blueToothLeSection,
         newsletterSection
       }
     }
@@ -52,6 +54,7 @@ function FeaturesPage(props) {
       {authenticationSection && <AuthenticationSection />}
       {macMenuBarSection && <MacMenuBarSection />}
       {musicSection && <MusicSection />}
+      {blueToothLeSection && <BlueToothLeSection />}
       {newsletterSection && <NewsletterSection />}
     </>
   );
