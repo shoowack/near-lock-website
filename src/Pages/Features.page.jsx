@@ -8,7 +8,8 @@ import {
   LockSettingsSection,
   AppleWatchSection,
   ClipboardOptionsSection,
-  AuthenticationSection
+  AuthenticationSection,
+  MacMenuBarSection
 } from "./../Components/FeaturesPage";
 import NewsletterSection from "./../Components/NewsletterSection";
 import "./../Components/FeaturesPage/style.scss";
@@ -25,6 +26,7 @@ function FeaturesPage(props) {
         appleWatchSection,
         clipboardOptionsSection,
         authenticationSection,
+        macMenuBarSection,
         newsletterSection
       }
     }
@@ -46,6 +48,7 @@ function FeaturesPage(props) {
       {appleWatchSection && <AppleWatchSection />}
       {clipboardOptionsSection && <ClipboardOptionsSection />}
       {authenticationSection && <AuthenticationSection />}
+      {macMenuBarSection && <MacMenuBarSection />}
       {newsletterSection && <NewsletterSection />}
     </>
   );

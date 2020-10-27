@@ -43,6 +43,7 @@
       "appleWatchSection": true,
       "clipboardOptionsSection": true,
       "authenticationSection": true,
+      "macMenuBarSection": true,
       "newsletterSection": true
     }
   },
