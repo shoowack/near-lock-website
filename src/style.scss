@@ -2,9 +2,30 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 200;
 }
 
+.alerts, .bg-warning, .bg-danger, .bg-new-feature {
+  padding: 1em;
+  border-radius: .5em;
+  margin-bottom: .5em;
+}
+
+.bg-warning {
+  background: #fcf8e3;
+}
+
 .bg-danger {
   background: #f2dede !important;
 }
+
+.bg-new-feature {
+  background: rgba(50, 145, 224, 0.15);
+}
+
+.bg-new-feature a,
+.bg-new-feature a:hover,
+.bg-new-feature a:visited {
+  font-weight: 600;
+}
+
 
 .colored {
   background-image: linear-gradient(-45deg, #35d678, #3291e0);

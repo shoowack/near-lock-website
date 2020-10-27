@@ -19,7 +19,7 @@ function MacUnlockConfirmation() {
             className="feature-icon"
           />
           <h4>Interactive Notifications</h4>
-          <p>
+          <p className="text-left">
             You will get a notification when you approach your Mac or when your
             Mac is woken up from sleep.
             <br />
@@ -35,11 +35,11 @@ function MacUnlockConfirmation() {
             className="feature-icon"
           />
           <h4>Knock, Knock</h4>
-          <p>
+          <p className="text-left">
             Unlock your Mac by double knocking on your iPhone. Use double knock
             to:
           </p>
-          <ul>
+          <ul className="text-left">
             <li>
               confirm Mac unlock with double knock when you approach your Mac
             </li>
@@ -60,7 +60,7 @@ function MacUnlockConfirmation() {
             className="feature-icon"
           />
           <h4>Touch ID</h4>
-          <p>
+          <p className="text-left">
             Add additional protection for unlocking your Mac with the{" "}
             <a
               href="https://support.apple.com/en-us/HT201371"

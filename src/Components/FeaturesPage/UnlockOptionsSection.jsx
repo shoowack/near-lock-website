@@ -17,7 +17,7 @@ function MacUnlockConfirmation() {
             className="feature-icon"
           />
           <h4>Automatically Unlock on Approach</h4>
-          <p>
+          <p className="text-left">
             Use your iPhone to lock and unlock your Mac automatically.
             <br />
             <br />
@@ -32,7 +32,7 @@ function MacUnlockConfirmation() {
             className="feature-icon"
           />
           <h4>Wifi Unlock</h4>
-          <p>
+          <p className="text-left">
             Keep your Mac unlocked while connected to your selected WiFi network
             (e.g. Home network).
             <br />
@@ -48,7 +48,7 @@ function MacUnlockConfirmation() {
             className="feature-icon"
           />
           <h4>Mac Wake Unlock</h4>
-          <p>
+          <p className="text-left">
             After your Mac is woken up from sleep and the password screen is
             shown, you can use your iPhone to easily unlock your Mac.
             <br />

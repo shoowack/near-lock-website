@@ -24,7 +24,7 @@ function FeatureContainer({
       >
         <div className="row">
           <div className="col-12">
-            {newFeature && <span className="new"></span>}
+            {newFeature && <span className="new-feature">NEW</span>}
 
             <img
               src={`/feature/${

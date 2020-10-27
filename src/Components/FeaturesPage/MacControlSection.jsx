@@ -22,7 +22,7 @@ function MacControlSection() {
             />
           </div>
           <h3 className="text-center">Unlock Photos</h3>
-          <ul>
+          <ul className="text-left">
             <li>
               <strong>Failed login attempts</strong> feature takes a photo from
               the Mac camera and sends a notification to your iPhone when a
