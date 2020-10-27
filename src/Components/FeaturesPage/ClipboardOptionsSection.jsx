@@ -2,13 +2,17 @@ import React from "react";
 
 function ClipboardOptionsSection() {
   return (
-    <div className="container-fluid" style={{ background: "#fafafa" }}>
+    <div
+      className="container-fluid"
+      style={{ background: "#fafafa" }}
+      id="clipboard"
+    >
       <div className="container">
         <div className="row">
           <div className="col-md-6 col-md-push-6 feature_menubar">
             <img
-              src="img/menubar.png"
-              className="feature_menubar__main_image"
+              src="/feature/menubar.png"
+              className="feature_menubar__main_image active" // TODO animate on scroll
               alt=""
             />
             <div className="feature_menubar_zoomed">
@@ -40,8 +44,8 @@ function ClipboardOptionsSection() {
           </div>
           <div className="col-md-6 col-md-pull-6 feature_clipboard_ios">
             <img
-              src="img/clipboard_ios.png"
-              className="feature_clipboard_ios__main_image"
+              src="/feature/clipboard_ios.png"
+              className="feature_clipboard_ios__main_image active" // TODO animate on scroll
               alt=""
             />
             <div className="feature_clipboard_ios__zoomed">
