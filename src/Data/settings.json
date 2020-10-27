@@ -37,8 +37,10 @@
     "visibileSections": {
       "accessAnywhereSection": true,
       "macControlSection": true,
-      "macUnlockConfirmation": true,
-      "unlockOptions": true,
+      "macUnlockConfirmationSection": true,
+      "unlockOptionsSection": true,
+      "lockSettingsSection": true,
+      "appleWatchSection": true,
       "newsletterSection": true
     }
   },

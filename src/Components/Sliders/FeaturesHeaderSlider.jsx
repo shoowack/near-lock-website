@@ -10,7 +10,8 @@ function FeaturesHeaderSlider({ scrollWithOffset }) {
     "Access Anywhere",
     "Mac Control",
     "Unlock Options",
-    "Unlock Options"
+    "Lock Settings",
+    "Apple Watch"
   ];
 
   return (
