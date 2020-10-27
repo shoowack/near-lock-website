@@ -4,6 +4,7 @@ import MacUnlockConfirmationSection from "./MacUnlockConfirmationSection";
 import UnlockOptionsSection from "./UnlockOptionsSection";
 import LockSettingsSection from "./LockSettingsSection";
 import AppleWatchSection from "./AppleWatchSection";
+import ClipboardOptionsSection from "./ClipboardOptionsSection";
 // import  from "./";
 
 export {
@@ -12,5 +13,6 @@ export {
   MacUnlockConfirmationSection,
   UnlockOptionsSection,
   LockSettingsSection,
-  AppleWatchSection
+  AppleWatchSection,
+  ClipboardOptionsSection
 };
