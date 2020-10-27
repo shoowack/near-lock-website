@@ -7,6 +7,7 @@ import AppleWatchSection from "./AppleWatchSection";
 import ClipboardOptionsSection from "./ClipboardOptionsSection";
 import AuthenticationSection from "./AuthenticationSection";
 import MacMenuBarSection from "./MacMenuBarSection";
+import MusicSection from "./MusicSection";
 // import  from "./";
 
 export {
@@ -18,5 +19,6 @@ export {
   AppleWatchSection,
   ClipboardOptionsSection,
   AuthenticationSection,
-  MacMenuBarSection
+  MacMenuBarSection,
+  MusicSection
 };

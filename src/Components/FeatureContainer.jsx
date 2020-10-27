@@ -2,6 +2,7 @@ import React from "react";
 
 function FeatureContainer({
   odd,
+  newFeature,
   featureIcon,
   featureTitle,
   featureDescription,
@@ -23,6 +24,8 @@ function FeatureContainer({
       >
         <div className="row">
           <div className="col-12">
+            {newFeature && <span className="new"></span>}
+
             <img
               src={`/feature/${
                 featureIcon ? featureIcon : browserFriendlyTitle

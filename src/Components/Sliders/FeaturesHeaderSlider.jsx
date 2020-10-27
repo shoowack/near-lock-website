@@ -12,7 +12,8 @@ function FeaturesHeaderSlider({ scrollWithOffset }) {
     "Unlock Options",
     "Lock Settings",
     "Apple Watch",
-    "Authentication"
+    "Authentication",
+    "Music"
   ];
 
   return (
