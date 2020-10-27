@@ -42,6 +42,7 @@
       "lockSettingsSection": true,
       "appleWatchSection": true,
       "clipboardOptionsSection": true,
+      "authenticationSection": true,
       "newsletterSection": true
     }
   },
