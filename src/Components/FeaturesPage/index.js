@@ -1,14 +1,16 @@
 import AccessAnywhereSection from "./AccessAnywhereSection";
 import MacControlSection from "./MacControlSection";
-import MacUnlockConfirmation from "./MacUnlockConfirmation";
-import UnlockOptions from "./UnlockOptions";
-// import  from "./";
-// import  from "./";
+import MacUnlockConfirmationSection from "./MacUnlockConfirmationSection";
+import UnlockOptionsSection from "./UnlockOptionsSection";
+import LockSettingsSection from "./LockSettingsSection";
+import AppleWatchSection from "./AppleWatchSection";
 // import  from "./";
 
 export {
   AccessAnywhereSection,
   MacControlSection,
-  MacUnlockConfirmation,
-  UnlockOptions
+  MacUnlockConfirmationSection,
+  UnlockOptionsSection,
+  LockSettingsSection,
+  AppleWatchSection
 };

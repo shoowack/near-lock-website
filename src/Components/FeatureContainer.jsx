@@ -16,8 +16,12 @@ function FeatureContainer({
       style={{ background: odd ? "#fafafa" : "#fffff" }}
       id={browserFriendlyTitle}
     >
-      <div className={"container feature " + (padding ? padding : "py-5")}>
-        <div className="row text-center ">
+      <div
+        className={
+          "container text-center feature " + (padding ? padding : "py-5")
+        }
+      >
+        <div className="row">
           <div className="col-12">
             <img
               src={`/feature/${
@@ -29,11 +33,14 @@ function FeatureContainer({
             />
             <h2>{featureTitle}</h2>
           </div>
-          <div className="col-12 col-md-8 offset-md-2 mb-5">
-            {featureDescription}
-          </div>
-          {children}
         </div>
+        <div className="row">
+          <div
+            className="col-12 col-md-8 offset-md-2 mb-5"
+            dangerouslySetInnerHTML={{ __html: featureDescription }}
+          ></div>
+        </div>
+        {children}
       </div>
     </div>
   );
