@@ -4,7 +4,6 @@ import FeatureContainer from "./../FeatureContainer";
 function AppleWatchSection() {
   return (
     <FeatureContainer
-      odd
       featureTitle={"Apple Watch"}
       featureDescription={
         "The Apple Watch adds an additional dimension to Near Lock. You can now use your watch to safely and seamlessly lock and unlock your Mac.<br /><br />Try it out for free!"

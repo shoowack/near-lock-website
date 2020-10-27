@@ -4,7 +4,6 @@ import FeatureContainer from "./../FeatureContainer";
 function MacUnlockConfirmation() {
   return (
     <FeatureContainer
-      odd
       featureTitle={"Unlock Options"}
       featureDescription={
         "Unlock your Mac with Apple Watch, double knock on iPhone, Touch ID, 3D Touch, notification center or unlock your Mac automatically whenever your iPhone is close to your Mac."
@@ -12,7 +11,7 @@ function MacUnlockConfirmation() {
     >
       <div className="row">
         <div className="col-12 col-md-4 unlock_approach_icon">
-          <h3>Automatically Unlock on Approach</h3>
+          <h4>Automatically Unlock on Approach</h4>
           <p>
             Use your iPhone to lock and unlock your Mac automatically.
             <br />
@@ -22,7 +21,7 @@ function MacUnlockConfirmation() {
           </p>
         </div>
         <div className="col-12 col-md-4 wifi_unlock_icon">
-          <h3>Wifi Unlock</h3>
+          <h4>Wifi Unlock</h4>
           <p>
             Keep your Mac unlocked while connected to your selected WiFi network
             (e.g. Home network).
@@ -33,7 +32,7 @@ function MacUnlockConfirmation() {
           </p>
         </div>
         <div className="col-12 col-md-4 mac_wake_unlock_icon">
-          <h3>Mac Wake Unlock</h3>
+          <h4>Mac Wake Unlock</h4>
           <p>
             After your Mac is woken up from sleep and the password screen is
             shown, you can use your iPhone to easily unlock your Mac.

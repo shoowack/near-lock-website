@@ -4,7 +4,6 @@ import FeatureContainer from "./../FeatureContainer";
 function AuthenticationSection() {
   return (
     <FeatureContainer
-      odd
       featureTitle={"Authentication"}
       featureDescription={
         "Use Near Lock for faster Mac authentication (such as installing new software)."

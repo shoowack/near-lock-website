@@ -16,7 +16,8 @@ function FeaturesHeaderSlider({ scrollWithOffset }) {
     "Music",
     "BlueTooth LE",
     "Retina Graphics",
-    "Security"
+    "Security",
+    "Localizations"
   ];
 
   return (

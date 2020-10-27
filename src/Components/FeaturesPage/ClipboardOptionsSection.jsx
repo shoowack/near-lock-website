@@ -2,7 +2,7 @@ import React from "react";
 
 function ClipboardOptionsSection() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid" style={{ background: "#fafafa" }}>
       <div className="container">
         <div className="row">
           <div className="col-md-6 col-md-push-6 feature_menubar">

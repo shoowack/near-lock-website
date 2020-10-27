@@ -89,15 +89,15 @@
   background: url(/feature/lock_unlock_history_icon.svg);
 }
 
-#unlock-options .interactive_notifications_icon > h4:before {
+#mac-unlock-confirmation .interactive_notifications_icon > h4:before {
   background: url(/feature/interactive_notifications_icon.svg);
 }
 
-#unlock-options .double_knock_icon > h4:before {
+#mac-unlock-confirmation .double_knock_icon > h4:before {
   background: url(/feature/double_knock_icon.svg);
 }
 
-#unlock-options .touch-id_icon > h4:before {
+#mac-unlock-confirmation .touch-id_icon > h4:before {
   background: url(/feature/touch-id_icon.svg);
 }
 
@@ -129,4 +129,142 @@
   @media (min-width: 991px) {
     box-shadow: 0 40px 200px rgba(0, 0, 0, 0.5);
   }
+}
+
+#music {
+  position: relative;
+  background: url(/feature/music-background.png) center bottom -100px no-repeat;
+  background-size: 100%;
+}
+@media (max-width: 1200px) {
+  #music {
+    background: url(/feature/music-background.png) center bottom -50px no-repeat;
+    background-size: 100%;
+  }
+}
+@media (max-width: 767px) {
+  #music {
+    background: url(/feature/music-background.png) left 40% bottom 0px no-repeat;
+    background-size: 500%;
+  }
+}
+
+#music .play_icon > h4::before {
+  background: url(/feature/play_icon.svg);
+}
+
+#music .pause_icon > h4::before {
+  background: url(/feature/pause_icon.svg);
+}
+
+#music .supported-players-title {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+@media (max-width: 991px) {
+  #music .supported-players-title {
+    padding-top: 30px;
+    padding-bottom: 100px;
+  }
+}
+
+#music .dock {
+  backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  position: absolute;
+  transform: translateX(-50%);
+  min-width: 240px;
+  border-radius: 7px 7px 0 0;
+  left: 50%;
+  bottom: 0px;
+  padding: 0 10px;
+}
+
+#music .dock .dock-item {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  margin: 10px 2px 5px 2px;
+
+  img {
+    border: none;
+    width: 100%;
+  }
+}
+
+#apple-watch {
+  text-align: center;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 340px;
+}
+@media (max-width: 991px) {
+  #apple-watch {
+    padding-bottom: 250px;
+  }
+}
+#apple-watch .btn {
+  display: inline-block;
+  border-radius: 8px;
+  border: 2px solid #c6c6c6;
+  padding: 12px 30px;
+  font-weight: 400;
+  font-size: 1.1em;
+  line-height: 1.1;
+  transition: 0.5s all;
+}
+#apple-watch .btn:hover {
+  background: #c6c6c6;
+}
+#apple-watch .apple-watch {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 991px) {
+  #apple-watch .apple-watch {
+    transform: scale(0.75) translate(-67%, 24px);
+  }
+}
+#apple-watch .apple-watch-image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#apple-watch .apple-watch .screen-wrapper {
+  position: relative;
+  height: 154px;
+  width: 190px;
+  bottom: 105px;
+  perspective: 150px;
+}
+#apple-watch .apple-watch .screen-wrapper .screen {
+  width: 190px;
+  height: 130px;
+  position: absolute;
+  transform: rotateX(14deg);
+  overflow: hidden;
+  cursor: grab;
+}
+#apple-watch .apple-watch .screen-wrapper .screen:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5) inset;
+  pointer-events: none;
+}
+#apple-watch .apple-watch .screen-wrapper .screen img {
+  display: inline-block;
+  width: 190px;
+  height: 130px;
 }

@@ -12,7 +12,7 @@ import BlueToothLeSection from "./BlueToothLeSection";
 import RetinaGraphicsSection from "./RetinaGraphicsSection";
 import SecuritySection from "./SecuritySection";
 import FindYourIphoneSection from "./FindYourIphoneSection";
-// import  from "./";
+import LocalizationsSection from "./LocalizationsSection";
 
 export {
   AccessAnywhereSection,
@@ -28,5 +28,6 @@ export {
   BlueToothLeSection,
   RetinaGraphicsSection,
   SecuritySection,
-  FindYourIphoneSection
+  FindYourIphoneSection,
+  LocalizationsSection
 };

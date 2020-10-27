@@ -14,7 +14,8 @@ import {
   BlueToothLeSection,
   RetinaGraphicsSection,
   SecuritySection,
-  FindYourIphoneSection
+  FindYourIphoneSection,
+  LocalizationsSection
 } from "./../Components/FeaturesPage";
 import NewsletterSection from "./../Components/NewsletterSection";
 import "./../Components/FeaturesPage/style.scss";
@@ -37,6 +38,7 @@ function FeaturesPage(props) {
         retinaGraphicsSection,
         securitySection,
         findYourIphoneSection,
+        localizationsSection,
         newsletterSection
       }
     }
@@ -64,6 +66,7 @@ function FeaturesPage(props) {
       {retinaGraphicsSection && <RetinaGraphicsSection />}
       {securitySection && <SecuritySection />}
       {findYourIphoneSection && <FindYourIphoneSection />}
+      {localizationsSection && <LocalizationsSection />}
       {newsletterSection && <NewsletterSection />}
     </>
   );

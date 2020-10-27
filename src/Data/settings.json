@@ -49,6 +49,7 @@
       "retinaGraphicsSection": true,
       "securitySection": true,
       "findYourIphoneSection": true,
+      "localizationsSection": true,
       "newsletterSection": true
     }
   },
