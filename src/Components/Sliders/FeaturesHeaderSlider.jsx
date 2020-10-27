@@ -6,7 +6,12 @@ import "./slick-theme.scss";
 import "./features-header-slider.scss";
 
 function FeaturesHeaderSlider({ scrollWithOffset }) {
-  const features = ["Access Anywhere", "Mac Control", "Unlock Options"];
+  const features = [
+    "Access Anywhere",
+    "Mac Control",
+    "Unlock Options",
+    "Unlock Options"
+  ];
 
   return (
     <Slider

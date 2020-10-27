@@ -38,6 +38,7 @@
       "accessAnywhereSection": true,
       "macControlSection": true,
       "macUnlockConfirmation": true,
+      "unlockOptions": true,
       "newsletterSection": true
     }
   },

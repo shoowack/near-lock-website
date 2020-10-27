@@ -17,8 +17,8 @@ function FeatureContainer({
       id={browserFriendlyTitle}
     >
       <div className={"container feature " + (padding ? padding : "py-5")}>
-        <div className="row">
-          <div className="col-12 text-center mb-5">
+        <div className="row text-center ">
+          <div className="col-12">
             <img
               src={`/feature/${
                 featureIcon ? featureIcon : browserFriendlyTitle
@@ -28,6 +28,8 @@ function FeatureContainer({
               alt=""
             />
             <h2>{featureTitle}</h2>
+          </div>
+          <div className="col-12 col-md-8 offset-md-2 mb-5">
             {featureDescription}
           </div>
           {children}

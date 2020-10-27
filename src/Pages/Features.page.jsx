@@ -3,7 +3,8 @@ import TitleHeader from "./../Components/TitleHeader";
 import {
   AccessAnywhereSection,
   MacControlSection,
-  MacUnlockConfirmation
+  MacUnlockConfirmation,
+  UnlockOptions
 } from "./../Components/FeaturesPage";
 import NewsletterSection from "./../Components/NewsletterSection";
 import "./../Components/FeaturesPage/style.scss";
@@ -15,6 +16,7 @@ function FeaturesPage(props) {
         accessAnywhereSection,
         macControlSection,
         macUnlockConfirmation,
+        unlockOptions,
         newsletterSection
       }
     }
@@ -31,6 +33,7 @@ function FeaturesPage(props) {
       {accessAnywhereSection && <AccessAnywhereSection />}
       {macControlSection && <MacControlSection />}
       {macUnlockConfirmation && <MacUnlockConfirmation />}
+      {unlockOptions && <UnlockOptions />}
       {newsletterSection && <NewsletterSection />}
     </>
   );
