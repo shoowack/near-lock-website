@@ -6,9 +6,7 @@ function LocalizationsSection() {
     <FeatureContainer odd featureTitle={"Localizations"}>
       <div className="row">
         <div className="col-md-12">
-          <h3 className="no-icon">
-            We are proud to offer Near Lock in these languages:
-          </h3>
+          <h3>We are proud to offer Near Lock in these languages:</h3>
           <p>
             English, German, Chinese - simplified, Chinese traditional, Spanish,
             Portuguese - Portugal, Portuguese - Brazilian, Japanese, Korean,
@@ -20,26 +18,22 @@ function LocalizationsSection() {
           </p>
 
           <div className="flags">
-            <img src="img/languages/english.svg" className="language" alt="" />
-            <img src="img/languages/german.svg" className="language" alt="" />
-            <img src="img/languages/chinese.svg" className="language" alt="" />
-            <img src="img/languages/spanish.svg" className="language" alt="" />
-            <img
-              src="img/languages/portuguese.svg"
-              className="language"
-              alt=""
-            />
-            <img src="img/languages/japanese.svg" className="language" alt="" />
-            <img src="img/languages/korean.svg" className="language" alt="" />
-            <img src="img/languages/french.svg" className="language" alt="" />
-            <img src="img/languages/italian.svg" className="language" alt="" />
-            <img src="img/languages/dutch.svg" className="language" alt="" />
-            <img src="img/languages/russian.svg" className="language" alt="" />
-            <img src="img/languages/arabic.svg" className="language" alt="" />
+            <img src="/feature/languages/english.svg" alt="" />
+            <img src="/feature/languages/german.svg" alt="" />
+            <img src="/feature/languages/chinese.svg" alt="" />
+            <img src="/feature/languages/spanish.svg" alt="" />
+            <img src="/feature/languages/portuguese.svg" alt="" />
+            <img src="/feature/languages/japanese.svg" alt="" />
+            <img src="/feature/languages/korean.svg" alt="" />
+            <img src="/feature/languages/french.svg" alt="" />
+            <img src="/feature/languages/italian.svg" alt="" />
+            <img src="/feature/languages/dutch.svg" alt="" />
+            <img src="/feature/languages/russian.svg" alt="" />
+            <img src="/feature/languages/arabic.svg" alt="" />
           </div>
         </div>
         <div className="col-md-12">
-          <h3 className="no-icon">Measurement Units</h3>
+          <h3>Measurement Units</h3>
           <p>
             Measurement units are also adjusted wheather you are using metric or
             imperial units. Signal strength is the third and most accurate

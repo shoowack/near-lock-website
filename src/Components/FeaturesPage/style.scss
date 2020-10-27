@@ -718,3 +718,24 @@
     padding-top: 400px;
   }
 }
+
+#localizations {
+  text-align: center;
+  
+  .flags {
+    margin: 2em auto 3em auto;
+
+    img {
+      padding: 0;
+      margin: 0 2px;
+      width: 48px;
+      border-radius: 999em;
+      overflow: hidden;
+      filter: drop-shadow(0px 1px 0px rgba(0, 0, 0, 0.4));
+      
+      @media (max-width: 991px) {
+        width: 40px;
+      }  
+    }
+  }
+}
