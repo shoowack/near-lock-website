@@ -31,10 +31,11 @@ function AppleWatchSection() {
             <div className="screen">
               <Slider
                 dots={false}
-                infinite={true}
+                infinite
                 speed={500}
                 slidesToShow={1}
                 slidesToScroll={1}
+                autoplay
               >
                 <div className="item">
                   <img src="/feature/watch-1.jpg" alt="" />

@@ -35,10 +35,10 @@ function TestimonialsSlider() {
         asNavFor={nav1}
         ref={(slider) => setSlider2(slider, [slider])}
         slidesToShow={3}
-        autoplay={true}
+        autoplay
         speed={3000}
-        swipeToSlide={true}
-        focusOnSelect={true}
+        swipeToSlide
+        focusOnSelect
         arrows={false}
         className="testimonialsImages"
         pauseOnHover
