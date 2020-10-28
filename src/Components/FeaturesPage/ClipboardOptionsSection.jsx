@@ -15,13 +15,15 @@ function ClipboardOptionsSection() {
               <div className="col-md-6 order-md-1 feature_menubar mb-4 mb-md-0">
                 <img
                   src="/feature/menubar.png"
-                  className={`feature_menubar__main_image ${
-                    isVisible && " active"
+                  className={`feature_menubar__main_image${
+                    isVisible ? " active" : ""
                   }`}
                   alt=""
                 />
                 <div
-                  className={`feature_menubar_zoomed ${isVisible && " active"}`}
+                  className={`feature_menubar_zoomed${
+                    isVisible ? " active" : ""
+                  }`}
                 >
                   <div className="feature_menubar_zoomed__left_icon"></div>
                   <label>Clipboard</label>
@@ -54,14 +56,14 @@ function ClipboardOptionsSection() {
               <div className="col-md-6 order-md-0 feature_clipboard_ios">
                 <img
                   src="/feature/clipboard_ios.png"
-                  className={`feature_clipboard_ios__main_image ${
-                    isVisible && " active"
+                  className={`feature_clipboard_ios__main_image${
+                    isVisible ? " active" : ""
                   }`}
                   alt=""
                 />
                 <div
-                  className={`feature_clipboard_ios__zoomed ${
-                    isVisible && " active"
+                  className={`feature_clipboard_ios__zoomed${
+                    isVisible ? " active" : ""
                   }`}
                 >
                   <div className="feature_clipboard_ios__zoomed__left">

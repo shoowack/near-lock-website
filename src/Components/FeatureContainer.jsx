@@ -14,7 +14,7 @@ function FeatureContainer({
   return (
     <div
       className="container-fluid"
-      style={{ background: odd ? "#fafafa" : "#fffff" }}
+      style={{ background: odd ? "#f5f5f5" : "#fffff" }}
       id={browserFriendlyTitle}
     >
       <div
