@@ -1,12 +1,9 @@
-### 3.6.1: November 25, 2014
+### [3.6.1](/3-6-1): November 25, 2014
 
 - macOS Sierra update
 - Near Lock should now work on macOS Sierra.
 - Warning: on iOS 10.0.1 Near Lock will still not connect in the background it is a known Apple bug and it should be fixed in their next release.
 - Note: a new version of Near Lock for iOS10 and macOS Sierra is going thought final testing and should be available soon.
-
-### 3.6.1: November 25, 2014
-
 - detect failed login attempts into your Mac
 - receive an iPhone notification every time a wrong password in inserted into your Mac
 - take a photo on your Mac when a false password is inserted
@@ -36,30 +33,30 @@
 - apple watch speed improvements
 - overall improvements and speed
 
-### 3.5.1: November 25, 2014
+### [3.5.1](/3-5-1): November 25, 2014
 
 - fixing the crash for certain languages
 
-### 3.5: November 25, 2014
+### [3.5](3.5): November 25, 2014
 
 - adding the Near Lock tutorial after pairing
 - various fixes and improvements from user feedback
 
-### 3.4.0: November 25, 2014
+### [3.4.0](3.4.0): November 25, 2014
 
 - rare crash fix - after user feedback
 - updater improvements
 
-### 3.3.0: November 25, 2014
+### [3.3.0](3.3.0): November 25, 2014
 
 - auto updated fix
 
-### 3.2.1: November 25, 2014
+### [3.2.1](3.2.1): November 25, 2014
 
 - connection improvements
 - sometimes Near Lock would not reconnect automatically
 
-### 3.2: November 25, 2014
+### [3.2](3.2): November 25, 2014
 
 - authorise user using Near Lock
 - easily authenticate user with Near Lock when installing new software
@@ -80,7 +77,7 @@
 - BLE stability enhancements
 - improved the proximity calculation
 
-### 3.0: November 25, 2014
+### [3.0](3.0): November 25, 2014
 
 - multiple Macs
 - simulations control of all your Macs at the same time
