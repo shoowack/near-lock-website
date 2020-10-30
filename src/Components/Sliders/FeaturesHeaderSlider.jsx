@@ -14,6 +14,7 @@ function FeaturesHeaderSlider({ scrollWithOffset }) {
     "Apple Watch",
     "Authentication",
     "Music",
+    "Find your iPhone",
     "BlueTooth LE",
     "Retina Graphics",
     "Security",
