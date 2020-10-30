@@ -1,7 +1,7 @@
 import React from "react";
 import TitleHeader from "./../Components/TitleHeader";
 import * as sections from "./../Components/FeaturesPage";
-import NewsletterSection from "./../Components/NewsletterSection";
+import NewsletterSection from "./../Components/Newsletter/NewsletterSection";
 import "./../Components/FeaturesPage/style.scss";
 
 function FeaturesPage(props) {

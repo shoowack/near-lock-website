@@ -8,7 +8,7 @@ import {
   CompatibilitySection,
   TestimonialsSection
 } from "./../Components/HomePage";
-import NewsletterSection from "./../Components/NewsletterSection";
+import NewsletterSection from "./../Components/Newsletter/NewsletterSection";
 
 function HomePage(props) {
   const {
