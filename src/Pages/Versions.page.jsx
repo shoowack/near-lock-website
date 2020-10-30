@@ -30,7 +30,7 @@ function VersionsPage() {
             <h5>Versions:</h5>
             {sidebar.map((item) => (
               <>
-                <Link smooth to={item}>
+                <Link smooth to={`/whats-new/${item}`}>
                   {item}
                 </Link>
                 <br />
