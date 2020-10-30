@@ -13,7 +13,13 @@ function NewsletterSection() {
         </div>
         <div className="col-12">
           <div className="shadow d-inline-block mt-4">
-            <form action="" method="post" encType="multipart/form-data">
+            <form
+              action=""
+              method="post"
+              encType="multipart/form-data"
+              name="newsletter-subscription"
+              netlify
+            >
               <input type="email" name="email" placeholder="Your E-mail" />
               <input type="submit" name="submit" value="Subscribe" />
             </form>
