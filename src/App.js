@@ -53,6 +53,7 @@ function App() {
         />
         <Route path="/terms" component={pages.TermsOfUsePage} />
         <Route path="/impressum" component={pages.ImpressumPage} />
+        <Route path="/error" component={pages.ErrorPage} />
       </Switch>
       <Footer
         scrollWithOffset={scrollWithOffset}
