@@ -12,7 +12,7 @@ function NewsletterSection() {
           </small>
         </div>
         <div className="col-12">
-          <div className="shadow d-inline-block mt-4">
+          <div className="d-inline-block mt-4 w-100">
             <form
               method="post"
               name="newsletter-subscription"
