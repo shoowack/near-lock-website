@@ -14,7 +14,7 @@ function VersionsPage() {
       .then((text) => setChangelog(text));
   }, []);
 
-  const sidebar = versions
+  const sidebar = changelog
     .split("\n")
     .filter((item) => item.startsWith("###"))
     .map((item) => item.split(":"))
