@@ -30,7 +30,7 @@ function MacControlSection() {
               option under <strong>Mac control</strong>.
               <br />
               <br />
-              <div className="alert bg-danger mb-5">
+              <div className="alert alert-danger mb-5" role="alert">
                 This feature doesn't work on macOS Sierra right now, but we are
                 working hard to fix it. Stay informed through our{" "}
                 <a href="/updates">updates</a>.

@@ -12,14 +12,14 @@ function MacMenuBarSection() {
               your iPhone, quickly enable or disable locking and set the
               desirable locking distance.
             </p>
-            <div className="bg-new-feature">
+            <div className="alert alert-primary" role="alert">
               Fast access to <a href="#unlock-options">WiFi Unlock</a> controls.
             </div>
-            <div className="bg-new-feature">
+            <div className="alert alert-primary" role="alert">
               Copy any text on your Mac, paste it on iOS via{" "}
               <a href="#clipboard">Clipboard</a> feature.
             </div>
-            <div className="bg-new-feature">
+            <div className="alert alert-primary" role="alert">
               Easy access to your Mac control options which include:
               <ul>
                 <li>

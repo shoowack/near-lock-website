@@ -19,7 +19,7 @@ function FaqPage() {
         data.answer.toLowerCase().includes(search.toLowerCase())
       ) {
         return data;
-      }
+      } // TODO fix this
     })
     .map((item) => {
       const { id, question, answer } = item;
@@ -38,10 +38,10 @@ function FaqPage() {
           <div className="row">
             <div className="col-12">
               <input
-                type="text"
+                type="search"
                 placeholder="Search..."
                 style={{
-                  appearance: "none",
+                  // appearance: "none",
                   border: "none",
                   background: "#fff",
                   borderRadius: "10px",
