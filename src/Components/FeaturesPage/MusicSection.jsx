@@ -45,7 +45,6 @@ function AuthenticationSection() {
           <DockItem tooltip="QuickTime" image="/feature/dock-quicktime.png" />
           <DockItem tooltip="VLC" image="/feature/dock-vlc.svg" />
           <DockItem tooltip="Spotify" image="/feature/dock-spotify.svg" />
-          <DockItem tooltip="Near Lock" image="/feature/dock-nearlock.svg" />
         </div>
       </div>
     </FeatureContainer>
