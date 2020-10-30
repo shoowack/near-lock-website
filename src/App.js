@@ -44,7 +44,15 @@ function App() {
           )}
         />
         <Route path="/faq" component={pages.FaqPage} />
-        <Route path="/whats-new" component={pages.VersionsPage} />
+        <Route
+          path="/whats-new"
+          render={(props) => (
+            <pages.VersionsPage
+              {...props}
+              scrollWithOffset={scrollWithOffset}
+            />
+          )}
+        />
         <Route
           path="/press"
           render={(props) => (

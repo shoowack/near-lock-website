@@ -5,8 +5,8 @@ import gfm from "remark-gfm";
 import TitleHeader from "./../Components/TitleHeader";
 import versions from "./../../src/Data/CHANGELOG.md";
 
-function VersionsPage() {
-  const [changelog, setChangelog] = useState("Loading");
+function VersionsPage({ scrollWithOffset }) {
+  const [changelog, setChangelog] = useState("Loading ...");
 
   useEffect(() => {
     fetch(versions)
@@ -30,7 +30,11 @@ function VersionsPage() {
             <h5>Versions:</h5>
             {sidebar.map((item) => (
               <>
-                <Link smooth to={`/whats-new#${item.split(".").join("")}`}>
+                <Link
+                  scroll={(el) => scrollWithOffset(el)}
+                  smooth
+                  to={`/whats-new#${item.split(".").join("")}`}
+                >
                   {item}
                 </Link>
                 <br />
@@ -42,7 +46,9 @@ function VersionsPage() {
               plugins={[gfm]}
               source={changelog}
               renderers={{
-                link: (props) => <a {...props} name={props.href.slice(0)} />
+                link: (props) => (
+                  <a id={props.href.slice(1)}>{props.node.children[0].value}</a>
+                )
               }}
             />
           </div>
