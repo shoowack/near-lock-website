@@ -19,7 +19,8 @@ function FaqPage() {
         data.answer.toLowerCase().includes(search.toLowerCase())
       ) {
         return data;
-      } // TODO fix this
+      }
+      return null;
     })
     .map((item) => {
       const { id, question, answer } = item;
