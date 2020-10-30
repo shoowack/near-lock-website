@@ -47,7 +47,9 @@ function VersionsPage({ scrollWithOffset }) {
               source={changelog}
               renderers={{
                 link: (props) => (
-                  <a id={props.href.slice(1)}>{props.node.children[0].value}</a>
+                  <a {...props} id={props.href.slice(1)}>
+                    {props.node.children[0].value}
+                  </a>
                 )
               }}
             />
