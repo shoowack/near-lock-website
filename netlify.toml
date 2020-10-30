@@ -1,5 +1,8 @@
+/*    /index.html   200
+
 # 404 redirect rule
 [[redirects]]
   from = "/*"
   to = "/error"
   status = 404
+  force = true

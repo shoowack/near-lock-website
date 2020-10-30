@@ -14,9 +14,7 @@ function NewsletterSection() {
         <div className="col-12">
           <div className="shadow d-inline-block mt-4">
             <form
-              action=""
               method="post"
-              encType="multipart/form-data"
               name="newsletter-subscription"
               data-netlify="true"
             >
