@@ -18,7 +18,7 @@ function NewsletterSection() {
               method="post"
               encType="multipart/form-data"
               name="newsletter-subscription"
-              netlify
+              data-netlify="true"
             >
               <input type="email" name="email" placeholder="Your E-mail" />
               <input type="submit" name="submit" value="Subscribe" />
