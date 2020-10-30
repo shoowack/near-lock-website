@@ -18,6 +18,11 @@ function NewsletterSection() {
               name="newsletter-subscription"
               data-netlify="true"
             >
+              <input
+                type="hidden"
+                name="form-name"
+                value="newsletter-subscription"
+              />
               <input type="email" name="email" placeholder="Your E-mail" />
               <input type="submit" name="submit" value="Subscribe" />
             </form>
