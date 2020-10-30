@@ -6,7 +6,7 @@ import TitleHeader from "./../Components/TitleHeader";
 import versions from "./../../src/Data/CHANGELOG.md";
 
 function VersionsPage() {
-  const [changelog, setChangelog] = useState("Loading...");
+  const [changelog, setChangelog] = useState("Loading");
 
   useEffect(() => {
     fetch(versions)
@@ -38,7 +38,13 @@ function VersionsPage() {
             ))}
           </div>
           <div className="col-10">
-            <ReactMarkdown plugins={[gfm]} source={changelog} />
+            <ReactMarkdown
+              plugins={[gfm]}
+              source={changelog}
+              renderers={{
+                link: (props) => <a {...props} name={props.href.slice(0)} />
+              }}
+            />
           </div>
         </div>
       </div>
