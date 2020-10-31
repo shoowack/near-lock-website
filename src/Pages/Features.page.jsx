@@ -6,34 +6,35 @@ import "./../Components/FeaturesPage/style.scss";
 
 function FeaturesPage(props) {
   const {
-    featuresPage: {
-      visibileSections: {
-        accessAnywhereSection,
-        macControlSection,
-        macUnlockConfirmationSection,
-        unlockOptionsSection,
-        lockSettingsSection,
-        appleWatchSection,
-        clipboardOptionsSection,
-        authenticationSection,
-        macMenuBarSection,
-        musicSection,
-        blueToothLeSection,
-        retinaGraphicsSection,
-        securitySection,
-        findYourIphoneSection,
-        localizationsSection,
-        newsletterSection
+    location: { pathname },
+    scrollWithOffset,
+    settings: {
+      featuresPage: {
+        visibileSections: {
+          accessAnywhereSection,
+          macControlSection,
+          macUnlockConfirmationSection,
+          unlockOptionsSection,
+          lockSettingsSection,
+          appleWatchSection,
+          clipboardOptionsSection,
+          authenticationSection,
+          macMenuBarSection,
+          musicSection,
+          blueToothLeSection,
+          retinaGraphicsSection,
+          securitySection,
+          findYourIphoneSection,
+          localizationsSection,
+          newsletterSection
+        }
       }
     }
-  } = props.settings;
+  } = props;
 
   return (
     <>
-      <TitleHeader
-        scrollWithOffset={props.scrollWithOffset}
-        location={props.location.pathname}
-      >
+      <TitleHeader scrollWithOffset={scrollWithOffset} location={pathname}>
         Features
       </TitleHeader>
       {accessAnywhereSection && <sections.AccessAnywhereSection />}
