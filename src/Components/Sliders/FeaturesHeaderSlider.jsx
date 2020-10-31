@@ -5,7 +5,7 @@ import "./slick.scss";
 import "./slick-theme.scss";
 import "./features-header-slider.scss";
 
-function FeaturesHeaderSlider({ scrollWithOffset }) {
+export default function FeaturesHeaderSlider({ scrollWithOffset }) {
   const features = [
     "Access Anywhere",
     "Mac Control",
@@ -21,6 +21,43 @@ function FeaturesHeaderSlider({ scrollWithOffset }) {
     "Localizations"
   ];
 
+  const arrowStyles = {
+    position: "absolute",
+    background: "url(./arrow.png) no-repeat",
+    top: "35%",
+    width: "18px",
+    height: "52px",
+    cursor: "pointer",
+    border: "none",
+    outline: "0"
+  };
+
+  function SampleNextArrow({ onClick }) {
+    return (
+      <div
+        style={{
+          ...arrowStyles,
+          right: "-25px",
+          transform: "translate(0, -50%) rotate(180deg)"
+        }}
+        onClick={onClick}
+      />
+    );
+  }
+
+  function SamplePrevArrow({ onClick }) {
+    return (
+      <div
+        style={{
+          ...arrowStyles,
+          left: "-25px",
+          transform: "translate(0, -50%)"
+        }}
+        onClick={onClick}
+      />
+    );
+  }
+
   return (
     <Slider
       className="mt-5"
@@ -30,6 +67,8 @@ function FeaturesHeaderSlider({ scrollWithOffset }) {
       slidesToShow={6}
       slidesToScroll={6}
       initialSlide={0}
+      nextArrow={<SampleNextArrow />}
+      prevArrow={<SamplePrevArrow />}
       responsive={[
         {
           breakpoint: 1024,
@@ -79,5 +118,3 @@ function FeaturesHeaderSlider({ scrollWithOffset }) {
     </Slider>
   );
 }
-
-export default FeaturesHeaderSlider;
