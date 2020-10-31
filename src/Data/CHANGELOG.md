@@ -1,31 +1,117 @@
+**Near Lock is constantly improving. Check the list below to see what we have added in the major updates since we launched version 3.0.**
+
+### [4.0](#40): November 30, 2014
+
+macOS Sierra update:
+
+- Near Lock should now work reliably on macOS Sierra.
+
+iOS 10:
+
+- Near Lock should now work reliably on ios10.
+
+WiFi unlock:
+
+- you can now keep your Mac unlocked while connected to your selected WiFi (eg. home network)
+
+Mac Login photos:
+
+- you can now set up Near Lock to take a photo after each Mac login
+
+Near Lock Tutorials
+
+- some features will show step-by-step tutorials to better explain how they work
+  - Mac Wake Unlock tutorial
+    - Near Lock automatic unlock tutorial
+    - Clipboard (copy paste) tutorial
+    - Mac Control info with explanations
+    - Mac advanced notification settings explanations
+
+Clipboard
+
+- you can now use Near Lock to copy and paste from and to your Mac (also using keyboard shortcuts or the notification widget on your iPhone)
+
+ios10 notification widget
+
+- the iPhone widget got a new look and a new copy/paste functionality
+
+Mac notification settings explanation
+
+- improvement of the Near Lock layout and notification settings that can be found in the advanced settings of the Near Lock Mac app
+
+Authentication options (password prompt dialog such as when installing new software)
+
+- you can choose how you wish insert password with Near Lock once a password dialog shows on the Mac screen:
+  - do not insert automatically
+  - yes or no
+  - touch ID or passcode
+  - double knock
+  - insert automatically (don’t ask)
+
+Additional options in the Mac menu bar settings
+
+- style the menu bar
+  - show and hide some sections from the menu bar in the advanced settings
+
+Mac Control settings
+
+- set up Near Lock to track how and when you use your Mac
+- take photos on failed login attempts
+- take photos after each login
+
+`Note: Take photo on failed login attempts does NOT work on macOS Sierra. Apple had some major changes in their Sierra update and we are still working on fixing this feature.`
+
+Settings simplifications
+
+- removing some advanced settings to the iPhone settings
+
 ### [3.6.1](#361): November 25, 2014
 
-- macOS Sierra update
+macOS Sierra update
+
 - Near Lock should now work on macOS Sierra.
-- Warning: on iOS 10.0.1 Near Lock will still not connect in the background it is a known Apple bug and it should be fixed in their next release.
-- Note: a new version of Near Lock for iOS10 and macOS Sierra is going thought final testing and should be available soon.
-- detect failed login attempts into your Mac
+
+  `Warning: on iOS 10.0.1 Near Lock will still not connect in the background it is a known Apple bug and it should be fixed in their next release.`
+
+  `Note: a new version of Near Lock for iOS10 and macOS Sierra is going thought final testing and should be available soon.`
+
+### [3.6](#36): November 25, 2014
+
+Detect failed login attempts into your Mac
+
 - receive an iPhone notification every time a wrong password in inserted into your Mac
 - take a photo on your Mac when a false password is inserted
 - generate and share a Near Lock Mugshot picture
-- unlock Mac with Knock (Double knock)
+
+Unlock Mac with Knock (Double knock)
+
 - login into your Mac by double knocking on your iPhone
 - unlock with double knock when you approach your Mac
 - unlock with double knock when password field appears on sleep screen
 - use knock to authorize Mac request: such as installing new software
-- Track login times
+
+Track login times
+
 - you can now see all the login logout information
 - track how users login into your Mac: manually, with password, using Near Lock, Apple watch
 - a nice user interface of the Mac login tracking information
-- authorization requests settings
+
+Authorization requests settings
+
 - choose how you want to authorize the Mac authorization request: TouchID, knock, yes - no, none
-- Near Lock today widget settings on iOS
+
+Near Lock today widget settings on iOS
+
 - set up today widget restrictions in the iPhone settings
-- added a new on-boarding Near Lock tutorial on iOS
+
+Added a new on-boarding Near Lock tutorial on iOS
+
 - short, fun and simple tutorial about what Near Lock is about
 - list of the most interesting features
 - this tutorial can be found on the Welcome screen
-- Improvements
+
+Improvements
+
 - improved the distance calculation
 - improved the login, logout speed
 - improving the bluetooth connection login
