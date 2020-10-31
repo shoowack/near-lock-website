@@ -26,7 +26,7 @@ function VersionsPage({ scrollWithOffset }) {
       <TitleHeader>Version History</TitleHeader>
       <div className="container py-3 py-md-5">
         <div className="row">
-          <div className="col-2">
+          <div className="d-none d-md-block col-2">
             <div className="sticky-top" style={{ top: "94px" }}>
               <h5>Versions:</h5>
               {sidebar.map((item) => (
@@ -43,7 +43,7 @@ function VersionsPage({ scrollWithOffset }) {
               ))}
             </div>
           </div>
-          <div className="col-10">
+          <div className="col-12 col-md-10">
             <ReactMarkdown
               plugins={[gfm]}
               source={changelog}
