@@ -1,3 +1,4 @@
+import UnderConstructionPage from "./UnderConstructionPage/UnderConstruction.page";
 import HomePage from "./Home.page";
 import FaqPage from "./Faq.page";
 import FeaturesPage from "./Features.page";
@@ -9,6 +10,7 @@ import ErrorPage from "./Error.page";
 import ProblemsPage from "./Problems.page";
 
 export {
+  UnderConstructionPage,
   HomePage,
   FaqPage,
   FeaturesPage,

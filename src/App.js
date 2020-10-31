@@ -21,55 +21,61 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
-      <Navigation
-        scrollWithOffset={scrollWithOffset}
-        {...(settings && { settings })}
-      />
-      <Switch>
-        <Route
-          exact
-          path="/"
-          render={(props) => (
-            <pages.HomePage {...props} {...(settings && { settings })} />
-          )}
-        />
-        <Route
-          path="/features"
-          render={(props) => (
-            <pages.FeaturesPage
-              scrollWithOffset={scrollWithOffset}
-              {...props}
-              {...(settings && { settings })}
+    <>
+      {settings.underConstruction ? (
+        <pages.UnderConstructionPage />
+      ) : (
+        <BrowserRouter>
+          <Navigation
+            scrollWithOffset={scrollWithOffset}
+            {...(settings && { settings })}
+          />
+          <Switch>
+            <Route
+              exact
+              path="/"
+              render={(props) => (
+                <pages.HomePage {...props} {...(settings && { settings })} />
+              )}
             />
-          )}
-        />
-        <Route path="/faq" component={pages.FaqPage} />
-        <Route
-          path="/whats-new"
-          render={(props) => (
-            <pages.VersionsPage
-              {...props}
-              scrollWithOffset={scrollWithOffset}
+            <Route
+              path="/features"
+              render={(props) => (
+                <pages.FeaturesPage
+                  scrollWithOffset={scrollWithOffset}
+                  {...props}
+                  {...(settings && { settings })}
+                />
+              )}
             />
-          )}
-        />
-        <Route
-          path="/press"
-          render={(props) => (
-            <pages.PressPage {...props} {...(settings && { settings })} />
-          )}
-        />
-        <Route path="/terms" component={pages.TermsOfUsePage} />
-        <Route path="/impressum" component={pages.ImpressumPage} />
-        <Route path="/problems" component={pages.ProblemsPage} />
-        <Route path="*" component={pages.ErrorPage} />
-      </Switch>
-      <Footer
-        scrollWithOffset={scrollWithOffset}
-        {...(settings && { settings })}
-      />
-    </BrowserRouter>
+            <Route path="/faq" component={pages.FaqPage} />
+            <Route
+              path="/whats-new"
+              render={(props) => (
+                <pages.VersionsPage
+                  {...props}
+                  scrollWithOffset={scrollWithOffset}
+                />
+              )}
+            />
+            <Route
+              path="/press"
+              render={(props) => (
+                <pages.PressPage {...props} {...(settings && { settings })} />
+              )}
+            />
+            <Route path="/terms" component={pages.TermsOfUsePage} />
+            <Route path="/impressum" component={pages.ImpressumPage} />
+            <Route path="/problems" component={pages.ProblemsPage} />
+            <Route path="*" component={pages.ErrorPage} />
+          </Switch>
+          <Footer
+            scrollWithOffset={scrollWithOffset}
+            {...(settings && { settings })}
+          />
+        </BrowserRouter>
+      )}
+    </>
   );
 }
 
