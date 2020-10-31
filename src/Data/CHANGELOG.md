@@ -65,6 +65,8 @@ Settings simplifications
 
 - removing some advanced settings to the iPhone settings
 
+---
+
 ### [3.6.1](#361): November 25, 2014
 
 macOS Sierra update
@@ -74,6 +76,8 @@ macOS Sierra update
   `Warning: on iOS 10.0.1 Near Lock will still not connect in the background it is a known Apple bug and it should be fixed in their next release.`
 
   `Note: a new version of Near Lock for iOS10 and macOS Sierra is going thought final testing and should be available soon.`
+
+---
 
 ### [3.6](#36): November 25, 2014
 
@@ -119,28 +123,40 @@ Improvements
 - apple watch speed improvements
 - overall improvements and speed
 
+---
+
 ### [3.5.1](#351): November 25, 2014
 
 - fixing the crash for certain languages
+
+---
 
 ### [3.5](#35): November 25, 2014
 
 - adding the Near Lock tutorial after pairing
 - various fixes and improvements from user feedback
 
+---
+
 ### [3.4.0](#340): November 25, 2014
 
 - rare crash fix - after user feedback
 - updater improvements
 
+---
+
 ### [3.3.0](#330): November 25, 2014
 
 - auto updated fix
+
+---
 
 ### [3.2.1](#321): November 25, 2014
 
 - connection improvements
 - sometimes Near Lock would not reconnect automatically
+
+---
 
 ### [3.2](#32): November 25, 2014
 
@@ -162,6 +178,8 @@ Improvements
 - Bluetooth connection improvements
 - BLE stability enhancements
 - improved the proximity calculation
+
+---
 
 ### [3.0](#30): November 25, 2014
 
