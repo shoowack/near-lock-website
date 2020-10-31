@@ -6,6 +6,7 @@ import PressPage from "./Press.page";
 import TermsOfUsePage from "./TermsOfUse.page";
 import ImpressumPage from "./Impressum.page";
 import ErrorPage from "./Error.page";
+import ProblemsPage from "./Problems.page";
 
 export {
   HomePage,
@@ -15,5 +16,6 @@ export {
   PressPage,
   TermsOfUsePage,
   ImpressumPage,
-  ErrorPage
+  ErrorPage,
+  ProblemsPage
 };

@@ -62,6 +62,7 @@ function App() {
         />
         <Route path="/terms" component={pages.TermsOfUsePage} />
         <Route path="/impressum" component={pages.ImpressumPage} />
+        <Route path="/problems" component={pages.ProblemsPage} />
         <Route path="*" component={pages.ErrorPage} />
       </Switch>
       <Footer

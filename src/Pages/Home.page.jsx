@@ -1,7 +1,8 @@
 import React from "react";
 import {
-  DownloadsSection,
   TopSection,
+  ProblemsSection,
+  DownloadsSection,
   FamilySection,
   ToolsSection,
   FeaturesSection,
@@ -10,13 +11,14 @@ import {
 } from "./../Components/HomePage";
 import NewsletterSection from "./../Components/Newsletter/NewsletterSection";
 
-function HomePage(props) {
+export default function HomePage(props) {
   const {
     videoUrl,
     downloadLinks: { appStoreLinkUrl },
     homePage: {
       visibileSections: {
         topSection,
+        problemsSection,
         downloadsSection,
         familySection,
         toolsSection,
@@ -42,6 +44,7 @@ function HomePage(props) {
         }}
       >
         {topSection && <TopSection videoUrl={videoUrl} />}
+        {problemsSection && <ProblemsSection />}
         {downloadsSection && (
           <DownloadsSection
             showIphoneDownloadHomepageLink={showIphoneDownloadHomepageLink}
@@ -59,5 +62,3 @@ function HomePage(props) {
     </>
   );
 }
-
-export default HomePage;

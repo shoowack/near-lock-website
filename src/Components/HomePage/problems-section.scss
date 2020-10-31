@@ -1,0 +1,14 @@
+a.problems {
+  color: rgba(255,255,255,.75);
+  transition: .25s all;
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+    transition: .25s all;
+  }
+
+  section {
+    background: rgba(0,0,0,.3);
+  }
+}

@@ -15,6 +15,7 @@
   "homePage": {
     "visibileSections": {
       "topSection": true,
+      "problemsSection": true,
       "downloadsSection": true,
       "familySection": true,
       "toolsSection": true,

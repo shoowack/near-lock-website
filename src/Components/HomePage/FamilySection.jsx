@@ -17,7 +17,6 @@ function FamilySection() {
         style={{ maxWidth: "950px" }}
         alt=""
       />
-      <div className="clearfix"></div>
     </section>
   );
 }
