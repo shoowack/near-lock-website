@@ -6,7 +6,7 @@ import TitleHeader from "./../Components/TitleHeader";
 import versions from "./../../src/Data/CHANGELOG.md";
 
 function VersionsPage({ scrollWithOffset }) {
-  const [changelog, setChangelog] = useState("Loading ...");
+  const [changelog, setChangelog] = useState("Loading...");
 
   useEffect(() => {
     fetch(versions)
@@ -26,12 +26,12 @@ function VersionsPage({ scrollWithOffset }) {
       <TitleHeader>Version History</TitleHeader>
       <div className="container py-3 py-md-5">
         <div className="row">
-          <div className="col-2">
+          <div className="col-2 sticky-top">
             <h5>Versions:</h5>
             {sidebar.map((item) => (
               <>
                 <Link
-                  scroll={(el) => scrollWithOffset(el)}
+                  scroll={(el) => scrollWithOffset(el, -70)}
                   smooth
                   to={`/whats-new#${item.split(".").join("")}`}
                 >

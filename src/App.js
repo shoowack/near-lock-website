@@ -13,10 +13,11 @@ import Footer from "./Components/Footer/Footer";
 function App() {
   let settings = require("./Data/settings.json");
 
-  const scrollWithOffset = (el) => {
-    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -55;
-    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+  const scrollWithOffset = (el, offset = -55) => {
+    window.scrollTo({
+      top: el.getBoundingClientRect().top + window.pageYOffset + offset,
+      behavior: "smooth"
+    });
   };
 
   return (
