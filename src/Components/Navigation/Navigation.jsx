@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { HashLink as Link } from "react-router-hash-link";
+import { NavHashLink as Link } from "react-router-hash-link";
 import "./navigation.scss";
 
 function Navigation({ scrollWithOffset, settings }) {
@@ -108,6 +108,7 @@ function Navigation({ scrollWithOffset, settings }) {
                 className="nav-link"
                 smooth
                 onClick={() => setIsNavCollapsed(true)}
+                activeClassName="active"
                 to="/features#top"
               >
                 Features
@@ -129,6 +130,7 @@ function Navigation({ scrollWithOffset, settings }) {
                 className="nav-link"
                 smooth
                 onClick={() => handleNavCollapse()}
+                activeClassName="active"
                 to="/faq#top"
               >
                 FAQ
@@ -139,6 +141,7 @@ function Navigation({ scrollWithOffset, settings }) {
                 className="nav-link"
                 smooth
                 onClick={() => handleNavCollapse()}
+                activeClassName="active"
                 to="/whats-new#top"
               >
                 What's new
@@ -149,6 +152,7 @@ function Navigation({ scrollWithOffset, settings }) {
                 className="nav-link"
                 smooth
                 onClick={() => handleNavCollapse()}
+                activeClassName="active"
                 to="/press#top"
               >
                 Press

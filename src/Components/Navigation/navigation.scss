@@ -44,7 +44,11 @@
   }
 
   .nav-item a.nav-link {
+    color: rgba(255,255,255,.75);
+
+    &.active {
     color: #fff;
+    }
   }
 }
 

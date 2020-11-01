@@ -27,6 +27,10 @@
       text-decoration: none;
       transition: .25s all;
     }
+
+    &.active {
+      color: #000;
+    }
   }
 
   dt {

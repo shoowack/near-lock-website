@@ -1,5 +1,5 @@
 import React from "react";
-import { HashLink as Link } from "react-router-hash-link";
+import { NavHashLink as Link } from "react-router-hash-link";
 import "./footer.scss";
 
 function Footer({ scrollWithOffset, settings }) {
@@ -28,7 +28,7 @@ function Footer({ scrollWithOffset, settings }) {
             </Link>
           </dd>
           <dd>
-            <Link smooth to="/features#top">
+            <Link smooth activeClassName="active" to="/features#top">
               Features
             </Link>
           </dd>
@@ -63,17 +63,17 @@ function Footer({ scrollWithOffset, settings }) {
             </a>
           </dd>
           <dd>
-            <Link smooth to="/press#top">
+            <Link smooth activeClassName="active" to="/press#top">
               Press
             </Link>
           </dd>
           <dd>
-            <Link smooth to="/terms#top">
+            <Link smooth activeClassName="active" to="/terms#top">
               Terms of use
             </Link>
           </dd>
           <dd>
-            <Link smooth to="/impressum#top">
+            <Link smooth activeClassName="active" to="/impressum#top">
               Impressum
             </Link>
           </dd>
@@ -83,7 +83,7 @@ function Footer({ scrollWithOffset, settings }) {
             <h5>Help</h5>
           </dt>
           <dd>
-            <Link smooth to="/faq#top">
+            <Link smooth activeClassName="active" to="/faq#top">
               FAQ
             </Link>
           </dd>
