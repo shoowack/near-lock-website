@@ -13,26 +13,28 @@ import NewsletterSection from "./../Components/Newsletter/NewsletterSection";
 
 export default function HomePage(props) {
   const {
-    videoUrl,
-    downloadLinks: { appStoreLinkUrl },
-    homePage: {
-      visibileSections: {
-        topSection,
-        problemsSection,
-        downloadsSection,
-        familySection,
-        toolsSection,
-        featuresSection,
-        compatibilitySection,
-        testimonialsSection,
-        newsletterSection
-      },
-      downloadsSection: {
-        showIphoneDownloadHomepageLink,
-        showWatchDownloadHomepageLink
+    settings: {
+      videoUrl,
+      downloadLinks: { appStoreLinkUrl },
+      homePage: {
+        visibileSections: {
+          topSection,
+          problemsSection,
+          downloadsSection,
+          familySection,
+          toolsSection,
+          featuresSection,
+          compatibilitySection,
+          testimonialsSection,
+          newsletterSection
+        },
+        downloadsSection: {
+          showIphoneDownloadHomepageLink,
+          showWatchDownloadHomepageLink
+        }
       }
     }
-  } = props.settings;
+  } = props;
 
   return (
     <>

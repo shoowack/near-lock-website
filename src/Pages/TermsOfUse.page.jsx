@@ -1,10 +1,13 @@
 import React from "react";
 import TitleHeader from "./../Components/TitleHeader";
 
-function TermsOfUsePage() {
+function TermsOfUsePage(props) {
+  const {
+    location: { pathname }
+  } = props;
   return (
     <>
-      <TitleHeader>Near Lock Terms of Use</TitleHeader>
+      <TitleHeader location={pathname}>Near Lock Terms of Use</TitleHeader>
       <div className="container py-3 py-md-5">
         <div className="row">
           <div className="col">

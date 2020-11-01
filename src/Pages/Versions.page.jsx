@@ -5,7 +5,11 @@ import gfm from "remark-gfm";
 import TitleHeader from "./../Components/TitleHeader";
 import versions from "./../../src/Data/CHANGELOG.md";
 
-function VersionsPage({ scrollWithOffset }) {
+function VersionsPage(props) {
+  const {
+    scrollWithOffset,
+    location: { pathname }
+  } = props;
   const [changelog, setChangelog] = useState("Loading...");
 
   useEffect(() => {
@@ -23,7 +27,7 @@ function VersionsPage({ scrollWithOffset }) {
 
   return (
     <>
-      <TitleHeader>Version History</TitleHeader>
+      <TitleHeader location={pathname}>Version History</TitleHeader>
       <div className="container py-3 py-md-5">
         <div className="row">
           <div className="d-none d-md-block col-2">

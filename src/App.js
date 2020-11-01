@@ -26,7 +26,7 @@ function App() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Near Lock - Lock and unlock your Mac with your iPhone</title>
-        <link rel="canonical" href="https://nearlock.netlify.app" />
+        <link rel="canonical" href={window.location.hostname} />
       </Helmet>
       {settings.underConstruction ? (
         <pages.UnderConstructionPage />

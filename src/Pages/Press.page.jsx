@@ -3,10 +3,13 @@ import TitleHeader from "./../Components/TitleHeader";
 
 function PressPage(props) {
   const {
-    appStoreLinkUrl,
-    videoUrl,
-    pressPage: { pressKitFile }
-  } = props.settings;
+    location: { pathname },
+    settings: {
+      appStoreLinkUrl,
+      videoUrl,
+      pressPage: { pressKitFile }
+    }
+  } = props;
 
   const images = {
     press: "/press.jpg",
@@ -17,7 +20,7 @@ function PressPage(props) {
 
   return (
     <>
-      <TitleHeader>Press kit</TitleHeader>
+      <TitleHeader location={pathname}>Press kit</TitleHeader>
       <div className="container py-3 py-md-5">
         <div className="row mb-4">
           <a

@@ -15,7 +15,7 @@ function ErrorPage() {
             </mark>
             <p className="mt-5">
               You may find what you were looking for on our{" "}
-              <Link smooth to="/#top">
+              <Link smooth to="/#">
                 Homepage
               </Link>
             </p>

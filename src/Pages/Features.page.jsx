@@ -1,6 +1,5 @@
 import React from "react";
 import TitleHeader from "./../Components/TitleHeader";
-import { Helmet } from "react-helmet";
 import * as sections from "./../Components/FeaturesPage";
 import NewsletterSection from "./../Components/Newsletter/NewsletterSection";
 import "./../Components/FeaturesPage/style.scss";
@@ -35,11 +34,6 @@ function FeaturesPage(props) {
 
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Near Lock - Features</title>
-        <link rel="canonical" href="https://nearlock.netlify.app/features" />
-      </Helmet>
       <TitleHeader scrollWithOffset={scrollWithOffset} location={pathname}>
         Features
       </TitleHeader>

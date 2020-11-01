@@ -1,10 +1,13 @@
 import React from "react";
 import TitleHeader from "./../Components/TitleHeader";
 
-function ImpressumPage() {
+function ImpressumPage(props) {
+  const {
+    location: { pathname }
+  } = props;
   return (
     <>
-      <TitleHeader>Impressum</TitleHeader>
+      <TitleHeader location={pathname}>Impressum</TitleHeader>
       <div className="container py-3 py-md-5">
         <div className="row">
           <div className="col">

@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import TitleHeader from "./../Components/TitleHeader";
 import Accordion from "../Components/FaqPage/Accordion";
 
-function FaqPage() {
+function FaqPage(props) {
+  const {
+    location: { pathname }
+  } = props;
   const [search, setSearch] = useState(null);
   let faq = require("./../Data/faq.json");
 
@@ -30,7 +33,7 @@ function FaqPage() {
 
   return (
     <>
-      <TitleHeader>FAQ</TitleHeader>
+      <TitleHeader location={pathname}>FAQ</TitleHeader>
       <div
         className="container-fluid py-3 py-md-5"
         style={{ background: "#F2F9F6" }}
