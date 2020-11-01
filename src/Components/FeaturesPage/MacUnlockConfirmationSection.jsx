@@ -1,7 +1,7 @@
 import React from "react";
 import FeatureContainer from "./../FeatureContainer";
 
-function MacUnlockConfirmation() {
+export default function MacUnlockConfirmation() {
   return (
     <FeatureContainer
       odd
@@ -81,5 +81,3 @@ function MacUnlockConfirmation() {
     </FeatureContainer>
   );
 }
-
-export default MacUnlockConfirmation;

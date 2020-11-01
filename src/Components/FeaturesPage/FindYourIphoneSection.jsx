@@ -1,7 +1,7 @@
 import React from "react";
 import FeatureContainer from "./../FeatureContainer";
 
-function FindYourIphoneSection() {
+export default function FindYourIphoneSection() {
   return (
     <FeatureContainer
       featureTitle={"Find your iPhone"}
@@ -11,5 +11,3 @@ function FindYourIphoneSection() {
     />
   );
 }
-
-export default FindYourIphoneSection;

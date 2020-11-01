@@ -1,7 +1,7 @@
 import React from "react";
 import FeatureContainer from "./../FeatureContainer";
 
-function AccessAnywhereSection() {
+export default function AccessAnywhereSection() {
   return (
     <FeatureContainer
       odd
@@ -138,5 +138,3 @@ function AccessAnywhereSection() {
     </FeatureContainer>
   );
 }
-
-export default AccessAnywhereSection;

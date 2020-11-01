@@ -1,7 +1,7 @@
 import React from "react";
 import TitleHeader from "./../Components/TitleHeader";
 
-function PressPage(props) {
+export default function PressPage(props) {
   const {
     location: { pathname },
     settings: {
@@ -160,5 +160,3 @@ function PressPage(props) {
     </>
   );
 }
-
-export default PressPage;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Modal from "./../../Components/Modal";
 import "./top-section.scss";
 
-function TopSection({ videoUrl }) {
+export default function TopSection({ videoUrl }) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const toggleModal = () => {
@@ -77,5 +77,3 @@ function TopSection({ videoUrl }) {
     </>
   );
 }
-
-export default TopSection;

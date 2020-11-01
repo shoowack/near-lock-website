@@ -1,7 +1,7 @@
 import React from "react";
 import FeatureContainer from "./../FeatureContainer";
 
-function MacUnlockConfirmation() {
+export default function MacUnlockConfirmation() {
   return (
     <FeatureContainer
       featureTitle={"Unlock Options"}
@@ -63,5 +63,3 @@ function MacUnlockConfirmation() {
     </FeatureContainer>
   );
 }
-
-export default MacUnlockConfirmation;

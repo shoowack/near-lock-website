@@ -5,7 +5,7 @@ import gfm from "remark-gfm";
 import TitleHeader from "./../Components/TitleHeader";
 import versions from "./../../src/Data/CHANGELOG.md";
 
-function VersionsPage(props) {
+export default function VersionsPage(props) {
   const {
     scrollWithOffset,
     location: { pathname }
@@ -65,5 +65,3 @@ function VersionsPage(props) {
     </>
   );
 }
-
-export default VersionsPage;

@@ -1,7 +1,7 @@
 import React from "react";
 import TestimonialsSlider from "./../../Components/Sliders/TestimonialsSlider";
 
-function TestimonialsSection() {
+export default function TestimonialsSection() {
   return (
     <div className="container-fluid" style={{ background: "#F2F2F3" }}>
       <div className="container py-5 text-center">
@@ -17,5 +17,3 @@ function TestimonialsSection() {
     </div>
   );
 }
-
-export default TestimonialsSection;

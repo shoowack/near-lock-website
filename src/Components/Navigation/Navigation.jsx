@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavHashLink as Link } from "react-router-hash-link";
 import "./navigation.scss";
 
-function Navigation({ scrollWithOffset, settings }) {
+export default function Navigation({ scrollWithOffset, settings }) {
   const [scrolled, setScrolled] = useState(false);
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
@@ -173,5 +173,3 @@ function Navigation({ scrollWithOffset, settings }) {
     </nav>
   );
 }
-
-export default Navigation;

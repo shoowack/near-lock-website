@@ -4,7 +4,7 @@ import "./slick.scss";
 import "./slick-theme.scss";
 import "./testimonials.scss";
 
-function TestimonialsSlider() {
+export default function TestimonialsSlider() {
   const [nav1, setNav1] = useState(null);
   const [nav2, setNav2] = useState(null);
   const [slider1, setSlider1] = useState(null);
@@ -64,5 +64,3 @@ function TestimonialsSlider() {
     </>
   );
 }
-
-export default TestimonialsSlider;

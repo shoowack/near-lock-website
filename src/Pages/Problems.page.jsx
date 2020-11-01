@@ -2,7 +2,7 @@ import React from "react";
 import TitleHeader from "./../Components/TitleHeader";
 import NewsletterSection from "./../Components/Newsletter/NewsletterSection";
 
-function ProblemsPage() {
+export default function ProblemsPage() {
   return (
     <>
       <TitleHeader>macOS Catalina issues</TitleHeader>
@@ -39,5 +39,3 @@ function ProblemsPage() {
     </>
   );
 }
-
-export default ProblemsPage;

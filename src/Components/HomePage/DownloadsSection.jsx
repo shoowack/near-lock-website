@@ -1,7 +1,7 @@
 import React from "react";
 import "./downloads-section.scss";
 
-function DownloadsSection({
+export default function DownloadsSection({
   showIphoneDownloadHomepageLink,
   showWatchDownloadHomepageLink,
   appStoreLinkUrl
@@ -69,5 +69,3 @@ function DownloadsSection({
     </div>
   );
 }
-
-export default DownloadsSection;

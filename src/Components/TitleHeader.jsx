@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import FeaturesHeaderSlider from "./Sliders/FeaturesHeaderSlider";
 
-function TitleHeader({ scrollWithOffset, location, children }) {
+export default function TitleHeader({ scrollWithOffset, location, children }) {
   return (
     <>
       {location ? (
@@ -10,7 +10,7 @@ function TitleHeader({ scrollWithOffset, location, children }) {
           <title>Near Lock - {children}</title>
           <link
             rel="canonical"
-            href={`${window.location.hostname}${location}`}
+            href={`${window.location.protocol}//${window.location.hostname}${location}`}
           />
         </Helmet>
       ) : null}
@@ -37,5 +37,3 @@ function TitleHeader({ scrollWithOffset, location, children }) {
     </>
   );
 }
-
-export default TitleHeader;

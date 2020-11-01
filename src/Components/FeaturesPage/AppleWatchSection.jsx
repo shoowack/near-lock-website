@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "./../Sliders/slick.scss";
 import "./../Sliders/slick-theme.scss";
 
-function AppleWatchSection() {
+export default function AppleWatchSection() {
   return (
     <FeatureContainer
       featureTitle={"Apple Watch"}
@@ -60,5 +60,3 @@ function AppleWatchSection() {
     </FeatureContainer>
   );
 }
-
-export default AppleWatchSection;

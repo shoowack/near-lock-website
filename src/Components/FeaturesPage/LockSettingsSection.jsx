@@ -1,7 +1,7 @@
 import React from "react";
 import FeatureContainer from "./../FeatureContainer";
 
-function LockSettingsSection() {
+export default function LockSettingsSection() {
   return (
     <FeatureContainer
       odd
@@ -33,5 +33,3 @@ function LockSettingsSection() {
     </FeatureContainer>
   );
 }
-
-export default LockSettingsSection;

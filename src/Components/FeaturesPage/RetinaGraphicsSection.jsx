@@ -1,7 +1,7 @@
 import React from "react";
 import FeatureContainer from "./../FeatureContainer";
 
-function RetinaGraphicsSection() {
+export default function RetinaGraphicsSection() {
   return (
     <FeatureContainer
       featureTitle={"Retina Graphics"}
@@ -11,5 +11,3 @@ function RetinaGraphicsSection() {
     />
   );
 }
-
-export default RetinaGraphicsSection;

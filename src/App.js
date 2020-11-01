@@ -11,7 +11,7 @@ import * as pages from "./Pages";
 import Navigation from "./Components/Navigation/Navigation";
 import Footer from "./Components/Footer/Footer";
 
-function App() {
+export default function App() {
   let settings = require("./Data/settings.json");
 
   const scrollWithOffset = (el, offset = -55) => {
@@ -26,7 +26,10 @@ function App() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Near Lock - Lock and unlock your Mac with your iPhone</title>
-        <link rel="canonical" href={window.location.hostname} />
+        <link
+          rel="canonical"
+          href={`${window.location.protocol}//${window.location.hostname}`}
+        />
       </Helmet>
       {settings.underConstruction ? (
         <pages.UnderConstructionPage />
@@ -84,5 +87,3 @@ function App() {
     </>
   );
 }
-
-export default App;

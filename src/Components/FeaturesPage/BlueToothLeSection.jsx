@@ -1,7 +1,7 @@
 import React from "react";
 import FeatureContainer from "./../FeatureContainer";
 
-function BlueToothLeSection() {
+export default function BlueToothLeSection() {
   return (
     <FeatureContainer
       odd
@@ -12,5 +12,3 @@ function BlueToothLeSection() {
     />
   );
 }
-
-export default BlueToothLeSection;

@@ -1,6 +1,6 @@
 import React from "react";
 
-function CompatibilitySection() {
+export default function CompatibilitySection() {
   return (
     <div className="container text-center py-5" id="compatibility">
       <div className="row">
@@ -42,5 +42,3 @@ function CompatibilitySection() {
     </div>
   );
 }
-
-export default CompatibilitySection;

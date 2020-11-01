@@ -1,7 +1,7 @@
 import React from "react";
 import TitleHeader from "./../Components/TitleHeader";
 
-function ImpressumPage(props) {
+export default function ImpressumPage(props) {
   const {
     location: { pathname }
   } = props;
@@ -291,5 +291,3 @@ function ImpressumPage(props) {
     </>
   );
 }
-
-export default ImpressumPage;

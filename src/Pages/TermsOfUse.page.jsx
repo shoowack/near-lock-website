@@ -1,7 +1,7 @@
 import React from "react";
 import TitleHeader from "./../Components/TitleHeader";
 
-function TermsOfUsePage(props) {
+export default function TermsOfUsePage(props) {
   const {
     location: { pathname }
   } = props;
@@ -173,5 +173,3 @@ function TermsOfUsePage(props) {
     </>
   );
 }
-
-export default TermsOfUsePage;

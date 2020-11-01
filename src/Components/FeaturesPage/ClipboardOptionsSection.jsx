@@ -1,7 +1,7 @@
 import React from "react";
 import VisibilitySensor from "react-visibility-sensor";
 
-function ClipboardOptionsSection() {
+export default function ClipboardOptionsSection() {
   return (
     <VisibilitySensor>
       {({ isVisible }) => (
@@ -83,5 +83,3 @@ function ClipboardOptionsSection() {
     </VisibilitySensor>
   );
 }
-
-export default ClipboardOptionsSection;

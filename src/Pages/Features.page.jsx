@@ -4,7 +4,7 @@ import * as sections from "./../Components/FeaturesPage";
 import NewsletterSection from "./../Components/Newsletter/NewsletterSection";
 import "./../Components/FeaturesPage/style.scss";
 
-function FeaturesPage(props) {
+export default function FeaturesPage(props) {
   const {
     location: { pathname },
     scrollWithOffset,
@@ -58,5 +58,3 @@ function FeaturesPage(props) {
     </>
   );
 }
-
-export default FeaturesPage;

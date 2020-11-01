@@ -1,7 +1,7 @@
 import React from "react";
 import "./newsletter.scss";
 
-function NewsletterSection() {
+export default function NewsletterSection() {
   return (
     <div className="newsletter container py-3 py-md-5 text-center">
       <div className="row">
@@ -32,5 +32,3 @@ function NewsletterSection() {
     </div>
   );
 }
-
-export default NewsletterSection;

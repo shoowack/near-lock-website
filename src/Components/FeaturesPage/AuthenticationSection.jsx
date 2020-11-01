@@ -2,7 +2,7 @@ import React from "react";
 import VisibilitySensor from "react-visibility-sensor";
 import FeatureContainer from "./../FeatureContainer";
 
-function AuthenticationSection() {
+export default function AuthenticationSection() {
   return (
     <VisibilitySensor>
       {({ isVisible }) => (
@@ -48,5 +48,3 @@ function AuthenticationSection() {
     </VisibilitySensor>
   );
 }
-
-export default AuthenticationSection;

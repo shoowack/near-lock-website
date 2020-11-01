@@ -1,7 +1,7 @@
 import React from "react";
 import FeatureContainer from "./../FeatureContainer";
 
-function SecuritySection() {
+export default function SecuritySection() {
   return (
     <FeatureContainer
       odd
@@ -48,5 +48,3 @@ function SecuritySection() {
     </FeatureContainer>
   );
 }
-
-export default SecuritySection;

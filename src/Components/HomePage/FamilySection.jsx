@@ -1,6 +1,6 @@
 import React from "react";
 
-function FamilySection() {
+export default function FamilySection() {
   return (
     <section
       className="family text-center py-5"
@@ -20,5 +20,3 @@ function FamilySection() {
     </section>
   );
 }
-
-export default FamilySection;

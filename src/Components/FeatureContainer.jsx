@@ -1,6 +1,6 @@
 import React from "react";
 
-function FeatureContainer({
+export default function FeatureContainer({
   odd,
   newFeature,
   featureIcon,
@@ -48,5 +48,3 @@ function FeatureContainer({
     </div>
   );
 }
-
-export default FeatureContainer;

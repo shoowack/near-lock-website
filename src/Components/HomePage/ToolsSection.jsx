@@ -1,7 +1,7 @@
 import React from "react";
 import "./tools-section.scss";
 
-function ToolsSection() {
+export default function ToolsSection() {
   return (
     <div className="container-fluid">
       <div className="row">
@@ -30,5 +30,3 @@ function ToolsSection() {
     </div>
   );
 }
-
-export default ToolsSection;

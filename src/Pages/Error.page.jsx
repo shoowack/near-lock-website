@@ -2,7 +2,7 @@ import React from "react";
 import TitleHeader from "./../Components/TitleHeader";
 import { HashLink as Link } from "react-router-hash-link";
 
-function ErrorPage() {
+export default function ErrorPage() {
   return (
     <>
       <TitleHeader>404</TitleHeader>
@@ -25,5 +25,3 @@ function ErrorPage() {
     </>
   );
 }
-
-export default ErrorPage;

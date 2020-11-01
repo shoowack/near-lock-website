@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TitleHeader from "./../Components/TitleHeader";
 import Accordion from "../Components/FaqPage/Accordion";
 
-function FaqPage(props) {
+export default function FaqPage(props) {
   const {
     location: { pathname }
   } = props;
@@ -77,5 +77,3 @@ function FaqPage(props) {
     </>
   );
 }
-
-export default FaqPage;

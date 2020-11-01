@@ -1,7 +1,7 @@
 import React from "react";
 import FeatureContainer from "./../FeatureContainer";
 
-function LocalizationsSection() {
+export default function LocalizationsSection() {
   return (
     <FeatureContainer odd featureTitle={"Localizations"}>
       <div className="row">
@@ -51,5 +51,3 @@ function LocalizationsSection() {
     </FeatureContainer>
   );
 }
-
-export default LocalizationsSection;

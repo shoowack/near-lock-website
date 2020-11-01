@@ -1,7 +1,7 @@
 import React from "react";
 import FeatureContainer from "./../FeatureContainer";
 
-function MacControlSection() {
+export default function MacControlSection() {
   return (
     <FeatureContainer
       featureTitle={"Mac Control"}
@@ -78,5 +78,3 @@ function MacControlSection() {
     </FeatureContainer>
   );
 }
-
-export default MacControlSection;

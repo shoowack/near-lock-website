@@ -1,6 +1,6 @@
 import React from "react";
 
-function Modal(props) {
+export default function Modal(props) {
   const { children, onClose, show, modalColor } = props;
 
   if (!show) {
@@ -44,5 +44,3 @@ function Modal(props) {
     </div>
   );
 }
-
-export default Modal;

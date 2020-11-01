@@ -2,7 +2,7 @@ import React from "react";
 import { NavHashLink as Link } from "react-router-hash-link";
 import "./footer.scss";
 
-function Footer({ scrollWithOffset, settings }) {
+export default function Footer({ scrollWithOffset, settings }) {
   const {
     socialLinks: { youtube, twitter, facebook },
     downloadLinks: { appStoreLinkUrl, macAppLinkUrl },
@@ -119,5 +119,3 @@ function Footer({ scrollWithOffset, settings }) {
     </div>
   );
 }
-
-export default Footer;

@@ -1,6 +1,6 @@
 import React from "react";
 
-function MacMenuBarSection() {
+export default function MacMenuBarSection() {
   return (
     <div className="container-fluid" id="mac-menu-bar">
       <div className="container">
@@ -39,5 +39,3 @@ function MacMenuBarSection() {
     </div>
   );
 }
-
-export default MacMenuBarSection;
