@@ -1,5 +1,6 @@
 import React from "react";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import "bootstrap/dist/css/bootstrap.css";
 import "./style.scss";
 // import "bootstrap/dist/js/bootstrap.js"; // uncomment when needed later
@@ -22,6 +23,11 @@ function App() {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Near Lock - Lock and unlock your Mac with your iPhone</title>
+        <link rel="canonical" href="https://nearlock.netlify.app" />
+      </Helmet>
       {settings.underConstruction ? (
         <pages.UnderConstructionPage />
       ) : (
