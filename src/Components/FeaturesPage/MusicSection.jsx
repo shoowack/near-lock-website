@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import FeatureContainer from "./../FeatureContainer";
 
-export default function DockItem({ tooltip, image }) {
+function DockItem({ tooltip, image }) {
   const [tooltipActive, setTooltipActive] = useState(false);
   return (
     <div
@@ -15,7 +15,7 @@ export default function DockItem({ tooltip, image }) {
   );
 }
 
-function AuthenticationSection() {
+export default function AuthenticationSection() {
   return (
     <FeatureContainer
       newFeature
