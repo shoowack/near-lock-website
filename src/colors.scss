@@ -1,0 +1,15 @@
+:root {
+  --main: #ffffff;
+  --second: #1a1a1b;
+  --darkerMain: #f5f5f5;
+  --NlBlue: #3291e0;
+  --NlGreen: #35d678;
+}
+
+[data-theme="dark"] {
+  --main: #040404;
+  --second: #ffffff;
+  --darkerMain: #151515;
+  --NlBlue: #3291e0;
+  --NlGreen: #35d678;
+}

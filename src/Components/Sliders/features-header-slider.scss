@@ -4,7 +4,7 @@
     transition: .25s all;
 
     &:hover {
-      color: #fff;
+      color: var(--main);
       text-decoration: none;
       transition: .25s all;
     }

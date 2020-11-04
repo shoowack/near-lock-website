@@ -2,7 +2,7 @@
   input[type="email"] {
     padding: 7px 14px;
     appearance: none;
-    background-color: #fff;
+    background-color: var(--main);
     border: 2px solid rgba(14,30,37,.09);
     border-radius: 4px;
     font-size: 1em;
@@ -28,7 +28,7 @@
     appearance: none;
     border: 2px solid #33A2C6;
     background: #33A2C6;
-    color: #fff;
+    color: var(--main);
     font-size: 1em;
     font-weight: bold;
     transition: .2s all ease-in-out;

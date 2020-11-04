@@ -13,8 +13,7 @@ export default function FeatureContainer({
 
   return (
     <div
-      className="container-fluid"
-      style={{ background: odd ? "#f5f5f5" : "#fffff" }}
+      className={`container-fluid${odd ? " odd-section" : ""}`}
       id={browserFriendlyTitle}
     >
       <div

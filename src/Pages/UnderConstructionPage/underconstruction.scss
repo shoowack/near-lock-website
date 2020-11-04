@@ -56,7 +56,7 @@
     top: 50%;
     width: 16em;
     height: 16em;
-    background: url("/nearlock_icon_256.png") #fff center no-repeat;
+    background: url("/nearlock_icon_256.png") var(--main) center no-repeat;
     background-size: cover;
     margin: -10em 0 0 -8em;
     z-index: 3;

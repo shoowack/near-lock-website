@@ -1,10 +1,12 @@
+@import "./../../colors.scss";
+
 .accordion__section {
   display: flex;
   flex-direction: column;
 }
 
 .accordion {
-  background-color: #ffffff;
+  background-color: var(--main);
   color: #444;
   cursor: pointer;
   padding: 18px;

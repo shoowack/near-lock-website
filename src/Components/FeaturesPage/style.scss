@@ -1,6 +1,6 @@
 .feature {
   a, a:visited {
-    color: #000;
+    color: var(--second);
     text-decoration: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);
     padding-bottom: 0.15em;
@@ -34,7 +34,7 @@
     position: absolute;
     top: -10px;
     margin-left: 30px;
-    color: #ffffff;
+    color: var(--main);
     text-transform: uppercase;
     display: inline-block;
     border-radius: 999em;
@@ -118,7 +118,7 @@
         background: rgba(0, 0, 0, 0.75);
         border-radius: 3px;
         padding: 3px 9px;
-        color: #fff;
+        color: var(--main);
         left: 50%;
         transform: translateX(-50%);
         white-space: nowrap;
@@ -235,7 +235,7 @@
   overflow: hidden;
 
   .feature_menubar {
-    color: #fff;
+    color: var(--main);
     font-size: 20px;
     font-weight: 400;
     position: relative;

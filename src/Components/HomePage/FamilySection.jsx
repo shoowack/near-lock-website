@@ -2,10 +2,7 @@ import React from "react";
 
 export default function FamilySection() {
   return (
-    <section
-      className="family text-center py-5"
-      style={{ background: "#f2f2f2" }}
-    >
+    <section className="text-center py-5 odd-section">
       <h3>The Near Lock family</h3>
       <p>
         Near Lock is available for your iPhone, iPad, Mac and Apple Watch as
