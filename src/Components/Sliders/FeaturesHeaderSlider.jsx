@@ -1,6 +1,7 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import Slider from "react-slick";
+import { ReactSVG } from "react-svg";
 import "./slick.scss";
 import "./slick-theme.scss";
 import "./features-header-slider.scss";
@@ -105,11 +106,11 @@ export default function FeaturesHeaderSlider({ scrollWithOffset }) {
             scroll={(el) => scrollWithOffset(el)}
             className="featureHeaderSlider__item"
           >
-            <img
+            <ReactSVG
               src={`/feature/icons/${feature
                 .replaceAll(" ", "_")
                 .toLowerCase()}_icon.svg`}
-              alt=""
+              className="featureHeaderSlider__icon"
             />
             {feature}
           </Link>

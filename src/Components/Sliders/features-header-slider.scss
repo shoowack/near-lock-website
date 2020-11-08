@@ -1,4 +1,16 @@
 .featureHeaderSlider {
+  &__icon {
+    svg {
+      width: 90px;
+      height: 90px;
+      margin-bottom: 10px;
+    }
+    
+    path {
+      fill: var(--main);
+    }
+  }
+
   &__item {
     color: rgba(255,255,255,.75);
     transition: .25s all;
@@ -7,12 +19,6 @@
       color: var(--main);
       text-decoration: none;
       transition: .25s all;
-    }
-
-    img {
-      width: 90px;
-      margin: auto;
-      margin-bottom: 10px;
     }
   }
 }

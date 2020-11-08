@@ -7,16 +7,21 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 200;
-  color: var(--main)
+  color: var(--second)
 }
 
 p {
-  color: var(--main)
+  color: var(--second)
 }
 
 .colored {
   background-image: linear-gradient(-45deg, var(--NlGreen), var(--NlBlue));
   color: var(--main);
+
+  h1, h2, h3, h4, h5, h6, p {
+    color: var(--main)
+  }
+  
 
   a {
     color: var(--main);

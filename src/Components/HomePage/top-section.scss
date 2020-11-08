@@ -1,4 +1,8 @@
 .top-setion {
+  h1,  p {
+    color: var(--main);
+  }
+
   .video-wrapper {
     margin-top: 2em;
     transition-property: all;

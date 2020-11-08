@@ -1,4 +1,5 @@
 import React from "react";
+import { ReactSVG } from "react-svg";
 import { HashLink as Link } from "react-router-hash-link";
 import "./features-section.scss";
 
@@ -49,10 +50,9 @@ export default function FeaturesSection({ scrollWithOffset }) {
               scroll={(el) => scrollWithOffset(el)}
             >
               <div className="new">
-                <img
-                  src="/music_icon.svg"
+                <ReactSVG
                   className="highlighted-features__icon"
-                  alt=""
+                  src="/music_icon.svg"
                 />
               </div>
               <h4>Music</h4>
@@ -67,12 +67,10 @@ export default function FeaturesSection({ scrollWithOffset }) {
               to="/features#access-anywhere"
               scroll={(el) => scrollWithOffset(el)}
             >
-              <img
-                src="/access_anywhere_icon.svg"
+              <ReactSVG
                 className="highlighted-features__icon"
-                alt=""
+                src="/access_anywhere_icon.svg"
               />
-
               <h4>Access Anywhere</h4>
               <p>
                 Quickly access Near Lock from Notification Center, through
@@ -90,12 +88,10 @@ export default function FeaturesSection({ scrollWithOffset }) {
               to="/features#mac-control"
               scroll={(el) => scrollWithOffset(el)}
             >
-              <img
+              <ReactSVG
                 src="/mac_control_icon.svg"
                 className="highlighted-features__icon"
-                alt=""
               />
-
               <h4>Mac Control</h4>
               <p>Use Near Lock to see who uses your Mac.</p>
             </Link>
@@ -108,12 +104,10 @@ export default function FeaturesSection({ scrollWithOffset }) {
               to="/features#authentication"
               scroll={(el) => scrollWithOffset(el)}
             >
-              <img
+              <ReactSVG
                 src="/ping_icon.svg"
                 className="highlighted-features__icon"
-                alt=""
               />
-
               <h4>Find My iPhone</h4>
               <p>
                 Ping your iPhone from your Mac while the bluetooth connection is
@@ -124,7 +118,7 @@ export default function FeaturesSection({ scrollWithOffset }) {
         </div>
         <div className="row">
           <div className="col">
-            <Link className="btn" smooth to="/features">
+            <Link className="btn btn-outline-light mt-4" smooth to="/features">
               See more
             </Link>
           </div>
