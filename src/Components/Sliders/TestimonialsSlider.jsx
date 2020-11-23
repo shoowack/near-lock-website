@@ -36,7 +36,8 @@ export default function TestimonialsSlider() {
         ref={(slider) => setSlider2(slider, [slider])}
         slidesToShow={3}
         autoplay
-        speed={3000}
+        speed={2000}
+        autoplaySpeed={7000}
         swipeToSlide
         focusOnSelect
         arrows={false}
