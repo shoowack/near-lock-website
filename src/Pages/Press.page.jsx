@@ -1,6 +1,7 @@
 import React from "react";
 import TitleHeader from "./../Components/TitleHeader";
 import { withState } from "./../context";
+import { Container, Row, Col } from "reactstrap";
 
 const PressPage = withState(
   ({
@@ -12,13 +13,12 @@ const PressPage = withState(
         images: { press, nearlockWhite, nearlockColor, nearlockText }
       },
       translations: { t }
-    },
-    location: { pathname }
+    }
   }) => (
     <>
-      <TitleHeader location={pathname}>Press kit</TitleHeader>
-      <div className="container py-3 py-md-5">
-        <div className="row mb-4">
+      <TitleHeader>Press kit</TitleHeader>
+      <Container className="py-3 py-md-5">
+        <Row className="mb-4">
           <a
             href={press}
             target="_blank"
@@ -51,9 +51,9 @@ const PressPage = withState(
           >
             <img src={nearlockText} alt="" className="img-fluid" />
           </a>
-        </div>
-        <div className="row">
-          <div className="col-12">
+        </Row>
+        <Row>
+          <Col>
             <p>
               Near Lock, a newly released app for iOS and Mac, is designed to
               allow users to lock and unlock their Macs with an iPhone,
@@ -115,10 +115,10 @@ const PressPage = withState(
               </a>
             </p>
             <br />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12 col-md-8 offset-md-2">
+          </Col>
+        </Row>
+        <Row>
+          <Col sm={12} md={{ size: 8, offset: 2 }}>
             <div className="embed-responsive embed-responsive-16by9">
               <iframe
                 style={{
@@ -150,9 +150,9 @@ const PressPage = withState(
               onClick={(e) => navigator.clipboard.writeText(e.target.value)}
               defaultValue={`<iframe width="560" height="315" src="${videoUrl}" frameborder="0" allowfullscreen></iframe>`}
             ></textarea>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     </>
   )
 );

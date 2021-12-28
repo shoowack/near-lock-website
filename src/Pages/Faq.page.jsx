@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import TitleHeader from "./../Components/TitleHeader";
 import Accordion from "../Components/FaqPage/Accordion";
 
-const FaqPage = ({
-    location: { pathname }
-  }) => {
+const FaqPage = () => {
   const [search, setSearch] = useState(null);
   let faq = require("./../Data/faq.json");
 
@@ -32,7 +30,7 @@ const FaqPage = ({
 
   return (
     <>
-      <TitleHeader location={pathname}>FAQ</TitleHeader>
+      <TitleHeader>FAQ</TitleHeader>
       <div
         className="container-fluid py-3 py-md-5"
         style={{ background: "#F2F9F6" }}
@@ -75,6 +73,6 @@ const FaqPage = ({
       </div>
     </>
   );
-}
+};
 
 export default FaqPage;

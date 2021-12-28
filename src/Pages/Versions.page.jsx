@@ -12,8 +12,7 @@ const VersionsPage = withState(
     state: {
       scrollWithOffset,
       translations: { t }
-    },
-    location: { pathname }
+    }
   }) => {
     const [changelog, setChangelog] = useState("Loading...");
 
@@ -32,7 +31,7 @@ const VersionsPage = withState(
 
     return (
       <>
-        <TitleHeader location={pathname}>Version History</TitleHeader>
+        <TitleHeader>Version History</TitleHeader>
         <Container className="py-3 py-md-5">
           <Row>
             <div className="d-none d-md-block col-2">

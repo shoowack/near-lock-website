@@ -1,12 +1,5 @@
-import React, { Suspense, lazy, useState } from "react";
-import {
-  Routes,
-  Route,
-  BrowserRouter,
-  // Link as NavLink,
-  Redirect,
-  Navigate
-} from "react-router-dom";
+import React, { Suspense } from "react";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 // import { Switch, Route, BrowserRouter } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -24,15 +17,6 @@ import Footer from "./Components/Footer/Footer";
 const App = () => {
   useTranslation();
   let settings = require("./Data/settings.json");
-
-  // const HomePage = lazy(() => import("./pages/home.page"));
-  // const IslandRabPage = lazy(() => import("./pages/island-rab.page"));
-  // const AboutUsPage = lazy(() => import("./pages/about-us.page"));
-  // const ContactUsPage = lazy(() => import("./pages/contact-us.page"));
-  // const HouseRulesPage = lazy(() => import("./pages/house-rules.page"));
-  // const TermsPage = lazy(() => import("./pages/terms.page"));
-  // const ApartmentPage = lazy(() => import("./pages/apartment.page"));
-  // const MainNavigation = lazy(() => import("./components/main-navigation"));
 
   return (
     <>
