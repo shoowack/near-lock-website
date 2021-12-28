@@ -1,3 +1,5 @@
+import React from "react";
+
 const Loading = () => {
   const navbarHeight = 62;
   const footerHeight = 252;
