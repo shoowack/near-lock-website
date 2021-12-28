@@ -1,15 +1,15 @@
 import React from "react";
 import TitleHeader from "./../Components/TitleHeader";
 
-export default function PressPage(props) {
-  const {
+const PressPage = ({
     location: { pathname },
     settings: {
       appStoreLinkUrl,
       videoUrl,
       pressPage: { pressKitFile }
     }
-  } = props;
+  }) => {
+  
 
   const images = {
     press: "/press.jpg",
@@ -160,3 +160,5 @@ export default function PressPage(props) {
     </>
   );
 }
+
+export default PressPage;

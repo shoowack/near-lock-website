@@ -1,8 +1,6 @@
 import React from "react";
 
-export default function Modal(props) {
-  const { children, onClose, show, modalColor } = props;
-
+const Modal = ({ children, onClose, show, modalColor }) => {
   if (!show) {
     return null;
   }
@@ -44,3 +42,5 @@ export default function Modal(props) {
     </div>
   );
 }
+
+export default Modal;

@@ -2,8 +2,7 @@ import React from "react";
 import TitleHeader from "./../Components/TitleHeader";
 import NewsletterSection from "./../Components/Newsletter/NewsletterSection";
 
-export default function ProblemsPage() {
-  return (
+const ProblemsPage = () => (
     <>
       <TitleHeader>macOS Catalina issues</TitleHeader>
       <div className="container py-3 py-md-5">
@@ -38,4 +37,5 @@ export default function ProblemsPage() {
       <NewsletterSection />
     </>
   );
-}
+
+export default ProblemsPage;

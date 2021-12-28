@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { Container, Row, Col } from 'reactstrap';
 import FeaturesHeaderSlider from "./Sliders/FeaturesHeaderSlider";
 
 export default function TitleHeader({ scrollWithOffset, location, children }) {
@@ -23,16 +24,16 @@ export default function TitleHeader({ scrollWithOffset, location, children }) {
           color: "#fff"
         }}
       >
-        <div className="container text-center">
-          <div className="row">
-            <div className="col-12">
+        <Container className="text-center">
+          <Row>
+            <Col sm={12}>
               <h2>{children}</h2>
               {location === "/features" && (
                 <FeaturesHeaderSlider scrollWithOffset={scrollWithOffset} />
               )}
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </div>
     </>
   );

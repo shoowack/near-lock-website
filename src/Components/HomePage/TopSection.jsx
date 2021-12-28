@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Modal from "./../../Components/Modal";
+import {Container, Row, Col} from "reactstrap";
 import "./top-section.scss";
 
-export default function TopSection({ videoUrl }) {
+const TopSection = ({ videoUrl }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const toggleModal = () => {
@@ -31,11 +32,11 @@ export default function TopSection({ videoUrl }) {
         id="top"
         style={{ paddingTop: "100px" }}
       >
-        <div className="row">
-          <div className="col">
-            <div className="container">
-              <div className="row">
-                <div className="col-12 col-lg-6">
+        <Row>
+          <Col>
+            <Container>
+              <Row>
+                <Col lg={6}>
                   <h1>A new way to lock your Mac. Just walk away.</h1>
                   <br />
                   <p>
@@ -53,8 +54,8 @@ export default function TopSection({ videoUrl }) {
                     <br />
                     Try it out for FREE!
                   </p>
-                </div>
-                <div className="col-12 col-lg-6">
+                </Col>
+                <Col lg={6}>
                   <div className="video-wrapper pl-lg-5">
                     <div className="video-play" onClick={() => toggleModal()}>
                       <img
@@ -68,12 +69,14 @@ export default function TopSection({ videoUrl }) {
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                </Col>
+              </Row>
+            </Container>
+          </Col>
+        </Row>
       </section>
     </>
   );
 }
+
+export default TopSection;

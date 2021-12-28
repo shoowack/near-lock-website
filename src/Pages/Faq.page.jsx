@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import TitleHeader from "./../Components/TitleHeader";
 import Accordion from "../Components/FaqPage/Accordion";
 
-export default function FaqPage(props) {
-  const {
+const FaqPage = ({
     location: { pathname }
-  } = props;
+  }) => {
   const [search, setSearch] = useState(null);
   let faq = require("./../Data/faq.json");
 
@@ -77,3 +76,5 @@ export default function FaqPage(props) {
     </>
   );
 }
+
+export default FaqPage;

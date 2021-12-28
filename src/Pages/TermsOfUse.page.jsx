@@ -1,11 +1,9 @@
 import React from "react";
 import TitleHeader from "./../Components/TitleHeader";
 
-export default function TermsOfUsePage(props) {
-  const {
+const TermsOfUsePage = ({
     location: { pathname }
-  } = props;
-  return (
+  }) => (
     <>
       <TitleHeader location={pathname}>Near Lock Terms of Use</TitleHeader>
       <div className="container py-3 py-md-5">
@@ -172,4 +170,5 @@ export default function TermsOfUsePage(props) {
       </div>
     </>
   );
-}
+
+export default TermsOfUsePage;

@@ -19,6 +19,7 @@
     "react-slick": "0.27.12",
     "react-svg": "11.1.0",
     "react-visibility-sensor": "5.1.1",
+    "reactstrap": "9.0.1",
     "remark-gfm": "1.0.0",
     "smoothscroll-polyfill": "0.4.4"
   },

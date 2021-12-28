@@ -1,19 +1,19 @@
 import React from "react";
 import TestimonialsSlider from "./../../Components/Sliders/TestimonialsSlider";
+import {Container, Row, Col} from "reactstrap";
 
-export default function TestimonialsSection() {
-  return (
-    <div className="container-fluid odd-section">
-      <div className="container py-5 text-center">
-        <div className="row">
-          <div className="col-12">
-            <div className="column testimonials">
-              <h3 className="mb-5">Testimonials</h3>
-              <TestimonialsSlider />
-            </div>
+const TestimonialsSection = () =>
+  <Container fluid className="odd-section">
+    <Container className="py-5 text-center">
+      <Row>
+        <Col>
+          <div className="column testimonials">
+            <h3 className="mb-5">Testimonials</h3>
+            <TestimonialsSlider />
           </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+        </Col>
+      </Row>
+    </Container>
+  </Container>
+
+export default TestimonialsSection;

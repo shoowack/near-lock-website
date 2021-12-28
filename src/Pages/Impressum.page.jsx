@@ -1,11 +1,9 @@
 import React from "react";
 import TitleHeader from "./../Components/TitleHeader";
 
-export default function ImpressumPage(props) {
-  const {
+const ImpressumPage = ({
     location: { pathname }
-  } = props;
-  return (
+  }) => (
     <>
       <TitleHeader location={pathname}>Impressum</TitleHeader>
       <div className="container py-3 py-md-5">
@@ -290,4 +288,5 @@ export default function ImpressumPage(props) {
       </div>
     </>
   );
-}
+
+export default ImpressumPage;

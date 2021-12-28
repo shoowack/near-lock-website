@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import FeatureContainer from "./../FeatureContainer";
+import {Row, Col} from "reactstrap";
 
-function DockItem({ tooltip, image }) {
+const DockItem = ({ tooltip, image }) => {
   const [tooltipActive, setTooltipActive] = useState(false);
   return (
     <div
@@ -15,38 +16,37 @@ function DockItem({ tooltip, image }) {
   );
 }
 
-export default function AuthenticationSection() {
-  return (
-    <FeatureContainer
-      newFeature
-      featureTitle={"Music"}
-      featureDescription={
-        "Seamless music control when locking and unlocking your Mac."
-      }
-    >
-      <div className="row">
-        <div className="col-md-6 play_icon">
-          <img src="/feature/pause_icon.svg" alt="" className="feature-icon" />
-          <h4>Pause audio when mac is locked</h4>
-        </div>
-        <div className="col-md-6 pause_icon">
-          <img src="/feature/play_icon.svg" alt="" className="feature-icon" />
-          <h4>Continue music after login</h4>
-        </div>
+const AuthenticationSection = () => 
+  <FeatureContainer
+    newFeature
+    featureTitle={"Music"}
+    featureDescription={
+      "Seamless music control when locking and unlocking your Mac."
+    }
+  >
+    <Row>
+      <Col md={6} className="play_icon">
+        <img src="/feature/pause_icon.svg" alt="" className="feature-icon" />
+        <h4>Pause audio when mac is locked</h4>
+      </Col>
+      <Col md={6} className="pause_icon">
+        <img src="/feature/play_icon.svg" alt="" className="feature-icon" />
+        <h4>Continue music after login</h4>
+      </Col>
 
-        <div className="col-12">
-          <h5 className="text-center supported-players-title">
-            Currently supported players:
-          </h5>
-        </div>
+      <Col>
+        <h5 className="text-center supported-players-title">
+          Currently supported players:
+        </h5>
+      </Col>
 
-        <div className="dock backdropfilter">
-          <DockItem tooltip="iTunes" image="/feature/dock-itunes.svg" />
-          <DockItem tooltip="QuickTime" image="/feature/dock-quicktime.png" />
-          <DockItem tooltip="VLC" image="/feature/dock-vlc.svg" />
-          <DockItem tooltip="Spotify" image="/feature/dock-spotify.svg" />
-        </div>
+      <div className="dock backdropfilter">
+        <DockItem tooltip="iTunes" image="/feature/dock-itunes.svg" />
+        <DockItem tooltip="QuickTime" image="/feature/dock-quicktime.png" />
+        <DockItem tooltip="VLC" image="/feature/dock-vlc.svg" />
+        <DockItem tooltip="Spotify" image="/feature/dock-spotify.svg" />
       </div>
-    </FeatureContainer>
-  );
-}
+    </Row>
+  </FeatureContainer>
+
+export default AuthenticationSection;

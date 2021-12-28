@@ -11,8 +11,7 @@ import {
 } from "./../Components/HomePage";
 import NewsletterSection from "./../Components/Newsletter/NewsletterSection";
 
-export default function HomePage(props) {
-  const {
+const HomePage = ({
     settings: {
       videoUrl,
       downloadLinks: { appStoreLinkUrl },
@@ -34,9 +33,7 @@ export default function HomePage(props) {
         }
       }
     }
-  } = props;
-
-  return (
+  }) => (
     <>
       <div
         style={{
@@ -63,4 +60,5 @@ export default function HomePage(props) {
       {newsletterSection && <NewsletterSection />}
     </>
   );
-}
+
+export default HomePage;

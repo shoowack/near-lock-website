@@ -6,7 +6,7 @@ import "./slick.scss";
 import "./slick-theme.scss";
 import "./features-header-slider.scss";
 
-export default function FeaturesHeaderSlider({ scrollWithOffset }) {
+const FeaturesHeaderSlider = ({ scrollWithOffset }) => {
   const features = [
     "Access Anywhere",
     "Mac Control",
@@ -33,31 +33,25 @@ export default function FeaturesHeaderSlider({ scrollWithOffset }) {
     outline: "0"
   };
 
-  function SampleNextArrow({ onClick }) {
-    return (
-      <div
-        style={{
-          ...arrowStyles,
-          right: "-25px",
-          transform: "translate(0, -50%) rotate(180deg)"
-        }}
-        onClick={onClick}
-      />
-    );
-  }
+  const SampleNextArrow = ({ onClick }) =>
+    <div
+      style={{
+        ...arrowStyles,
+        right: "-25px",
+        transform: "translate(0, -50%) rotate(180deg)"
+      }}
+      onClick={onClick}
+    />
 
-  function SamplePrevArrow({ onClick }) {
-    return (
-      <div
-        style={{
-          ...arrowStyles,
-          left: "-25px",
-          transform: "translate(0, -50%)"
-        }}
-        onClick={onClick}
-      />
-    );
-  }
+  const SamplePrevArrow = ({ onClick }) =>
+    <div
+      style={{
+        ...arrowStyles,
+        left: "-25px",
+        transform: "translate(0, -50%)"
+      }}
+      onClick={onClick}
+    />
 
   return (
     <Slider
@@ -97,25 +91,25 @@ export default function FeaturesHeaderSlider({ scrollWithOffset }) {
         }
       ]}
     >
-      {features.map((feature, index) => {
-        return (
-          <Link
-            key={index}
-            smooth
-            to={`#${feature.replaceAll(" ", "-").toLowerCase()}`}
-            scroll={(el) => scrollWithOffset(el)}
-            className="featureHeaderSlider__item"
-          >
-            <ReactSVG
-              src={`/feature/icons/${feature
-                .replaceAll(" ", "_")
-                .toLowerCase()}_icon.svg`}
-              className="featureHeaderSlider__icon"
-            />
-            {feature}
-          </Link>
-        );
-      })}
+      {features.map((feature, index) => 
+        <Link
+          key={index}
+          smooth
+          to={`#${feature.replaceAll(" ", "-").toLowerCase()}`}
+          scroll={(el) => scrollWithOffset(el)}
+          className="featureHeaderSlider__item"
+        >
+          <ReactSVG
+            src={`/feature/icons/${feature
+              .replaceAll(" ", "_")
+              .toLowerCase()}_icon.svg`}
+            className="featureHeaderSlider__icon"
+          />
+          {feature}
+        </Link>
+      )}
     </Slider>
   );
 }
+
+export default FeaturesHeaderSlider;

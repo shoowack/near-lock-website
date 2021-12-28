@@ -3,8 +3,7 @@ import Chevron from "./Chevron";
 
 import "./accordion.scss";
 
-export default function Accordion(props) {
-  const { title, content } = props;
+const Accordion = ({ title, content }) => {
   const [setActive, setActiveState] = useState("");
   const [setHeight, setHeightState] = useState("0px");
   const [setRotate, setRotateState] = useState("accordion__icon");
@@ -40,3 +39,5 @@ export default function Accordion(props) {
     </div>
   );
 }
+
+export default Accordion;

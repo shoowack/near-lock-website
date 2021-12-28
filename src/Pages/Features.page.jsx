@@ -4,8 +4,7 @@ import * as sections from "./../Components/FeaturesPage";
 import NewsletterSection from "./../Components/Newsletter/NewsletterSection";
 import "./../Components/FeaturesPage/style.scss";
 
-export default function FeaturesPage(props) {
-  const {
+const FeaturesPage = ({
     location: { pathname },
     scrollWithOffset,
     settings: {
@@ -30,9 +29,7 @@ export default function FeaturesPage(props) {
         }
       }
     }
-  } = props;
-
-  return (
+  }) => (
     <>
       <TitleHeader scrollWithOffset={scrollWithOffset} location={pathname}>
         Features
@@ -57,4 +54,5 @@ export default function FeaturesPage(props) {
       {newsletterSection && <NewsletterSection />}
     </>
   );
-}
+
+export default FeaturesPage

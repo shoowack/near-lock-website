@@ -5,11 +5,10 @@ import gfm from "remark-gfm";
 import TitleHeader from "./../Components/TitleHeader";
 import versions from "./../../src/Data/CHANGELOG.md";
 
-export default function VersionsPage(props) {
-  const {
+const VersionsPage = ({
     scrollWithOffset,
     location: { pathname }
-  } = props;
+  }) => {
   const [changelog, setChangelog] = useState("Loading...");
 
   useEffect(() => {
@@ -65,3 +64,5 @@ export default function VersionsPage(props) {
     </>
   );
 }
+
+export default VersionsPage;
