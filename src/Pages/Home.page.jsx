@@ -34,10 +34,8 @@ const HomePage = withState(
           showWatchDownloadHomepageLink
         }
       },
-      scrollWithOffset,
       translations: { t }
     }
-    // location: { pathname }
   }) => (
     <>
       <div

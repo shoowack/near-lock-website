@@ -1,7 +1,5 @@
 import React, { Suspense } from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-
-// import { Switch, Route, BrowserRouter } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import "bootstrap/dist/css/bootstrap.css";
 import "./style.scss";
@@ -13,6 +11,7 @@ import { useTranslation } from "react-i18next";
 import * as pages from "./Pages";
 import Navigation from "./Components/Navigation/Navigation";
 import Footer from "./Components/Footer/Footer";
+import Loading from "./Components/Loading";
 
 const App = () => {
   useTranslation();
@@ -32,8 +31,8 @@ const App = () => {
         <pages.UnderConstructionPage />
       ) : (
         <BrowserRouter>
-          <Suspense fallback={"Loading..."}>
-            <Navigation />
+          <Navigation />
+          <Suspense fallback={<Loading />}>
             <Routes>
               <Route exact path="/" element={<pages.HomePage />} />
               <Route path="/features" element={<pages.FeaturesPage />} />
