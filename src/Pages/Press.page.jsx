@@ -1,59 +1,55 @@
 import React from "react";
 import TitleHeader from "./../Components/TitleHeader";
+import { withState } from "./../context";
 
-const PressPage = ({
-    location: { pathname },
-    settings: {
+const PressPage = withState(
+  ({
+    state: {
       appStoreLinkUrl,
       videoUrl,
-      pressPage: { pressKitFile }
-    }
-  }) => {
-  
-
-  const images = {
-    press: "/press.jpg",
-    nearlockWhite: "/nearlock_white.jpg",
-    nearlockColor: "/nearlock_color.jpg",
-    nearlockText: "/nearlock_text.jpg"
-  };
-
-  return (
+      pressPage: {
+        pressKitFile,
+        images: { press, nearlockWhite, nearlockColor, nearlockText }
+      },
+      translations: { t }
+    },
+    location: { pathname }
+  }) => (
     <>
       <TitleHeader location={pathname}>Press kit</TitleHeader>
       <div className="container py-3 py-md-5">
         <div className="row mb-4">
           <a
-            href={images.press}
+            href={press}
             target="_blank"
             rel="noreferrer noopener"
             className="col-6 col-md-3 mb-3"
           >
-            <img src={images.press} alt="" className="img-fluid" />
+            <img src={press} alt="" className="img-fluid" />
           </a>
           <a
-            href={images.nearlockWhite}
+            href={nearlockWhite}
             target="_blank"
             rel="noreferrer noopener"
             className="col-6 col-md-3 mb-3"
           >
-            <img src={images.nearlockWhite} alt="" className="img-fluid" />
+            <img src={nearlockWhite} alt="" className="img-fluid" />
           </a>
           <a
-            href={images.nearlockColor}
+            href={nearlockColor}
             target="_blank"
             rel="noreferrer noopener"
             className="col-6 col-md-3 mb-3"
           >
-            <img src={images.nearlockColor} alt="" className="img-fluid" />
+            <img src={nearlockColor} alt="" className="img-fluid" />
           </a>
           <a
-            href={images.nearlockText}
+            href={nearlockText}
             target="_blank"
             rel="noreferrer noopener"
             className="col-6 col-md-3 mb-3"
           >
-            <img src={images.nearlockText} alt="" className="img-fluid" />
+            <img src={nearlockText} alt="" className="img-fluid" />
           </a>
         </div>
         <div className="row">
@@ -158,7 +154,7 @@ const PressPage = ({
         </div>
       </div>
     </>
-  );
-}
+  )
+);
 
 export default PressPage;

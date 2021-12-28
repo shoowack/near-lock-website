@@ -10,9 +10,11 @@ import {
   TestimonialsSection
 } from "./../Components/HomePage";
 import NewsletterSection from "./../Components/Newsletter/NewsletterSection";
+import { withState } from "./../context";
 
-const HomePage = ({
-    settings: {
+const HomePage = withState(
+  ({
+    state: {
       videoUrl,
       downloadLinks: { appStoreLinkUrl },
       homePage: {
@@ -31,8 +33,11 @@ const HomePage = ({
           showIphoneDownloadHomepageLink,
           showWatchDownloadHomepageLink
         }
-      }
+      },
+      scrollWithOffset,
+      translations: { t }
     }
+    // location: { pathname }
   }) => (
     <>
       <div
@@ -59,6 +64,7 @@ const HomePage = ({
       {testimonialsSection && <TestimonialsSection />}
       {newsletterSection && <NewsletterSection />}
     </>
-  );
+  )
+);
 
 export default HomePage;

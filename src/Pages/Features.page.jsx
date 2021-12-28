@@ -2,12 +2,13 @@ import React from "react";
 import TitleHeader from "./../Components/TitleHeader";
 import * as sections from "./../Components/FeaturesPage";
 import NewsletterSection from "./../Components/Newsletter/NewsletterSection";
+import { withState } from "./../context";
 import "./../Components/FeaturesPage/style.scss";
 
-const FeaturesPage = ({
-    location: { pathname },
-    scrollWithOffset,
-    settings: {
+const FeaturesPage = withState(
+  ({
+    state: {
+      translations: { t, i18n },
       featuresPage: {
         visibileSections: {
           accessAnywhereSection,
@@ -31,9 +32,7 @@ const FeaturesPage = ({
     }
   }) => (
     <>
-      <TitleHeader scrollWithOffset={scrollWithOffset} location={pathname}>
-        Features
-      </TitleHeader>
+      <TitleHeader>Features</TitleHeader>
       {accessAnywhereSection && <sections.AccessAnywhereSection />}
       {macControlSection && <sections.MacControlSection />}
       {macUnlockConfirmationSection && (
@@ -53,6 +52,7 @@ const FeaturesPage = ({
       {localizationsSection && <sections.LocalizationsSection />}
       {newsletterSection && <NewsletterSection />}
     </>
-  );
+  )
+);
 
-export default FeaturesPage
+export default FeaturesPage;

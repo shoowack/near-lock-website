@@ -1,33 +1,56 @@
 import React, { useEffect, useState } from "react";
 import { NavHashLink as Link } from "react-router-hash-link";
-import {Navbar, NavbarToggler, Nav, NavItem, Collapse, Container} from "reactstrap"
+import {
+  Navbar,
+  NavbarToggler,
+  Nav,
+  NavItem,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  Collapse,
+  Container
+} from "reactstrap";
+import { withState } from "./../../context";
 import "./navigation.scss";
 
-const Navigation = ({ scrollWithOffset, settings }) => {
-  const [scrolled, setScrolled] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
-
-  useEffect(() => {
-    if (window.innerWidth < 991) {
-      setScrolled(true);
-    } else {
-      const onScroll = (e) => {
-        window.pageYOffset > 5 ? setScrolled(true) : setScrolled(false);
-      };
-      window.addEventListener("scroll", onScroll);
-
-      return () => window.removeEventListener("scroll", onScroll);
+const Navigation = withState(
+  ({
+    state: {
+      translations: { t, i18n },
+      contactEmailAddress,
+      scrollWithOffset
     }
-  }, [scrolled]);
+  }) => {
+    const lang = {
+      en: `Language (${i18n.language})`,
+      hr: `Jezik (${i18n.language})`
+    };
 
-  return (
-    <Navbar
-      color={scrolled ? 'light' : 'transparent'}
-      expand="lg"
-      fixed="top"
-      light={scrolled}
+    const [scrolled, setScrolled] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => setIsOpen(!isOpen);
+
+    useEffect(() => {
+      if (window.innerWidth < 991) {
+        setScrolled(true);
+      } else {
+        const onScroll = (e) => {
+          window.pageYOffset > 5 ? setScrolled(true) : setScrolled(false);
+        };
+        window.addEventListener("scroll", onScroll);
+
+        return () => window.removeEventListener("scroll", onScroll);
+      }
+    }, [scrolled]);
+
+    return (
+      <Navbar
+        color={scrolled ? "light" : "transparent"}
+        expand="lg"
+        fixed="top"
+        light={scrolled}
       >
         <Container>
           <Link
@@ -95,7 +118,7 @@ const Navigation = ({ scrollWithOffset, settings }) => {
                   className="nav-link"
                   smooth
                   onClick={() => setIsOpen(false)}
-                  activeClassName="active"
+                  activeclassname="active"
                   to="/features#top"
                 >
                   Features
@@ -117,7 +140,7 @@ const Navigation = ({ scrollWithOffset, settings }) => {
                   className="nav-link"
                   smooth
                   onClick={() => setIsOpen(false)}
-                  activeClassName="active"
+                  activeclassname="active"
                   to="/faq#top"
                 >
                   FAQ
@@ -128,7 +151,7 @@ const Navigation = ({ scrollWithOffset, settings }) => {
                   className="nav-link"
                   smooth
                   onClick={() => setIsOpen(false)}
-                  activeClassName="active"
+                  activeclassname="active"
                   to="/whats-new#top"
                 >
                   What's new
@@ -139,7 +162,7 @@ const Navigation = ({ scrollWithOffset, settings }) => {
                   className="nav-link"
                   smooth
                   onClick={() => setIsOpen(false)}
-                  activeClassName="active"
+                  activeclassname="active"
                   to="/press#top"
                 >
                   Press
@@ -149,16 +172,47 @@ const Navigation = ({ scrollWithOffset, settings }) => {
                 <a
                   className="nav-link"
                   onClick={() => setIsOpen(false)}
-                  href={`mailto:${settings.contactEmailAddress}?subject=Contact via Near Lock Website`}
+                  href={`mailto:${contactEmailAddress}?subject=Contact via Near Lock Website`}
                 >
                   Contact
                 </a>
               </NavItem>
+
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret>
+                  {lang[i18n.language]}
+                </DropdownToggle>
+                <DropdownMenu>
+                  <Link
+                    to=""
+                    className="dropdown-item"
+                    activeclassname="active"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      i18n.changeLanguage("en");
+                    }}
+                  >
+                    {t("navbarLanguagesEnglish")}
+                  </Link>
+                  <Link
+                    to=""
+                    className="dropdown-item"
+                    activeclassname="active"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      i18n.changeLanguage("hr");
+                    }}
+                  >
+                    {t("navbarLanguagesCroatian")}
+                  </Link>
+                </DropdownMenu>
+              </UncontrolledDropdown>
             </Nav>
           </Collapse>
         </Container>
       </Navbar>
-  );
-}
+    );
+  }
+);
 
 export default Navigation;
