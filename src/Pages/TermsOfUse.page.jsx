@@ -1,14 +1,13 @@
 import React from "react";
 import TitleHeader from "./../Components/TitleHeader";
+import { Col, Container, Row } from "reactstrap";
 
-const TermsOfUsePage = ({
-    location: { pathname }
-  }) => (
+const TermsOfUsePage = () => (
     <>
-      <TitleHeader location={pathname}>Near Lock Terms of Use</TitleHeader>
-      <div className="container py-3 py-md-5">
-        <div className="row">
-          <div className="col">
+      <TitleHeader>Near Lock Terms of Use</TitleHeader>
+      <Container className="py-3 py-md-5">
+        <Row>
+          <Col>
             <p className="text-right mb-5 small">
               Document last updated Thursday, 29 January 2015
               <br />
@@ -165,9 +164,9 @@ const TermsOfUsePage = ({
                 https://creativecommons.org/licenses/by-sa/3.0/
               </a>
             </p>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 

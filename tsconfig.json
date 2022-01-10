@@ -1,7 +1,4 @@
 {
-  // "include": [
-  //   "./src/**/*"
-  // ],
   "compilerOptions": {
     "outDir": "build/dist",
     "module": "esnext",
@@ -12,7 +9,7 @@
     ],
     "sourceMap": true,
     "allowJs": true,
-    "jsx": "react", // or: "jsx": "react-jsx"
+    "jsx": "react",
     "moduleResolution": "node",
     "rootDir": "src",
     "forceConsistentCasingInFileNames": true,
@@ -21,8 +18,16 @@
     "noImplicitAny": true,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true
-    // "strict": true,
-    // "esModuleInterop": true,
-  }
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
+  },
+  "include": [
+    "src"
+  ]
 }
