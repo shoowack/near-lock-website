@@ -1,6 +1,6 @@
-import React from "react";
+import * as React from "react";
 import { render } from "react-dom";
-import smoothScrollPolyfill from "smoothscroll-polyfill";
+import * as smoothScrollPolyfill from "smoothscroll-polyfill";
 import { StateStore } from "./context";
 import App from "./App";
 
