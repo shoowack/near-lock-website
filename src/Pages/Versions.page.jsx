@@ -3,7 +3,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
 import { Container, Col, Row } from 'reactstrap';
-import TitleHeader from '../Components/TitleHeader';
+import TitleHeader from '../components/TitleHeader';
 import versions from '../Data/CHANGELOG.md';
 import { withState } from '../context';
 

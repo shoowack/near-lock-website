@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import TitleHeader from '../Components/TitleHeader';
-import Accordion from '../Components/FaqPage/Accordion';
+import TitleHeader from '../components/TitleHeader';
+import Accordion from '../components/FaqPage/Accordion';
 
 const FaqPage = () => {
   const [search, setSearch] = useState(null);

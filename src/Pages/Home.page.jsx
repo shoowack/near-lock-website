@@ -8,8 +8,8 @@ import {
   FeaturesSection,
   CompatibilitySection,
   TestimonialsSection,
-} from '../Components/HomePage';
-import NewsletterSection from '../Components/Newsletter/NewsletterSection';
+} from '../components/HomePage';
+import NewsletterSection from '../components/Newsletter/NewsletterSection';
 import { withState } from '../context';
 import topBackground from '../media/topBackground.jpg';
 

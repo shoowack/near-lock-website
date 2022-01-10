@@ -28,6 +28,7 @@ const StateStore = ({ children }) => {
   /* eslint-disable-next-line no-unused-vars */
   const [state, setState] = useState({
     translations: { t, i18n },
+    isDarkTheme: false,
     scrollWithOffset,
 
     underConstruction: false,
@@ -99,6 +100,13 @@ const StateStore = ({ children }) => {
       },
     },
   });
+
+  const togglePlayPause = () => {
+    setState((state) => ({
+      ...state,
+      isDarkTheme: !state.isDarkTheme,
+    }));
+  };
 
   return <StateContext.Provider value={state}>{children}</StateContext.Provider>;
 };

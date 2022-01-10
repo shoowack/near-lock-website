@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import TitleHeader from '../Components/TitleHeader';
+import TitleHeader from '../components/TitleHeader';
 import { withState } from '../context';
 
 const PressPage = withState(

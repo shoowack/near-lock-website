@@ -1,9 +1,9 @@
 import React from 'react';
-import TitleHeader from '../Components/TitleHeader';
-import * as sections from '../Components/FeaturesPage';
-import NewsletterSection from '../Components/Newsletter/NewsletterSection';
+import TitleHeader from '../components/TitleHeader';
+import * as sections from '../components/FeaturesPage';
+import NewsletterSection from '../components/Newsletter/NewsletterSection';
 import { withState } from '../context';
-import '../Components/FeaturesPage/style.scss';
+import '../components/FeaturesPage/style.scss';
 
 const FeaturesPage = withState(
   ({

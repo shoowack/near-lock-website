@@ -1,6 +1,6 @@
 import React from 'react';
-import TitleHeader from '../Components/TitleHeader';
-import NewsletterSection from '../Components/Newsletter/NewsletterSection';
+import TitleHeader from '../components/TitleHeader';
+import NewsletterSection from '../components/Newsletter/NewsletterSection';
 
 const ProblemsPage = () => (
   <>

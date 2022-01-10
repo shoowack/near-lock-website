@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
-import TitleHeader from '../Components/TitleHeader';
+import TitleHeader from '../components/TitleHeader';
 
 const ErrorPage = () => (
   <>

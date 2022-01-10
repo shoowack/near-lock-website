@@ -1,6 +1,7 @@
 import React from 'react';
+import { Col, Container, Row } from 'reactstrap';
 
-export default function FeatureContainer({
+const FeatureContainer = ({
   odd,
   newFeature,
   featureIcon,
@@ -8,14 +9,14 @@ export default function FeatureContainer({
   featureDescription,
   padding,
   children,
-}) {
+}) => {
   const browserFriendlyTitle = featureTitle.replaceAll(' ', '-').toLowerCase();
 
   return (
-    <div className={`container-fluid${odd ? ' odd-section' : ''}`} id={browserFriendlyTitle}>
-      <div className={`container text-center feature ${padding || 'py-5'}`}>
-        <div className="row">
-          <div className="col-12">
+    <Container fluid className={odd ? ' odd-section' : ''} id={browserFriendlyTitle}>
+      <Container className={`text-center feature ${padding || 'py-5'}`}>
+        <Row>
+          <Col>
             {newFeature && <span className="new-feature">NEW</span>}
 
             <img
@@ -25,17 +26,20 @@ export default function FeatureContainer({
               alt=""
             />
             <h2>{featureTitle}</h2>
-          </div>
-        </div>
-        <div className="row">
-          <div
-            className="col-12 col-md-8 offset-md-2 mb-5"
+          </Col>
+        </Row>
+        <Row>
+          <Col
+            md={{ size: 8, offset: 2 }}
+            className="mb-5"
             // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{ __html: featureDescription }}
           />
-        </div>
+        </Row>
         {children}
-      </div>
-    </div>
+      </Container>
+    </Container>
   );
-}
+};
+
+export default FeatureContainer;

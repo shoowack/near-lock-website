@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'reactstrap';
-import TitleHeader from '../Components/TitleHeader';
+import TitleHeader from '../components/TitleHeader';
 
 const TermsOfUsePage = () => (
   <>

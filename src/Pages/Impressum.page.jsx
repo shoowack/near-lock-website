@@ -1,12 +1,13 @@
 import React from 'react';
-import TitleHeader from '../Components/TitleHeader';
+import { Col, Container, Row } from 'reactstrap';
+import TitleHeader from '../components/TitleHeader';
 
-const ImpressumPage = ({ location: { pathname } }) => (
+const ImpressumPage = () => (
   <>
-    <TitleHeader location={pathname}>Impressum</TitleHeader>
-    <div className="container py-3 py-md-5">
-      <div className="row">
-        <div className="col">
+    <TitleHeader>Impressum</TitleHeader>
+    <Container className="py-3 py-md-5">
+      <Row>
+        <Col>
           <h4>Developed by:</h4>
           <p>
             Filip Duvnjak
@@ -253,9 +254,9 @@ const ImpressumPage = ({ location: { pathname } }) => (
             OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
             POSSIBILITY OF SUCH DAMAGE.
           </p>
-        </div>
-      </div>
-    </div>
+        </Col>
+      </Row>
+    </Container>
   </>
 );
 
