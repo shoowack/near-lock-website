@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Modal from "./../../Components/Modal";
 import {Container, Row, Col} from "reactstrap";
+import video from "./../../media/video.jpg";
 import "./top-section.scss";
 
 const TopSection = ({ videoUrl }) => {
@@ -59,7 +60,7 @@ const TopSection = ({ videoUrl }) => {
                   <div className="video-wrapper pl-lg-5">
                     <div className="video-play" onClick={() => toggleModal()}>
                       <img
-                        src="/video.jpg"
+                        src={video}
                         className="img-fluid video-img"
                         alt=""
                       />

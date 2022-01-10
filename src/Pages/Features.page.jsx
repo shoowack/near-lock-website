@@ -10,7 +10,7 @@ const FeaturesPage = withState(
     state: {
       translations: { t, i18n },
       featuresPage: {
-        visibileSections: {
+        visibleSections: {
           accessAnywhereSection,
           macControlSection,
           macUnlockConfirmationSection,

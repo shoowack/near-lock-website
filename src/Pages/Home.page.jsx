@@ -11,6 +11,7 @@ import {
 } from "./../Components/HomePage";
 import NewsletterSection from "./../Components/Newsletter/NewsletterSection";
 import { withState } from "./../context";
+import topBackground from "./../media/topBackground.jpg";
 
 const HomePage = withState(
   ({
@@ -18,7 +19,7 @@ const HomePage = withState(
       videoUrl,
       downloadLinks: { appStoreLinkUrl },
       homePage: {
-        visibileSections: {
+        visibleSections: {
           topSection,
           problemsSection,
           downloadsSection,
@@ -40,7 +41,7 @@ const HomePage = withState(
     <>
       <div
         style={{
-          background: `linear-gradient(134deg, #3291e0 25%, rgba(53, 214, 120, 0) 100%), url(/topBackground.jpg) no-repeat center`,
+          background: `linear-gradient(134deg, #3291e0 25%, rgba(53, 214, 120, 0) 100%), url(${topBackground}) no-repeat center`,
           backgroundSize: "cover",
           color: "#fff"
         }}

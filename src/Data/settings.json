@@ -14,7 +14,7 @@
   "newsletterEmailAddress": "subscribe@nearlock.me",
   "supportEmailAddress": "support@nearlock.me",
   "homePage": {
-    "visibileSections": {
+    "visibleSections": {
       "topSection": true,
       "problemsSection": true,
       "downloadsSection": true,
@@ -36,7 +36,7 @@
     "newsletterSection": {}
   },
   "featuresPage": {
-    "visibileSections": {
+    "visibleSections": {
       "accessAnywhereSection": true,
       "macControlSection": true,
       "macUnlockConfirmationSection": true,

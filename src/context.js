@@ -45,7 +45,7 @@ const StateStore = ({ children }) => {
     newsletterEmailAddress: "subscribe@nearlock.me",
     supportEmailAddress: "support@nearlock.me",
     homePage: {
-      visibileSections: {
+      visibleSections: {
         topSection: true,
         problemsSection: true,
         downloadsSection: true,
@@ -67,7 +67,7 @@ const StateStore = ({ children }) => {
       newsletterSection: {}
     },
     featuresPage: {
-      visibileSections: {
+      visibleSections: {
         accessAnywhereSection: true,
         macControlSection: true,
         macUnlockConfirmationSection: true,
