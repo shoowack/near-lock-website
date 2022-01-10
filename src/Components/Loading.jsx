@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Loading = () => {
   const navbarHeight = 62;
@@ -7,11 +7,11 @@ const Loading = () => {
   return (
     <div
       style={{
-        display: "flex",
+        display: 'flex',
         height: `calc(100vh - ${navbarHeight + footerHeight}px)`,
         marginTop: `${navbarHeight}px`,
-        alignItems: "center",
-        justifyContent: "center"
+        alignItems: 'center',
+        justifyContent: 'center',
       }}
     >
       Loading...

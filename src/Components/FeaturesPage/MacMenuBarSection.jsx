@@ -1,25 +1,22 @@
-import React from "react";
-import {Container, Row, Col} from "reactstrap";
+import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
 
 const MacMenuBarSection = () => (
   <Container fluid id="mac-menu-bar">
     <Container>
       <Row>
-        <Col xs={3}
-        md={6}
-        mlg={{size: 5, offset: 1}} className="py-md-5">
+        <Col xs={3} md={6} mlg={{ size: 5, offset: 1 }} className="py-md-5">
           <h3>Mac Menu Bar</h3>
           <p>
-            Near Lock lives in your Mac's menu bar and lets you view status of
-            your iPhone, quickly enable or disable locking and set the
-            desirable locking distance.
+            Near Lock lives in your Mac&apos;s menu bar and lets you view status of your iPhone,
+            quickly enable or disable locking and set the desirable locking distance.
           </p>
           <div className="alert alert-primary" role="alert">
             Fast access to <a href="#unlock-options">WiFi Unlock</a> controls.
           </div>
           <div className="alert alert-primary" role="alert">
-            Copy any text on your Mac, paste it on iOS via{" "}
-            <a href="#clipboard">Clipboard</a> feature.
+            Copy any text on your Mac, paste it on iOS via <a href="#clipboard">Clipboard</a>{' '}
+            feature.
           </div>
           <div className="alert alert-primary" role="alert">
             Easy access to your Mac control options which include:

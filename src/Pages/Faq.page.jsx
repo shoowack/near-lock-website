@@ -1,20 +1,21 @@
-import React, { useState } from "react";
-import TitleHeader from "./../Components/TitleHeader";
-import Accordion from "../Components/FaqPage/Accordion";
+import React, { useState } from 'react';
+import TitleHeader from '../Components/TitleHeader';
+import Accordion from '../Components/FaqPage/Accordion';
 
 const FaqPage = () => {
   const [search, setSearch] = useState(null);
-  let faq = require("./../Data/faq.json");
+  // eslint-disable-next-line global-require
+  const faq = require('../Data/faq.json');
 
   const searchSpace = (event) => {
-    let keyword = event.target.value;
+    const keyword = event.target.value;
     setSearch(keyword);
   };
 
   const searchResults = faq
     .filter((data) => {
       if (search == null) return data;
-      else if (
+      if (
         data.question.toLowerCase().includes(search.toLowerCase()) ||
         data.answer.toLowerCase().includes(search.toLowerCase())
       ) {
@@ -31,10 +32,7 @@ const FaqPage = () => {
   return (
     <>
       <TitleHeader>FAQ</TitleHeader>
-      <div
-        className="container-fluid py-3 py-md-5"
-        style={{ background: "#F2F9F6" }}
-      >
+      <div className="container-fluid py-3 py-md-5" style={{ background: '#F2F9F6' }}>
         <div className="container d-flex align-items-center justify-content-center">
           <div className="row">
             <div className="col-12">
@@ -43,15 +41,15 @@ const FaqPage = () => {
                 placeholder="Search..."
                 style={{
                   // appearance: "none",
-                  border: "none",
-                  background: "#fff",
-                  borderRadius: "10px",
-                  margin: "0",
-                  boxShadow: "0px 10px 40px -15px rgba(0, 0, 0, 0.5)",
-                  padding: "10px 30px",
-                  width: "600px",
-                  color: "#333333",
-                  fontSize: "1.5em"
+                  border: 'none',
+                  background: '#fff',
+                  borderRadius: '10px',
+                  margin: '0',
+                  boxShadow: '0px 10px 40px -15px rgba(0, 0, 0, 0.5)',
+                  padding: '10px 30px',
+                  width: '600px',
+                  color: '#333333',
+                  fontSize: '1.5em',
                 }}
                 onChange={(e) => searchSpace(e)}
               />

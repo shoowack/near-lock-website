@@ -1,6 +1,6 @@
-import React, { createContext, useState } from "react";
-import "./i18next";
-import { useTranslation } from "react-i18next";
+import React, { createContext, useState } from 'react';
+import './i18next';
+import { useTranslation } from 'react-i18next';
 import * as Media from './media';
 
 const StateContext = createContext();
@@ -21,30 +21,29 @@ const StateStore = ({ children }) => {
   const scrollWithOffset = (el, offset = -55) => {
     window.scrollTo({
       top: el.getBoundingClientRect().top + window.pageYOffset + offset,
-      behavior: "smooth"
+      behavior: 'smooth',
     });
   };
 
   /* eslint-disable-next-line no-unused-vars */
   const [state, setState] = useState({
     translations: { t, i18n },
-    scrollWithOffset: scrollWithOffset,
+    scrollWithOffset,
 
     underConstruction: false,
-    videoUrl: "https://www.youtube.com/embed/mvlcCQ1RWXc?rel=0",
+    videoUrl: 'https://www.youtube.com/embed/mvlcCQ1RWXc?rel=0',
     downloadLinks: {
-      appStoreLinkUrl:
-        "https://itunes.apple.com/us/app/near-lock/id886882252?mt=8",
-      macAppLinkUrl: ""
+      appStoreLinkUrl: 'https://itunes.apple.com/us/app/near-lock/id886882252?mt=8',
+      macAppLinkUrl: '',
     },
     socialLinks: {
-      youtube: "https://www.youtube.com/channel/UCAsGat6-KYwuh6Uhu9OrQ7g",
-      twitter: "https://twitter.com/nearlockapp",
-      facebook: "https://www.facebook.com/nearlockapp"
+      youtube: 'https://www.youtube.com/channel/UCAsGat6-KYwuh6Uhu9OrQ7g',
+      twitter: 'https://twitter.com/nearlockapp',
+      facebook: 'https://www.facebook.com/nearlockapp',
     },
-    contactEmailAddress: "contact@nearlock.me",
-    newsletterEmailAddress: "subscribe@nearlock.me",
-    supportEmailAddress: "support@nearlock.me",
+    contactEmailAddress: 'contact@nearlock.me',
+    newsletterEmailAddress: 'subscribe@nearlock.me',
+    supportEmailAddress: 'support@nearlock.me',
     homePage: {
       visibleSections: {
         topSection: true,
@@ -55,17 +54,17 @@ const StateStore = ({ children }) => {
         featuresSection: true,
         compatibilitySection: true,
         testimonialsSection: true,
-        newsletterSection: true
+        newsletterSection: true,
       },
       downloadsSection: {
         showIphoneDownloadHomepageLink: true,
-        showWatchDownloadHomepageLink: true
+        showWatchDownloadHomepageLink: true,
       },
       toolsSection: {},
       featuresSection: {},
       compatibilitySection: {},
       testimonialsSection: {},
-      newsletterSection: {}
+      newsletterSection: {},
     },
     featuresPage: {
       visibleSections: {
@@ -84,11 +83,11 @@ const StateStore = ({ children }) => {
         securitySection: true,
         findYourIphoneSection: true,
         localizationsSection: true,
-        newsletterSection: true
-      }
+        newsletterSection: true,
+      },
     },
     pressPage: {
-      pressKitFile: "http://nearlock.me/downloads/presskit.zip",
+      pressKitFile: 'http://nearlock.me/downloads/presskit.zip',
       images: {
         press: Media.press,
         nearlockWhite: Media.nearlockWhite,
@@ -96,14 +95,12 @@ const StateStore = ({ children }) => {
         nearlockColor: Media.nearlockColor,
         nearlockColorSvg: Media.nearlockColorSvg,
         nearlockText: Media.nearlockText,
-        nearlockTextSvg: Media.nearlockTextSvg
-      }
-    }
+        nearlockTextSvg: Media.nearlockTextSvg,
+      },
+    },
   });
 
-  return (
-    <StateContext.Provider value={state}>{children}</StateContext.Provider>
-  );
+  return <StateContext.Provider value={state}>{children}</StateContext.Provider>;
 };
 
 export { StateContext, StateStore, withState };

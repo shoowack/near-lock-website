@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   TopSection,
   ProblemsSection,
@@ -7,11 +7,11 @@ import {
   ToolsSection,
   FeaturesSection,
   CompatibilitySection,
-  TestimonialsSection
-} from "./../Components/HomePage";
-import NewsletterSection from "./../Components/Newsletter/NewsletterSection";
-import { withState } from "./../context";
-import topBackground from "./../media/topBackground.jpg";
+  TestimonialsSection,
+} from '../Components/HomePage';
+import NewsletterSection from '../Components/Newsletter/NewsletterSection';
+import { withState } from '../context';
+import topBackground from '../media/topBackground.jpg';
 
 const HomePage = withState(
   ({
@@ -28,22 +28,18 @@ const HomePage = withState(
           featuresSection,
           compatibilitySection,
           testimonialsSection,
-          newsletterSection
+          newsletterSection,
         },
-        downloadsSection: {
-          showIphoneDownloadHomepageLink,
-          showWatchDownloadHomepageLink
-        }
+        downloadsSection: { showIphoneDownloadHomepageLink, showWatchDownloadHomepageLink },
       },
-      translations: { t }
-    }
+    },
   }) => (
     <>
       <div
         style={{
           background: `linear-gradient(134deg, #3291e0 25%, rgba(53, 214, 120, 0) 100%), url(${topBackground}) no-repeat center`,
-          backgroundSize: "cover",
-          color: "#fff"
+          backgroundSize: 'cover',
+          color: '#fff',
         }}
       >
         {topSection && <TopSection videoUrl={videoUrl} />}
@@ -63,7 +59,7 @@ const HomePage = withState(
       {testimonialsSection && <TestimonialsSection />}
       {newsletterSection && <NewsletterSection />}
     </>
-  )
+  ),
 );
 
 export default HomePage;

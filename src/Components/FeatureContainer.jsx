@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function FeatureContainer({
   odd,
@@ -7,29 +7,20 @@ export default function FeatureContainer({
   featureTitle,
   featureDescription,
   padding,
-  children
+  children,
 }) {
-  const browserFriendlyTitle = featureTitle.replaceAll(" ", "-").toLowerCase();
+  const browserFriendlyTitle = featureTitle.replaceAll(' ', '-').toLowerCase();
 
   return (
-    <div
-      className={`container-fluid${odd ? " odd-section" : ""}`}
-      id={browserFriendlyTitle}
-    >
-      <div
-        className={
-          "container text-center feature " + (padding ? padding : "py-5")
-        }
-      >
+    <div className={`container-fluid${odd ? ' odd-section' : ''}`} id={browserFriendlyTitle}>
+      <div className={`container text-center feature ${padding || 'py-5'}`}>
         <div className="row">
           <div className="col-12">
             {newFeature && <span className="new-feature">NEW</span>}
 
             <img
-              src={`/feature/${
-                featureIcon ? featureIcon : browserFriendlyTitle
-              }_icon_alt.svg`}
-              style={{ width: "60px", height: "60px" }}
+              src={`/feature/${featureIcon || browserFriendlyTitle}_icon_alt.svg`}
+              style={{ width: '60px', height: '60px' }}
               className="mb-4"
               alt=""
             />
@@ -39,8 +30,9 @@ export default function FeatureContainer({
         <div className="row">
           <div
             className="col-12 col-md-8 offset-md-2 mb-5"
+            // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{ __html: featureDescription }}
-          ></div>
+          />
         </div>
         {children}
       </div>

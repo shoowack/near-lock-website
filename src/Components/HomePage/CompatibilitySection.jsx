@@ -1,7 +1,7 @@
-import React from "react";
-import {Container, Row, Col} from "reactstrap";
+import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
 
-const CompatibilitySection = () =>
+const CompatibilitySection = () => (
   <Container className="text-center py-5" id="compatibility">
     <Row>
       <Col md={12}>
@@ -10,11 +10,7 @@ const CompatibilitySection = () =>
     </Row>
     <Row>
       <Col md={6}>
-        <img
-          src="/devices.svg"
-          className="img-fluid mt-md-5 m-lg-4 mb-4 mb-md-0 w-75"
-          alt=""
-        />
+        <img src="/devices.svg" className="img-fluid mt-md-5 m-lg-4 mb-4 mb-md-0 w-75" alt="" />
       </Col>
       <Col md={6} className="text-lg-left text-md-left text-sm-center text-xs-center">
         <p>
@@ -40,5 +36,6 @@ const CompatibilitySection = () =>
       </Col>
     </Row>
   </Container>
+);
 
 export default CompatibilitySection;

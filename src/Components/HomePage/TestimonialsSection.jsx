@@ -1,8 +1,8 @@
-import React from "react";
-import TestimonialsSlider from "./../../Components/Sliders/TestimonialsSlider";
-import {Container, Row, Col} from "reactstrap";
+import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
+import TestimonialsSlider from '../Sliders/TestimonialsSlider';
 
-const TestimonialsSection = () =>
+const TestimonialsSection = () => (
   <Container fluid className="odd-section">
     <Container className="py-5 text-center">
       <Row>
@@ -15,5 +15,6 @@ const TestimonialsSection = () =>
       </Row>
     </Container>
   </Container>
+);
 
 export default TestimonialsSection;

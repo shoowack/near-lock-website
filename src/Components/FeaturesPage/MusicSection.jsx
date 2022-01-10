@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import FeatureContainer from "./../FeatureContainer";
-import {Row, Col} from "reactstrap";
+import React, { useState } from 'react';
+import { Row, Col } from 'reactstrap';
+import FeatureContainer from '../FeatureContainer';
 
 const DockItem = ({ tooltip, image }) => {
   const [tooltipActive, setTooltipActive] = useState(false);
@@ -14,15 +14,13 @@ const DockItem = ({ tooltip, image }) => {
       <img src={image} alt={tooltip} />
     </div>
   );
-}
+};
 
-const AuthenticationSection = () => 
+const AuthenticationSection = () => (
   <FeatureContainer
     newFeature
-    featureTitle={"Music"}
-    featureDescription={
-      "Seamless music control when locking and unlocking your Mac."
-    }
+    featureTitle="Music"
+    featureDescription="Seamless music control when locking and unlocking your Mac."
   >
     <Row>
       <Col md={6} className="play_icon">
@@ -35,9 +33,7 @@ const AuthenticationSection = () =>
       </Col>
 
       <Col>
-        <h5 className="text-center supported-players-title">
-          Currently supported players:
-        </h5>
+        <h5 className="text-center supported-players-title">Currently supported players:</h5>
       </Col>
 
       <div className="dock backdropfilter">
@@ -48,5 +44,6 @@ const AuthenticationSection = () =>
       </div>
     </Row>
   </FeatureContainer>
+);
 
 export default AuthenticationSection;

@@ -1,19 +1,18 @@
-import React from "react";
-import FeatureContainer from "./../FeatureContainer";
+import React from 'react';
+import FeatureContainer from '../FeatureContainer';
 
 const LocalizationsSection = () => (
-  <FeatureContainer odd featureTitle={"Localizations"}>
+  <FeatureContainer odd featureTitle="Localizations">
     <div className="row">
       <div className="col-md-12">
         <h3>We are proud to offer Near Lock in these languages:</h3>
         <p>
-          English, German, Chinese - simplified, Chinese traditional, Spanish,
-          Portuguese - Portugal, Portuguese - Brazilian, Japanese, Korean,
-          French, Italian, Dutch, Russian and Arabic.
+          English, German, Chinese - simplified, Chinese traditional, Spanish, Portuguese -
+          Portugal, Portuguese - Brazilian, Japanese, Korean, French, Italian, Dutch, Russian and
+          Arabic.
           <br />
           <br />
-          Select your desired language in your iPhone settings under Near
-          Lock.
+          Select your desired language in your iPhone settings under Near Lock.
         </p>
 
         <div className="flags">
@@ -34,13 +33,12 @@ const LocalizationsSection = () => (
       <div className="col-md-12">
         <h3>Measurement Units</h3>
         <p>
-          Measurement units are also adjusted wheather you are using metric or
-          imperial units. Signal strength is the third and most accurate
-          option you can choose for distance estimation.
+          Measurement units are also adjusted wheather you are using metric or imperial units.
+          Signal strength is the third and most accurate option you can choose for distance
+          estimation.
           <br />
           <br />
-          Select your desired measurement units in your iPhone settings under
-          Near Lock.
+          Select your desired measurement units in your iPhone settings under Near Lock.
         </p>
       </div>
       {/* <p>

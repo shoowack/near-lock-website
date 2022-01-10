@@ -1,14 +1,13 @@
-import React from "react";
-import TitleHeader from "./../Components/TitleHeader";
-import * as sections from "./../Components/FeaturesPage";
-import NewsletterSection from "./../Components/Newsletter/NewsletterSection";
-import { withState } from "./../context";
-import "./../Components/FeaturesPage/style.scss";
+import React from 'react';
+import TitleHeader from '../Components/TitleHeader';
+import * as sections from '../Components/FeaturesPage';
+import NewsletterSection from '../Components/Newsletter/NewsletterSection';
+import { withState } from '../context';
+import '../Components/FeaturesPage/style.scss';
 
 const FeaturesPage = withState(
   ({
     state: {
-      translations: { t, i18n },
       featuresPage: {
         visibleSections: {
           accessAnywhereSection,
@@ -26,18 +25,16 @@ const FeaturesPage = withState(
           securitySection,
           findYourIphoneSection,
           localizationsSection,
-          newsletterSection
-        }
-      }
-    }
+          newsletterSection,
+        },
+      },
+    },
   }) => (
     <>
       <TitleHeader>Features</TitleHeader>
       {accessAnywhereSection && <sections.AccessAnywhereSection />}
       {macControlSection && <sections.MacControlSection />}
-      {macUnlockConfirmationSection && (
-        <sections.MacUnlockConfirmationSection />
-      )}
+      {macUnlockConfirmationSection && <sections.MacUnlockConfirmationSection />}
       {unlockOptionsSection && <sections.UnlockOptionsSection />}
       {lockSettingsSection && <sections.LockSettingsSection />}
       {appleWatchSection && <sections.AppleWatchSection />}
@@ -52,7 +49,7 @@ const FeaturesPage = withState(
       {localizationsSection && <sections.LocalizationsSection />}
       {newsletterSection && <NewsletterSection />}
     </>
-  )
+  ),
 );
 
 export default FeaturesPage;

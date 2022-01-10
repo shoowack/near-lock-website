@@ -1,8 +1,8 @@
-import React from "react";
-import { NavHashLink as Link } from "react-router-hash-link";
-import "./footer.scss";
-import { Container, Row } from "reactstrap";
-import { withState } from "./../../context";
+import React from 'react';
+import { NavHashLink as Link } from 'react-router-hash-link';
+import './footer.scss';
+import { Container, Row } from 'reactstrap';
+import { withState } from '../../context';
 
 const Footer = withState(
   ({
@@ -12,8 +12,7 @@ const Footer = withState(
       contactEmailAddress,
       supportEmailAddress,
       scrollWithOffset,
-      translations: { t }
-    }
+    },
   }) => (
     <Container className="footer py-4">
       {/* add "colored" class if we want to revert to v1 */}
@@ -23,11 +22,7 @@ const Footer = withState(
             <h5>Product</h5>
           </dt>
           <dd>
-            <Link
-              smooth
-              to="/#compatibility"
-              scroll={(el) => scrollWithOffset(el)}
-            >
+            <Link smooth to="/#compatibility" scroll={(el) => scrollWithOffset(el)}>
               Compatibility
             </Link>
           </dd>
@@ -37,9 +32,7 @@ const Footer = withState(
             </Link>
           </dd>
           <dd>
-            <a
-              href={`mailto:${contactEmailAddress}?subject=Contact via Near Lock Website`}
-            >
+            <a href={`mailto:${contactEmailAddress}?subject=Contact via Near Lock Website`}>
               Contact
             </a>
           </dd>
@@ -60,9 +53,7 @@ const Footer = withState(
             <h5>Company</h5>
           </dt>
           <dd>
-            <a
-              href={`mailto:${contactEmailAddress}?subject=Contact via Near Lock Website`}
-            >
+            <a href={`mailto:${contactEmailAddress}?subject=Contact via Near Lock Website`}>
               Contact
             </a>
           </dd>
@@ -92,9 +83,7 @@ const Footer = withState(
             </Link>
           </dd>
           <dd>
-            <a
-              href={`mailto:${supportEmailAddress}?subject=Question via Near Lock Website`}
-            >
+            <a href={`mailto:${supportEmailAddress}?subject=Question via Near Lock Website`}>
               Support
             </a>
           </dd>
@@ -121,7 +110,7 @@ const Footer = withState(
         </dl>
       </Row>
     </Container>
-  )
+  ),
 );
 
 export default Footer;

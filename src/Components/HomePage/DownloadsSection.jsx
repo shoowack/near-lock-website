@@ -1,15 +1,13 @@
-import React from "react";
-import "./downloads-section.scss";
-import {Container, Row, Col} from "reactstrap";
+import React from 'react';
+import './downloads-section.scss';
+import { Container, Row, Col } from 'reactstrap';
 
 const DownloadsSection = ({
   showIphoneDownloadHomepageLink,
   showWatchDownloadHomepageLink,
-  appStoreLinkUrl
-}) =>
-  <Container fluid
-    style={{ background: "rgba(0, 0, 0, 0.5)" }}
-  >
+  appStoreLinkUrl,
+}) => (
+  <Container fluid style={{ background: 'rgba(0, 0, 0, 0.5)' }}>
     <Container className="download text-center py-4" id="download">
       <Row>
         <Col>
@@ -24,10 +22,7 @@ const DownloadsSection = ({
             rel="noopener noreferrer"
             className="link col-md-4 col-sm-4 col-xs-12 py-4"
           >
-            <div
-              className="icon iphone mb-4"
-              style={{ background: "url(/iphone11.svg)" }}
-            ></div>
+            <div className="icon iphone mb-4" style={{ background: 'url(/iphone11.svg)' }} />
             iPhone App
           </a>
         )}
@@ -39,10 +34,7 @@ const DownloadsSection = ({
             rel="noopener noreferrer"
             className="link col-md-4 col-sm-4 col-xs-12 py-4"
           >
-            <div
-              className="icon watch mb-4"
-              style={{ background: "url(/applewatch.svg)" }}
-            ></div>
+            <div className="icon watch mb-4" style={{ background: 'url(/applewatch.svg)' }} />
             Apple Watch
           </a>
         )}
@@ -51,20 +43,17 @@ const DownloadsSection = ({
           href="downloads/nearlock.dmg"
           className="link col-md-4 col-sm-4 col-xs-12 py-4 newsletter-trigger"
         >
-          <div
-            className="icon mac mb-4"
-            style={{ background: "url(/imac.svg)" }}
-          ></div>
+          <div className="icon mac mb-4" style={{ background: 'url(/imac.svg)' }} />
           Mac App
         </a>
       </Row>
       <Row>
         <sub className="col py-4">
-          Download iPhone, Mac and Apple Watch applications for FREE, and give
-          it a try!
+          Download iPhone, Mac and Apple Watch applications for FREE, and give it a try!
         </sub>
       </Row>
     </Container>
   </Container>
+);
 
 export default DownloadsSection;
