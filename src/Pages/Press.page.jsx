@@ -10,7 +10,7 @@ const PressPage = withState(
       videoUrl,
       pressPage: {
         pressKitFile,
-        images: { press, nearlockWhite, nearlockColor, nearlockText }
+        images: { press, nearlockWhite, nearlockColor, nearlockText, nearlockWhiteSvg, nearlockColorSvg, nearlockTextSvg }
       },
       translations: { t }
     }
@@ -33,7 +33,7 @@ const PressPage = withState(
             rel="noreferrer noopener"
             className="col-6 col-md-3 mb-3"
           >
-            <img src={nearlockWhite} alt="" className="img-fluid" />
+            <img src={nearlockWhiteSvg} alt="" className="img-fluid" />
           </a>
           <a
             href={nearlockColor}
@@ -41,7 +41,7 @@ const PressPage = withState(
             rel="noreferrer noopener"
             className="col-6 col-md-3 mb-3"
           >
-            <img src={nearlockColor} alt="" className="img-fluid" />
+            <img src={nearlockColorSvg} alt="" className="img-fluid" />
           </a>
           <a
             href={nearlockText}
@@ -49,7 +49,7 @@ const PressPage = withState(
             rel="noreferrer noopener"
             className="col-6 col-md-3 mb-3"
           >
-            <img src={nearlockText} alt="" className="img-fluid" />
+            <img src={nearlockTextSvg} alt="" className="img-fluid" />
           </a>
         </Row>
         <Row>

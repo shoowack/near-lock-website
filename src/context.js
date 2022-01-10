@@ -1,6 +1,7 @@
 import React, { createContext, useState } from "react";
 import "./i18next";
 import { useTranslation } from "react-i18next";
+import * as Media from './media';
 
 const StateContext = createContext();
 
@@ -89,10 +90,13 @@ const StateStore = ({ children }) => {
     pressPage: {
       pressKitFile: "http://nearlock.me/downloads/presskit.zip",
       images: {
-        press: "/press.jpg",
-        nearlockWhite: "/nearlock_white.jpg",
-        nearlockColor: "/nearlock_color.jpg",
-        nearlockText: "/nearlock_text.jpg"
+        press: Media.press,
+        nearlockWhite: Media.nearlockWhite,
+        nearlockWhiteSvg: Media.nearlockWhiteSvg,
+        nearlockColor: Media.nearlockColor,
+        nearlockColorSvg: Media.nearlockColorSvg,
+        nearlockText: Media.nearlockText,
+        nearlockTextSvg: Media.nearlockTextSvg
       }
     }
   });
