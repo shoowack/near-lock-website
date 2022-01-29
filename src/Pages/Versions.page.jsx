@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
-import ReactMarkdown from 'react-markdown';
-import gfm from 'remark-gfm';
-import { Container, Col, Row } from 'reactstrap';
-import TitleHeader from '../components/TitleHeader';
-import versions from '../Data/CHANGELOG.md';
-import { withState } from '../context';
+import React, { useEffect, useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
+import ReactMarkdown from "react-markdown";
+import gfm from "remark-gfm";
+import { Container, Col, Row } from "reactstrap";
+import TitleHeader from "../Components/TitleHeader";
+import versions from "../Data/CHANGELOG.md";
+import { withState } from "../context";
 
 const VersionsPage = withState(({ state: { scrollWithOffset } }) => {
-  const [changelog, setChangelog] = useState('Loading...');
+  const [changelog, setChangelog] = useState("Loading...");
 
   useEffect(() => {
     fetch(versions)
@@ -17,10 +17,10 @@ const VersionsPage = withState(({ state: { scrollWithOffset } }) => {
   }, []);
 
   const sidebar = changelog
-    .split('\n')
-    .filter((item) => item.startsWith('###'))
-    .map((item) => item.split(':'))
-    .map((item) => item[0].split(']('))
+    .split("\n")
+    .filter((item) => item.startsWith("###"))
+    .map((item) => item.split(":"))
+    .map((item) => item[0].split("]("))
     .map((item) => item[0].slice(5));
 
   return (
@@ -29,14 +29,14 @@ const VersionsPage = withState(({ state: { scrollWithOffset } }) => {
       <Container className="py-3 py-md-5">
         <Row>
           <div className="d-none d-md-block col-2">
-            <div className="sticky-top" style={{ top: '94px' }}>
+            <div className="sticky-top" style={{ top: "94px" }}>
               <h5>Versions:</h5>
               {sidebar.map((item) => (
                 <>
                   <Link
                     scroll={(el) => scrollWithOffset(el, -70)}
                     smooth
-                    to={`/whats-new#${item.split('.').join('')}`}
+                    to={`/whats-new#${item.split(".").join("")}`}
                   >
                     {item}
                   </Link>
@@ -54,7 +54,7 @@ const VersionsPage = withState(({ state: { scrollWithOffset } }) => {
                   <a {...props} id={props.href.slice(1)}>
                     {props.node.children[0].value}
                   </a>
-                ),
+                )
               }}
             />
           </Col>
