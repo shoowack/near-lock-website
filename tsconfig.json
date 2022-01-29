@@ -11,7 +11,7 @@
     "allowJs": true,
     "jsx": "preserve",
     "moduleResolution": "node",
-    "rootDir": "src",
+    "rootDir": "/",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
@@ -29,7 +29,7 @@
   },
   "include": [
     "src"
-, "pages"  ],
+, "pages", "i18n.js"  ],
   "exclude": [
     "node_modules"
   ]

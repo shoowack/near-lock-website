@@ -14,7 +14,7 @@ import {
 } from 'reactstrap';
 import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
-import i18nConfig from '../../../i18n';
+import i18nConfig from '/i18n';
 
 import { withState } from '../../context';
 
