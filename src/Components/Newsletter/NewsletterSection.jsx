@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import './newsletter.scss';
 
 const NewsletterSection = () => (
   <Container className="newsletter py-3 py-md-5 text-center">

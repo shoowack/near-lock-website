@@ -3,9 +3,6 @@ import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import Slider from 'react-slick';
 import { ReactSVG } from 'react-svg';
-import './slick.scss';
-import './slick-theme.scss';
-import './features-header-slider.scss';
 
 const FeaturesHeaderSlider = ({ scrollWithOffset }) => {
   const features = [

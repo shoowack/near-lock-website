@@ -1,8 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
 import FeatureContainer from '../FeatureContainer';
-import '../Sliders/slick.scss';
-import '../Sliders/slick-theme.scss';
 
 const AppleWatchSection = () => (
   <FeatureContainer

@@ -1,7 +1,8 @@
 import React from 'react';
-import { NavHashLink as Link } from 'react-router-hash-link';
-import './footer.scss';
+// import { NavHashLink as Link } from 'react-router-hash-link';
+// import './footer.scss';
 import { Container, Row } from 'reactstrap';
+import Link from 'next/link';
 import { withState } from '../../context';
 
 const Footer = withState(
@@ -22,12 +23,16 @@ const Footer = withState(
             <h5>Product</h5>
           </dt>
           <dd>
-            <Link smooth to="/#compatibility" scroll={(el) => scrollWithOffset(el)}>
+            <Link
+              smooth
+              href="/#compatibility"
+              // scroll={(el) => scrollWithOffset(el)}
+            >
               Compatibility
             </Link>
           </dd>
           <dd>
-            <Link smooth activeclassname="active" to="/features#top">
+            <Link smooth activeclassname="active" href="/features#top">
               Features
             </Link>
           </dd>
@@ -58,17 +63,17 @@ const Footer = withState(
             </a>
           </dd>
           <dd>
-            <Link smooth activeclassname="active" to="/press#top">
+            <Link smooth activeclassname="active" href="/press#top">
               Press
             </Link>
           </dd>
           <dd>
-            <Link smooth activeclassname="active" to="/terms#top">
+            <Link smooth activeclassname="active" href="/terms#top">
               Terms of use
             </Link>
           </dd>
           <dd>
-            <Link smooth activeclassname="active" to="/impressum#top">
+            <Link smooth activeclassname="active" href="/impressum#top">
               Impressum
             </Link>
           </dd>
@@ -78,7 +83,7 @@ const Footer = withState(
             <h5>Help</h5>
           </dt>
           <dd>
-            <Link smooth activeclassname="active" to="/faq#top">
+            <Link smooth activeclassname="active" href="/faq#top">
               FAQ
             </Link>
           </dd>

@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
-import './slick.scss';
-import './slick-theme.scss';
-import './testimonials.scss';
 
 const TestimonialsSlider = () => {
   const [nav1, setNav1] = useState(null);

@@ -1,6 +1,5 @@
-import React, { createContext, useState } from 'react';
-import './i18next';
-import { useTranslation } from 'react-i18next';
+import { createContext, useState } from 'react';
+import useTranslation from 'next-translate/useTranslation';
 import * as Media from './media';
 
 const StateContext = createContext();
@@ -16,7 +15,9 @@ const withState = (Component) => {
 };
 
 const StateStore = ({ children }) => {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation('common');
+
+  // const { t, i18n } = useTranslation();
 
   const scrollWithOffset = (el, offset = -55) => {
     window.scrollTo({

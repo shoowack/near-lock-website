@@ -1,6 +1,8 @@
 import React from 'react';
-import './downloads-section.scss';
+import styles from './downloads-section.module.scss';
 import { Container, Row, Col } from 'reactstrap';
+import {iMacSvg} from './../../media';
+import Image from 'next/image';
 
 const DownloadsSection = ({
   showIphoneDownloadHomepageLink,
@@ -43,7 +45,8 @@ const DownloadsSection = ({
           href="downloads/nearlock.dmg"
           className="link col-md-4 col-sm-4 col-xs-12 py-4 newsletter-trigger"
         >
-          <div className="icon mac mb-4" style={{ background: 'url(/imac.svg)' }} />
+          {/* <Image src={iMacSvg} className="icon mac mb-4"     height={'80px'} width={'80px'}/> */}
+          <div className="icon mac mb-4" style={{ background: `url(${iMacSvg.src})` }} />
           Mac App
         </a>
       </Row>

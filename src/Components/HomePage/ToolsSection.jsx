@@ -1,5 +1,5 @@
 import React from 'react';
-import './tools-section.scss';
+import './tools-section.module.scss';
 import { Container, Row, Col } from 'reactstrap';
 
 const ToolsSection = () => (

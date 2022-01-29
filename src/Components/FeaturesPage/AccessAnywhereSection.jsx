@@ -1,4 +1,3 @@
-import React from 'react';
 import FeatureContainer from '../FeatureContainer';
 
 const AccessAnywhereSection = () => (

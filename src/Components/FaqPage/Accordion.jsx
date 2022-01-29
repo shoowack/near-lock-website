@@ -2,8 +2,6 @@ import React, { useState, useRef } from 'react';
 import { Button } from 'reactstrap';
 import Chevron from './Chevron';
 
-import './accordion.scss';
-
 const Accordion = ({ title, content }) => {
   const [setActive, setActiveState] = useState('');
   const [setHeight, setHeightState] = useState('0px');

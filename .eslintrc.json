@@ -3,7 +3,8 @@
       "airbnb",
       "airbnb/hooks",
       "plugin:prettier/recommended",
-      "prettier/react"
+      "prettier/react",
+      "next/core-web-vitals"
     ],
     "rules": {
       // ** prettier rules **

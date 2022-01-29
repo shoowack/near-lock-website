@@ -6,11 +6,11 @@ import FeaturesHeaderSlider from './Sliders/FeaturesHeaderSlider';
 import { withState } from '../context';
 
 const TitleHeader = withState(({ state: { scrollWithOffset }, children }) => {
-  const location = useLocation();
+  // const location = useLocation();
 
   return (
     <>
-      {location.pathname ? (
+      {/* {location.pathname ? (
         <Helmet>
           <title>Near Lock - {children}</title>
           <link
@@ -18,7 +18,7 @@ const TitleHeader = withState(({ state: { scrollWithOffset }, children }) => {
             href={`${window.location.protocol}//${window.location.hostname}${location.pathname}`}
           />
         </Helmet>
-      ) : null}
+      ) : null} */}
       <div
         id="top"
         className="pb-5"
@@ -32,9 +32,9 @@ const TitleHeader = withState(({ state: { scrollWithOffset }, children }) => {
           <Row>
             <Col sm={12}>
               <h2>{children}</h2>
-              {location.pathname === '/features' && (
+              {/* {location.pathname === '/features' && (
                 <FeaturesHeaderSlider scrollWithOffset={scrollWithOffset} />
-              )}
+              )} */}
             </Col>
           </Row>
         </Container>

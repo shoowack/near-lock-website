@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 // import "jquery"; // uncomment when needed later
 // import "popper.js"; // uncomment when needed later
 
-import * as pages from './Pages';
+import * as pages from './pages';
 import Navigation from './Components/Navigation/Navigation';
 import Footer from './Components/Footer/Footer';
 import Loading from './Components/Loading';

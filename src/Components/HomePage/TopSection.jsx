@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import Modal from '../Modal';
 import video from '../../media/video.jpg';
-import './top-section.scss';
+import play from '../../media/play.svg';
 
 const TopSection = ({ videoUrl }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -28,7 +28,11 @@ const TopSection = ({ videoUrl }) => {
         </div>
       </Modal>
 
-      <section className="top-setion container-fluid pb-5" id="top" style={{ paddingTop: '100px' }}>
+      <section
+        className="top-section container-fluid pb-5"
+        id="top"
+        style={{ paddingTop: '100px' }}
+      >
         <Row>
           <Col>
             <Container>
@@ -55,9 +59,9 @@ const TopSection = ({ videoUrl }) => {
                   <div className="video-wrapper pl-lg-5">
                     {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */}
                     <div className="video-play" onClick={() => toggleModal()}>
-                      <img src={video} className="img-fluid video-img" alt="" />
+                      <img src={video.src} className="img-fluid video-img" alt="" />
                       <div className="play">
-                        <img src="/play.svg" alt="" />
+                        <img src={play.src} alt="" />
                         Play Video
                       </div>
                     </div>

@@ -5,6 +5,7 @@ import nearlockColor from './nearlock_color.jpg';
 import nearlockColorSvg from './nearlock_color.svg';
 import nearlockText from './nearlock_text.jpg';
 import nearlockTextSvg from './nearlock_text.svg';
+import iMacSvg from './imac.svg';
 
 export {
   press,
@@ -14,4 +15,5 @@ export {
   nearlockColorSvg,
   nearlockText,
   nearlockTextSvg,
+  iMacSvg
 };
