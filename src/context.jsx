@@ -101,12 +101,12 @@ const StateStore = ({ children }) => {
     },
   });
 
-  const togglePlayPause = () => {
-    setState((state) => ({
-      ...state,
-      isDarkTheme: !state.isDarkTheme,
-    }));
-  };
+  // const togglePlayPause = () => {
+  //   setState((state) => ({
+  //     ...state,
+  //     isDarkTheme: !state.isDarkTheme,
+  //   }));
+  // };
 
   return <StateContext.Provider value={state}>{children}</StateContext.Provider>;
 };
