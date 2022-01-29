@@ -1,5 +1,4 @@
 import { createContext, useState } from 'react';
-import useTranslation from 'next-translate/useTranslation';
 import * as Media from './media';
 
 const StateContext = createContext();
@@ -15,22 +14,9 @@ const withState = (Component) => {
 };
 
 const StateStore = ({ children }) => {
-  const { t, i18n } = useTranslation('common');
-
-  // const { t, i18n } = useTranslation();
-
-  const scrollWithOffset = (el, offset = -55) => {
-    window.scrollTo({
-      top: el.getBoundingClientRect().top + window.pageYOffset + offset,
-      behavior: 'smooth',
-    });
-  };
-
   /* eslint-disable-next-line no-unused-vars */
   const [state, setState] = useState({
-    translations: { t, i18n },
     isDarkTheme: false,
-    scrollWithOffset,
 
     underConstruction: false,
     videoUrl: 'https://www.youtube.com/embed/mvlcCQ1RWXc?rel=0',

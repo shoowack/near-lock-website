@@ -3,7 +3,8 @@ import { Container, Row, Col } from 'reactstrap';
 import useTranslation from 'next-translate/useTranslation';
 
 const CompatibilitySection = () => {
-  const { t, lang } = useTranslation('common');
+  const { t } = useTranslation('common');
+
   return (
     <Container className="text-center py-5" id="compatibility">
       <Row>

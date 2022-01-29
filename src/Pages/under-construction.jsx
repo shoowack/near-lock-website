@@ -1,5 +1,4 @@
 import React from 'react';
-import './underconstruction.scss';
 
 const UnderConstructionPage = () => (
   <div className="under-construction">
