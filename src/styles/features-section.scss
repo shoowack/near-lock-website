@@ -47,16 +47,16 @@
   }
 }
 
-.backgroundiconcontainer {
+.background-icon-container {
   margin: auto;
   position: relative;
   height: 250px;
   width: 250px;
   display: inline-block;
 
-  .backgroundicon {
+  .background-icon {
     position: absolute;
-    background: url(/background_icon.png);
+    background: url('./../media/background_icon.png');
     top: 0;
     left: 0;
     background-size: 100%;
@@ -68,7 +68,7 @@
 
 .gear1 {
   position: absolute;
-  background: url(/background_icon_gear_left.png);
+  background: url('./../media/background_icon_gear_left.png');
   background-size: 100%;
   height: 70px;
   width: 70px;
@@ -123,7 +123,7 @@
 
 .gear2 {
   position: absolute;
-  background: url(/background_icon_gear_right.png);
+  background: url('./../media/background_icon_gear_right.png');
   background-size: 100%;
   height: 102px;
   width: 102px;
@@ -178,7 +178,7 @@
 
 .sparkle {
   position: absolute;
-  background: url(/sparkle.png) center no-repeat;
+  background: url('./../media/sparkle.png') center no-repeat;
   background-size: cover !important;
   height: 66px;
   width: 66px;

@@ -1,6 +1,6 @@
-import React from "react";
-import { HashLink as Link } from "react-router-hash-link";
-import TitleHeader from "../Components/TitleHeader";
+import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
+import TitleHeader from '../Components/TitleHeader';
 
 const ErrorPage = () => (
   <>
@@ -9,11 +9,9 @@ const ErrorPage = () => (
       <div className="row">
         <div className="col-12 text-center py-5">
           <p className="mb-2">Something went wrong, we have nothing on:</p>
-          <mark className="font-weight-bold d-inline">
-            {window.location.href}
-          </mark>
+          <mark className="font-weight-bold d-inline">{window.location.href}</mark>
           <p className="mt-5">
-            You may find what you were looking for on our{" "}
+            You may find what you were looking for on our{' '}
             <Link smooth to="/#">
               Homepage
             </Link>

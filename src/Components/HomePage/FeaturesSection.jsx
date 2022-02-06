@@ -1,22 +1,15 @@
 import React from 'react';
 import { ReactSVG } from 'react-svg';
-// import { HashLink as Link } from 'react-router-hash-link';
 import { Container, Row, Col } from 'reactstrap';
 import Link from 'next/link';
-import styles from './features-section.module.scss';
 
-const FeaturesSection = ({ scrollWithOffset }) => (
+const FeaturesSection = () => (
   <section className="highlighted-features colored text-center py-5">
     <Container>
       <Row>
         <Col md={12}>
-          <Link
-            className="link"
-            smooth
-            href="/features"
-            // scroll={(el) => scrollWithOffset(el)}
-          >
-            <div className="backgroundiconcontainer">
+          <Link className="link" smooth href="/features" passHref>
+            <div className="background-icon-container">
               <div className="sparkle" />
               <div className="sparkle" />
               <div className="sparkle" />
@@ -26,7 +19,7 @@ const FeaturesSection = ({ scrollWithOffset }) => (
               <div className="sparkle" />
               <div className="gear1" />
               <div className="gear2" />
-              <div className="backgroundicon" />
+              <div className="background-icon" />
             </div>
           </Link>
           <h3>Background mode</h3>

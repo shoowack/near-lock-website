@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './downloads-section.module.scss';
 import { Container, Row, Col } from 'reactstrap';
-import {iMacSvg} from './../../media';
+import { iMacSvg } from '../../media';
 import Image from 'next/image';
 
 const DownloadsSection = ({
