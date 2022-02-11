@@ -1,3 +1,8 @@
+import fs from 'fs';
+import matter from 'gray-matter';
+import path from 'path';
+import yaml from 'js-yaml';
+
 import React, { useEffect, useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 // import ReactMarkdown from 'react-markdown';
@@ -6,7 +11,30 @@ import { Container, Col, Row } from 'reactstrap';
 import TitleHeader from '../Components/TitleHeader';
 // import versions from '../Data/CHANGELOG.md';
 
+const markdownFile = path('../Data/CHANGELOG.md');
+const fileContents = fs.readFileSync(markdownFile, 'utf8');
+
 const VersionsPage = ({ versions }) => {
+  // Use gray-matter to parse the post metadata section
+  const matterResult = matter(fileContents, {
+    engines: {
+      yaml: (s) => yaml.safeLoad(s, { schema: yaml.JSON_SCHEMA }),
+      //  as object,
+    },
+  });
+  const matterData = matterResult.data;
+  //  as {
+  //   date: string;
+  //   title: string;
+  //   tags: string[];
+  //   slug: string;
+  // };
+
+  console.log(matterData);
+  // return matterData;
+
+  //----------------------------------------------------------------------------------
+
   // const [changelog, setChangelog] = useState('Loading...');
 
   // useEffect(() => {
