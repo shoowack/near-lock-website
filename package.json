@@ -46,7 +46,8 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "^2.2.1",
     "typescript": "^4.5.4",
-    "yaml-loader": "^0.6.0"
+    "yaml-loader": "^0.6.0",
+    "@netlify/plugin-nextjs": "^4.2.5"
   },
   "scripts": {
     "dev": "next dev",
